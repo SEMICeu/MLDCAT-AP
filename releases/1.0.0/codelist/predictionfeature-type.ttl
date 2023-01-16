@@ -5,7 +5,7 @@
 
 <http://openml.org/openml/predictionFeature-type> a skos:ConceptScheme;
   dct:description "The type of Prediction Feature";
-  dct:title "Predicion Feature type";
+  dct:title "Prediction Feature type";
   skos:hasTopConcept <http://openml.org/openml/predictionFeature-type#integer>, <http://openml.org/openml/predictionFeature-type#numeric>,
     <http://openml.org/openml/predictionFeature-type#string> .
 
