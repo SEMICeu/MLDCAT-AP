@@ -1199,7 +1199,7 @@
           "sh:name": {
             "en": "description"
           },
-          "sh:path": "http://purl.org/dc/terms/description"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1217,7 +1217,7 @@
           "sh:name": {
             "en": "name"
           },
-          "sh:path": "http://purl.org/dc/terms/title"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#TaskType"

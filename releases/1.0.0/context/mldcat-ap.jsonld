@@ -744,7 +744,7 @@
     },
     "TaskType": "http://openml.org/openml#TaskType",
     "TaskType.description": {
-      "@id": "http://purl.org/dc/terms/description",
+      "@id": "http://www.w3.org/2004/02/skos/core#definition",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "TaskType.identifier": {
@@ -752,7 +752,7 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "TaskType.name": {
-      "@id": "http://purl.org/dc/terms/title",
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     }
   }

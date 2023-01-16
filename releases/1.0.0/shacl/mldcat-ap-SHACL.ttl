@@ -1104,7 +1104,7 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "description"@en;
-    shacl:path dc:description
+    shacl:path skos:definition
   ], [
     shacl:datatype rdfs:Literal;
     shacl:maxCount 1;
@@ -1116,6 +1116,6 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "name"@en;
-    shacl:path dc:title
+    shacl:path skos:prefLabel
   ];
   shacl:targetClass <http://openml.org/openml#TaskType> .
