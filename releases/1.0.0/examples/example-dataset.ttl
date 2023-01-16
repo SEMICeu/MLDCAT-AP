@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix locn: <http://www.w3.org/ns/locn> .
+
+<http://www.example.com/le/123> a legal:LegalEntity;
+	legal:legalName "ArchITES"@en ;
+	legal:registeredAddress <http://www.example.com/address/abc> ;
+	legal:companyType  <http://www.example.com/companyType/sarl> .
+
+<http://www.example.com/address/abc> a locn:Address ;
+	locn:fullAddress "27, Rue Adrienne Bolland, 44230 Saint-Sebastien-Sur-Loire" .
