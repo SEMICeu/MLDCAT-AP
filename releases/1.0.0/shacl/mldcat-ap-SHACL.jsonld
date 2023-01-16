@@ -1095,20 +1095,20 @@
           "sh:path": "http://openml.org/openml#hasCostMatrix"
         },
         {
-          "sh:class": "http://openml.org/openml#EvaluationMeasure",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "has evaluation measure"
-          },
-          "sh:path": "http://openml.org/openml#hasEvaluationMeasure"
-        },
-        {
           "sh:class": "http://openml.org/openml#EstimationProcedure",
           "sh:minCount": "1",
           "sh:name": {
             "en": "has estimation procedure"
           },
           "sh:path": "http://openml.org/openml#hasEstimationProcedure"
+        },
+        {
+          "sh:class": "http://openml.org/openml#EvaluationMeasure",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "has evaluation measure"
+          },
+          "sh:path": "http://openml.org/openml#hasEvaluationMeasure"
         },
         {
           "sh:class": "http://openml.org/openml#Prediction",

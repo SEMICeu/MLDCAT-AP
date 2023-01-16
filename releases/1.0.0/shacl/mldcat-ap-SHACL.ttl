@@ -1048,15 +1048,15 @@
     shacl:name "has cost matrix"@en;
     shacl:path <http://openml.org/openml#hasCostMatrix>
   ], [
-    shacl:class <http://openml.org/openml#EvaluationMeasure>;
-    shacl:minCount 1;
-    shacl:name "has evaluation measure"@en;
-    shacl:path <http://openml.org/openml#hasEvaluationMeasure>
-  ], [
     shacl:class <http://openml.org/openml#EstimationProcedure>;
     shacl:minCount 1;
     shacl:name "has estimation procedure"@en;
     shacl:path <http://openml.org/openml#hasEstimationProcedure>
+  ], [
+    shacl:class <http://openml.org/openml#EvaluationMeasure>;
+    shacl:minCount 1;
+    shacl:name "has evaluation measure"@en;
+    shacl:path <http://openml.org/openml#hasEvaluationMeasure>
   ], [
     shacl:class <http://openml.org/openml#Prediction>;
     shacl:maxCount 1;
