@@ -1,18 +1,23 @@
 {
     "@context": "https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/context/mldcat-ap_en.jsonld",
     "@graph": [
-          {
-              "@id": "http://openml.org/openml/dataset/31",
-              "@type": "Dataset",
-              "Dataset.accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
-              "Dataset.collectionDate": "1994-11-17",
-              "Dataset.description": "This dataset classifies people described by a set of attributes as good or bad credit risks",
-              "Dataset.distribution": "http://openml.org/openml/distribution/31"
-          },
-          {
-              "@id": "http://openml.org/openml/distribution/31",
-              "@type": "Distribution",
-              "Distribution.accessService": "http://openml.org/openml/dataService/1"
-          }
-      ]
-  }
+        {
+            "@id": "http://openml.org/openml/dataset/31",
+            "@type": "Dataset",
+            "Dataset.accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+            "Dataset.collectionDate": {
+                "@value":"1994-11-17",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            },
+            "Dataset.description": "This dataset classifies people described by a set of attributes as good or bad credit risks",
+            "Dataset.distribution": "http://openml.org/openml/distribution/31",
+            "Dataset.identifier": "31",
+            "Dataset.isReferencedBy": "https://dl.acm.org/doi/abs/10.1145/967900.968104"
+        },
+        {
+            "@id": "http://openml.org/openml/distribution/31",
+            "@type": "Distribution",
+            "Distribution.accessService": "http://openml.org/openml/dataService/1"
+        }
+    ]
+}
