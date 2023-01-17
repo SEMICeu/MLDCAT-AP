@@ -1,6 +1,6 @@
 function example_structure(exampleid){
 	structure=`
-	<div id="` + exampleid + `-tabs" class="tabs">
+	<div id="` + exampleid + `-tabs" class="tabs tabsstyle">
 		<ul>
 			<li><a href="#` + exampleid + `-tabs-1">Turtle</a></li>
 			<li><a href="#` + exampleid + `-tabs-2">JSON-LD</a></li>
