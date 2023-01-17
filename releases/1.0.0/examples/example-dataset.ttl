@@ -1,13 +1,69 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix oml: <http://openml.org/openml> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix legal: <http://www.w3.org/ns/legal#> .
-@prefix cv: <http://data.europa.eu/m8g/> .
-@prefix locn: <http://www.w3.org/ns/locn> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.example.com/le/123> a legal:LegalEntity;
-	legal:legalName "ArchITES"@en ;
-	legal:registeredAddress <http://www.example.com/address/abc> ;
-	legal:companyType  <http://www.example.com/companyType/sarl> .
+<http://openml.org/openml/dataset/31> a dcat:Dataset;
+	dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+	oml:collectionDate "1994-11-17"^^xsd:date ;
+	dct:creator <http://openml.org/openml/agent/1> ;
+	dct:description "This dataset classifies people described by a set of attributes as good or bad credit risks" ;
+	dcat:distribution <http://openml.org/openml/distribution/31> ;
+	dct:identifier "31" ;
+	dct:isReferencedBy <https://dl.acm.org/doi/abs/10.1145/967900.968104> ;
+	dct:issued "2014-04-06T23:21:47"^^xsd:dateTime ;
+	dcat:keyword "credit_scoring", "finance_problem", "mythbusting_1", "OpenML-CC18", "OpenML100",
+					"study_1", "study_123", "study_14", "study_144", "study_15", "study_20", 
+					"study_218", "study_241", "study_34", "study_37", "study_41", "study_50",
+					"study_52", "study_7", "study_70", "study_98", "study_99", "uci" ;
+	dcat:landingPage <https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)> ;
+	dct:publisher <http://openml.org/openml/agent/2> ;
+    adms:status <http://openml.org/openml/dataset-status#active> ;
+	dct:title "credit-g" ;
+	owl:versionInfo "1" ;
+	oml:versionLabel "1" ;
+	oml:visibility <http://openml.org/openml/dataset-visibility#public> .
 
-<http://www.example.com/address/abc> a locn:Address ;
-	locn:fullAddress "27, Rue Adrienne Bolland, 44230 Saint-Sebastien-Sur-Loire" .
+<http://openml.org/openml/distribution/31> a dcat:Distribution ;
+	dcat:accessService <http://openml.org/openml/dataService/1> ;
+	dcat:accessURL <https://www.openml.org/search?type=data&status=active&id=31> ;
+	spdx:checksum <http://openml.org/openml/checksum/31> ;
+	oml:defaultTargetAttribute "class" ;
+	dcat:downloadURL <https://www.openml.org/data/download/31/dataset_31_credit-g.arff> ;
+	dct:format <http://sweetontology.net/reprDataFormat/ARFF> ;
+	oml:hasFeature <http://openml.org/openml/feature/31-1> ;
+	odrl:hasPolicy <https://archive.ics.uci.edu/ml/citation_policy.html> ;
+	oml:hasQuality <http://openml.org/openml/quality#numinstances> ;
+	dct:identifier "31";
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	oml:processingDate "2020-11-20T19:44:53"^^xsd:dateTime .
+
+<http://openml.org/openml/dataService/1> a dcat:DataService ;
+	dcat:endPointURL <https://www.openml.org/apis> ;
+	dcat:servesDataset <http://openml.org/openml/dataset/31> ;
+	dct:title "REST API for sharing, organizing and reusing machine learning datasets, code, and experiments." .
+
+<http://openml.org/openml/checksum/31> a spdx:Checksum ;
+	spdx:checksumValue "9a475053fed0c26ee95cd4525e50074c" ;
+	spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_md5> .
+
+<http://openml.org/openml/feature/31-1> a oml:Feature ;
+	dct:title "class" ;
+    dct:type <http://openml.org/openml/feature-type#nominal> .
+
+<http://openml.org/openml/quality#numinstances> a oml:Quality ;
+	dct:title "number of instances" ;
+    oml:value "1000" .
+
+<http://openml.org/openml/agent/1> a foaf:Agent ;
+	foaf:name "Dr Hans Hofmann" .
+
+<http://openml.org/openml/agent/2> a foaf:Agent ;
+	foaf:name "Jan Van Rijn" .
