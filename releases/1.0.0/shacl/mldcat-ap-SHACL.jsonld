@@ -905,6 +905,7 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": {
             "en": "A computed value of the quality."
           },

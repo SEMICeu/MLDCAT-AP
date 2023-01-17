@@ -919,6 +919,7 @@
     shacl:name "name"@en;
     shacl:path dc:title
   ], [
+    shacl:datatype rdfs:Literal;
     shacl:description "A computed value of the quality."@en;
     shacl:maxCount 1;
     shacl:minCount 1;

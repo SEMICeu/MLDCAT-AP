@@ -613,7 +613,7 @@
     },
     "Quality.value": {
       "@id": "http://openml.org/openml#value",
-      "@type": ""
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Run": "http://openml.org/openml#Run",
     "Run.errorMessage": {
