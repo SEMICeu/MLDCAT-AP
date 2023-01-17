@@ -259,12 +259,6 @@
     shacl:name "landing page"@en;
     shacl:path dcat:landingPage
   ], [
-    shacl:datatype rdfs:Literal;
-    shacl:description "Date of processing."@en;
-    shacl:maxCount 1;
-    shacl:name "processingDate"@en;
-    shacl:path <http://openml.org/openml#processingDate>
-  ], [
     shacl:class foaf:Agent;
     shacl:description "This property refers to an entity (organisation) responsible for making the Dataset available."@en;
     shacl:maxCount 1;
@@ -332,7 +326,7 @@
     shacl:datatype rdfs:Literal;
     shacl:description "The default target attribute, if it exists."@en;
     shacl:maxCount 1;
-    shacl:name "default target Attribute"@en;
+    shacl:name "default target attribute"@en;
     shacl:path <http://openml.org/openml#defaultTargetAttribute>
   ], [
     shacl:class rdfs:Resource;
@@ -385,6 +379,12 @@
     shacl:maxCount 1;
     shacl:name "licence"@en;
     shacl:path dc:license
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "Date of processing."@en;
+    shacl:maxCount 1;
+    shacl:name "processingDate"@en;
+    shacl:path <http://openml.org/openml#processingDate>
   ], [
     shacl:datatype rdfs:Literal;
     shacl:description "Errors discovered while processing the dataset."@en;
@@ -564,7 +564,6 @@
     shacl:datatype rdfs:Literal;
     shacl:description "An explanation of the attribute."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "description"@en;
     shacl:path dc:description
   ], [
@@ -908,6 +907,12 @@
   shacl:closed false;
   shacl:property [
     shacl:datatype rdfs:Literal;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "id"@en;
+    shacl:path dc:identifier
+  ], [
+    shacl:datatype rdfs:Literal;
     shacl:description "A title of the quality."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -1109,7 +1114,7 @@
     shacl:datatype rdfs:Literal;
     shacl:maxCount 1;
     shacl:minCount 1;
-    shacl:name "identifier"@en;
+    shacl:name "id"@en;
     shacl:path dc:identifier
   ], [
     shacl:datatype rdfs:Literal;

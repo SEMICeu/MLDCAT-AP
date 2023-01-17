@@ -158,10 +158,6 @@
       "@id": "http://www.w3.org/ns/dcat#landingPage",
       "@type": "@id"
     },
-    "Dataset.processingDate": {
-      "@id": "http://openml.org/openml#processingDate",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
     "Dataset.publisher": {
       "@id": "http://purl.org/dc/terms/publisher",
       "@type": "@id"
@@ -250,6 +246,10 @@
     "Distribution.licence": {
       "@id": "http://purl.org/dc/terms/license",
       "@type": "@id"
+    },
+    "Distribution.processingDate": {
+      "@id": "http://openml.org/openml#processingDate",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Distribution.processingError": {
       "@id": "http://openml.org/openml#processingError",
@@ -603,6 +603,10 @@
       "@type": "@id"
     },
     "Quality": "http://openml.org/openml#Quality",
+    "Quality.id": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
     "Quality.name": {
       "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -747,7 +751,7 @@
       "@id": "http://www.w3.org/2004/02/skos/core#definition",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "TaskType.identifier": {
+    "TaskType.id": {
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },

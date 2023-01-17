@@ -101,7 +101,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/MLDCAT-AP/tree/1.0.0/releases/1.0.0">https://github.com/SEMICeu/MLDCAT-AP/tree/1.0.0/releases/1.0.0</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/6e8a4579a017039763e7811f275bc9ca613646a5/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/6e8a4579a017039763e7811f275bc9ca613646a5/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/740a08f9f839df00140e0d80552b084d206d2a76/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/740a08f9f839df00140e0d80552b084d206d2a76/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/SEMICeu/MLDCAT-AP/issues">https://github.com/SEMICeu/MLDCAT-AP/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="MLDCAT-AP">MLDCAT-AP</a></dd>-->
 
@@ -851,7 +851,6 @@
                       <a href="#Dataset%3Aissued">issued</a>, 
                       <a href="#Dataset%3Akeyword">keyword</a>, 
                       <a href="#Dataset%3Alanding%20page">landing page</a>, 
-                      <a href="#Dataset%3AprocessingDate">processingDate</a>, 
                       <a href="#Dataset%3Apublisher">publisher</a>, 
                       <a href="#Dataset%3Astatus">status</a>, 
                       <a href="#Dataset%3Atitle">title</a>, 
@@ -1137,26 +1136,6 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Dataset%3AprocessingDate" typeof="rdfs:Property" resource="http://openml.org/openml#processingDate">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://openml.org/openml#processingDate" data-toggle="tooltip" data-content="http://openml.org/openml#processingDate" data-placement="right">
-                            processingDate</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">Date of processing.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Dataset%3Apublisher" typeof="rdfs:Property" resource="http://purl.org/dc/terms/publisher">
                         <td>
                           <code property="rdfs:label">
@@ -1297,7 +1276,7 @@
                       <a href="#Distribution%3Aaccess%20URL">access URL</a>, 
                       <a href="#Distribution%3Abyte%20size">byte size</a>, 
                       <a href="#Distribution%3Achecksum">checksum</a>, 
-                      <a href="#Distribution%3Adefault%20target%20Attribute">default target Attribute</a>, 
+                      <a href="#Distribution%3Adefault%20target%20attribute">default target attribute</a>, 
                       <a href="#Distribution%3Adownload%20URL">download URL</a>, 
                       <a href="#Distribution%3Aformat">format</a>, 
                       <a href="#Distribution%3Ahas%20feature">has feature</a>, 
@@ -1309,6 +1288,7 @@
                       <a href="#Distribution%3Alicence">licence</a>, 
                       <a href="#Distribution%3Aprocessing%20error">processing error</a>, 
                       <a href="#Distribution%3Aprocessing%20warning">processing warning</a>, 
+                      <a href="#Distribution%3AprocessingDate">processingDate</a>, 
                       <a href="#Distribution%3Arow%20ID%20attribute">row ID attribute</a>, 
                       <a href="#Distribution%3Atitle">title</a>.</dd>
                     
@@ -1410,11 +1390,11 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Distribution%3Adefault%20target%20Attribute" typeof="rdfs:Property" resource="http://openml.org/openml#defaultTargetAttribute">
+                      <tr id="Distribution%3Adefault%20target%20attribute" typeof="rdfs:Property" resource="http://openml.org/openml#defaultTargetAttribute">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://openml.org/openml#defaultTargetAttribute" data-toggle="tooltip" data-content="http://openml.org/openml#defaultTargetAttribute" data-placement="right">
-                            default target Attribute</a>
+                            default target attribute</a>
                           </code>
                         </td>
                         <td>
@@ -1646,6 +1626,26 @@
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Warnings while processing the dataset.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Distribution%3AprocessingDate" typeof="rdfs:Property" resource="http://openml.org/openml#processingDate">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://openml.org/openml#processingDate" data-toggle="tooltip" data-content="http://openml.org/openml#processingDate" data-placement="right">
+                            processingDate</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date of processing.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2380,7 +2380,7 @@
                             
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">An explanation of the attribute.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -3857,6 +3857,7 @@
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
+                      <a href="#Quality%3Aid">id</a>, 
                       <a href="#Quality%3Aname">name</a>, 
                       <a href="#Quality%3Avalue">value</a>.</dd>
                     
@@ -3877,6 +3878,26 @@
                     </thead>
 
                     <tbody class="supertype">
+                    
+                      <tr id="Quality%3Aid" typeof="rdfs:Property" resource="http://purl.org/dc/terms/identifier">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/identifier" data-toggle="tooltip" data-content="http://purl.org/dc/terms/identifier" data-placement="right">
+                            id</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a>
+                            
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
                     
                       <tr id="Quality%3Aname" typeof="rdfs:Property" resource="http://purl.org/dc/terms/title">
                         <td>
@@ -4723,7 +4744,7 @@
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#Task%20Type%3Adescription">description</a>, 
-                      <a href="#Task%20Type%3Aidentifier">identifier</a>, 
+                      <a href="#Task%20Type%3Aid">id</a>, 
                       <a href="#Task%20Type%3Aname">name</a>.</dd>
                     
                   </dl>
@@ -4764,11 +4785,11 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Task%20Type%3Aidentifier" typeof="rdfs:Property" resource="http://purl.org/dc/terms/identifier">
+                      <tr id="Task%20Type%3Aid" typeof="rdfs:Property" resource="http://purl.org/dc/terms/identifier">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/dc/terms/identifier" data-toggle="tooltip" data-content="http://purl.org/dc/terms/identifier" data-placement="right">
-                            identifier</a>
+                            id</a>
                           </code>
                         </td>
                         <td>

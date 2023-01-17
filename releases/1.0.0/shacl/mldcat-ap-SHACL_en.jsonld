@@ -350,7 +350,6 @@
             "en": "An explanation of the attribute."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "description"
           },
@@ -886,6 +885,15 @@
       "sh:property": [
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": {
             "en": "A title of the quality."
           },
@@ -1206,7 +1214,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "identifier"
+            "en": "id"
           },
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
@@ -1536,17 +1544,6 @@
           "sh:path": "http://www.w3.org/ns/dcat#landingPage"
         },
         {
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "en": "Date of processing."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "processingDate"
-          },
-          "sh:path": "http://openml.org/openml#processingDate"
-        },
-        {
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
           "sh:description": {
             "en": "This property refers to an entity (organisation) responsible for making the Dataset available."
@@ -1670,7 +1667,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "default target Attribute"
+            "en": "default target attribute"
           },
           "sh:path": "http://openml.org/openml#defaultTargetAttribute"
         },
@@ -1769,6 +1766,17 @@
             "en": "licence"
           },
           "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "Date of processing."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "processingDate"
+          },
+          "sh:path": "http://openml.org/openml#processingDate"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",

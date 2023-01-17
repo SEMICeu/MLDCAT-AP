@@ -1,0 +1,18 @@
+{
+    "@context": "https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/context/mldcat-ap_en.jsonld",
+    "@graph": [
+          {
+              "@id": "http://openml.org/openml/dataset/31",
+              "@type": "Dataset",
+              "Dataset.accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+              "Dataset.collectionDate": "1994-11-17",
+              "Dataset.description": "This dataset classifies people described by a set of attributes as good or bad credit risks",
+              "Dataset.distribution": "http://openml.org/openml/distribution/31"
+          },
+          {
+              "@id": "http://openml.org/openml/distribution/31",
+              "@type": "Distribution",
+              "Distribution.accessService": "http://openml.org/openml/dataService/1"
+          }
+      ]
+  }
