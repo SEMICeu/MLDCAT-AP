@@ -939,14 +939,12 @@
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": "",
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:path": "https://www.openml.org/model#intervalEnd"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": "",
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:path": "https://www.openml.org/model#intervalStart"
         },
         {

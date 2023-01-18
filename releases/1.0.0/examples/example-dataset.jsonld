@@ -56,7 +56,32 @@
             "DataService.title": "REST API for sharing, organizing and reusing machine learning datasets, code, and experiments."
         },
         {
-            "@id": "http://openml.org/openml/checksum/31"
+            "@id": "http://openml.org/openml/checksum/31",
+            "@type": "Checksum",
+            "Checksum.checksumValue": "9a475053fed0c26ee95cd4525e50074c",
+            "Checksum.algorithm": "http://spdx.org/rdf/terms#checksumAlgorithm_md5"
+        },
+        {
+            "@id": "http://openml.org/openml/feature/31-1",
+            "@type": "Feature",
+            "Feature.name": "class",
+            "Feature.type": "http://openml.org/openml/feature-type#nominal"
+        },
+        {
+            "@id": "http://openml.org/openml/quality/numinstances/1",
+            "@type": "Quality",
+            "Quality.value": "1000",
+            "Quality.type": "http://openml.org/openml/quality/numinstances"
+        },
+        {
+            "@id": "http://openml.org/openml/agent/1",
+            "@type": "Agent",
+            "Agent.name": "Dr Hans Hofmann"
+        },
+        {
+            "@id": "http://openml.org/openml/agent/2",
+            "@type": "Agent",
+            "Agent.name": "Jan Van Rijn"
         }
     ]
 }
