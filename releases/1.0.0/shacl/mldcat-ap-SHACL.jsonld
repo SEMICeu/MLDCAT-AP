@@ -109,6 +109,47 @@
       "sh:targetClass": "http://openml.org/openml#CostMatrix"
     },
     {
+      "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#DataQualityListShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "Pointer to the did."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "did"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "The engine responsible for extracting the features."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "evaluation engine id"
+          },
+          "sh:path": "http://openml.org/openml#evaluationEngine"
+        },
+        {
+          "sh:class": "http://openml.org/openml#Quality",
+          "sh:description": {
+            "en": "the qualities that need to be set"
+          },
+          "sh:name": {
+            "en": "includes"
+          },
+          "sh:path": "https://www.openml.org/model#includes"
+        }
+      ],
+      "sh:targetClass": "http://openml.org/openml#DataQualityList"
+    },
+    {
       "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#EstimationProcedureShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -885,29 +926,45 @@
       "sh:property": [
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "The index of the quality that is set."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "feature index"
+          },
+          "sh:path": "http://openml.org/openml#featureIndex"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:path": "https://www.openml.org/model#intervalEnd"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:path": "https://www.openml.org/model#intervalStart"
+        },
+        {
+          "sh:class": "http://openml.org/openml#QualityType",
+          "sh:description": {
+            "en": "A classification for a quality."
+          },
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "id"
+            "en": "type"
           },
-          "sh:path": "http://purl.org/dc/terms/identifier"
+          "sh:path": "http://purl.org/dc/terms/type"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": {
-            "en": "A title of the quality."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "en": "A computed value of the quality."
+            "en": "The value of the quality."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
@@ -918,6 +975,34 @@
         }
       ],
       "sh:targetClass": "http://openml.org/openml#Quality"
+    },
+    {
+      "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#QualityTypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:path": "https://www.openml.org/model#description"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:path": "https://www.openml.org/model#id"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:path": "https://www.openml.org/model#name"
+        }
+      ],
+      "sh:targetClass": "http://openml.org/openml#QualityType"
     },
     {
       "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#RunShape",
@@ -1237,6 +1322,38 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://purl.org/dc/terms/LicenseDocument"
+    },
+    {
+      "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#ChecksumShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://spdx.org/rdf/terms#ChecksumAlgorithm",
+          "sh:description": {
+            "en": "This property identifies the algorithm used to produce the subject Checksum."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "algorithm"
+          },
+          "sh:path": "http://spdx.org/rdf/terms#algorithm"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "checksum value"
+          },
+          "sh:path": "http://spdx.org/rdf/terms#checksumValue"
+        }
+      ],
+      "sh:targetClass": "http://spdx.org/rdf/terms#Checksum"
     },
     {
       "@id": "https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CatalogShape",

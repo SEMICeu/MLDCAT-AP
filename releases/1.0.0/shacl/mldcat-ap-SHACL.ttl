@@ -9,6 +9,7 @@
 
 <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en> <https://semiceu.github.io//shacl/mldcat-ap-SHACL_enshapes> <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CollectionShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CostMatrixShape>,
+    <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#DataQualityListShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#EstimationProcedureShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#EvaluationShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#EvaluationMeasureShape>,
@@ -25,6 +26,7 @@
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#PredictionShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#PredictionFeatureShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#QualityShape>,
+    <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#QualityTypeShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#RunShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#RunCollectionShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#SplitShape>,
@@ -32,6 +34,7 @@
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#TaskCollectionShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#TaskTypeShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#LicenseDocumentShape>,
+    <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#ChecksumShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CatalogShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CatalogRecordShape>,
     <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#DataServiceShape>,
@@ -119,6 +122,25 @@
   ];
   shacl:targetClass dcat:Catalog .
 
+<https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#ChecksumShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://spdx.org/rdf/terms#ChecksumAlgorithm>;
+    shacl:description "This property identifies the algorithm used to produce the subject Checksum."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "algorithm"@en;
+    shacl:path <http://spdx.org/rdf/terms#algorithm>
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "checksum value"@en;
+    shacl:path <http://spdx.org/rdf/terms#checksumValue>
+  ];
+  shacl:targetClass <http://spdx.org/rdf/terms#Checksum> .
+
 <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CollectionShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
@@ -162,6 +184,29 @@
 <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#CostMatrixShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://openml.org/openml#CostMatrix> .
+
+<https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#DataQualityListShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdfs:Literal;
+    shacl:description "Pointer to the did."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "did"@en;
+    shacl:path dc:identifier
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "The engine responsible for extracting the features."@en;
+    shacl:maxCount 1;
+    shacl:name "evaluation engine id"@en;
+    shacl:path <http://openml.org/openml#evaluationEngine>
+  ], [
+    shacl:class <http://openml.org/openml#Quality>;
+    shacl:description "the qualities that need to be set"@en;
+    shacl:name "includes"@en;
+    shacl:path <https://www.openml.org/model#includes>
+  ];
+  shacl:targetClass <http://openml.org/openml#DataQualityList> .
 
 <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#DataServiceShape> a shacl:NodeShape;
   shacl:closed false;
@@ -907,26 +952,60 @@
   shacl:closed false;
   shacl:property [
     shacl:datatype rdfs:Literal;
+    shacl:description "The index of the quality that is set."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "id"@en;
-    shacl:path dc:identifier
+    shacl:name "feature index"@en;
+    shacl:path <http://openml.org/openml#featureIndex>
   ], [
     shacl:datatype rdfs:Literal;
-    shacl:description "A title of the quality."@en;
+    shacl:description "";
     shacl:maxCount 1;
     shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path dc:title
+    shacl:path <https://www.openml.org/model#intervalEnd>
   ], [
     shacl:datatype rdfs:Literal;
-    shacl:description "A computed value of the quality."@en;
+    shacl:description "";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:path <https://www.openml.org/model#intervalStart>
+  ], [
+    shacl:class <http://openml.org/openml#QualityType>;
+    shacl:description "A classification for a quality."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@en;
+    shacl:path dc:type
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "The value of the quality."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "value"@en;
     shacl:path <http://openml.org/openml#value>
   ];
   shacl:targetClass <http://openml.org/openml#Quality> .
+
+<https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#QualityTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdfs:Literal;
+    shacl:description "";
+    shacl:maxCount 1;
+    shacl:path <https://www.openml.org/model#description>
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:path <https://www.openml.org/model#id>
+  ], [
+    shacl:datatype rdfs:Literal;
+    shacl:description "";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:path <https://www.openml.org/model#name>
+  ];
+  shacl:targetClass <http://openml.org/openml#QualityType> .
 
 <https://semiceu.github.io//shacl/mldcat-ap-SHACL_en#RunCollectionShape> a shacl:NodeShape;
   shacl:closed false;

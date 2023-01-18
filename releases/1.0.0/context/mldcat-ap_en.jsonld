@@ -54,6 +54,15 @@
       "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
       "@type": "@id"
     },
+    "Checksum": "http://spdx.org/rdf/terms#Checksum",
+    "Checksum.algorithm": {
+      "@id": "http://spdx.org/rdf/terms#algorithm",
+      "@type": "@id"
+    },
+    "Checksum.checksumValue": {
+      "@id": "http://spdx.org/rdf/terms#checksumValue",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
     "Collection": "http://openml.org/openml#Collection",
     "Collection.creationDate": {
       "@id": "http://openml.org/openml#creationDate",
@@ -80,6 +89,20 @@
       "@type": "@id"
     },
     "CostMatrix": "http://openml.org/openml#CostMatrix",
+    "DataQualityList": "http://openml.org/openml#DataQualityList",
+    "DataQualityList.did": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "DataQualityList.evaluationEngineId": {
+      "@id": "http://openml.org/openml#evaluationEngine",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "DataQualityList.includes": {
+      "@container": "@set",
+      "@id": "https://www.openml.org/model#includes",
+      "@type": "@id"
+    },
     "DataService": "http://www.w3.org/ns/dcat#DataService",
     "DataService.endpointUrl": {
       "@container": "@set",
@@ -603,16 +626,37 @@
       "@type": "@id"
     },
     "Quality": "http://openml.org/openml#Quality",
-    "Quality.id": {
-      "@id": "http://purl.org/dc/terms/identifier",
+    "Quality.featureIndex": {
+      "@id": "http://openml.org/openml#featureIndex",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Quality.name": {
-      "@id": "http://purl.org/dc/terms/title",
+    "Quality.intervalEnd": {
+      "@id": "https://www.openml.org/model#intervalEnd",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Quality.intervalStart": {
+      "@id": "https://www.openml.org/model#intervalStart",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Quality.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
     },
     "Quality.value": {
       "@id": "http://openml.org/openml#value",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "QualityType": "http://openml.org/openml#QualityType",
+    "QualityType.description": {
+      "@id": "https://www.openml.org/model#description",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "QualityType.id": {
+      "@id": "https://www.openml.org/model#id",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "QualityType.name": {
+      "@id": "https://www.openml.org/model#name",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Run": "http://openml.org/openml#Run",

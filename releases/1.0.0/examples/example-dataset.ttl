@@ -3,7 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
-@prefix oml: <http://openml.org/openml> .
+@prefix oml: <http://openml.org/openml#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -40,7 +40,7 @@
 	dct:format <http://sweetontology.net/reprDataFormat/ARFF> ;
 	oml:hasFeature <http://openml.org/openml/feature/31-1> ;
 	odrl:hasPolicy <https://archive.ics.uci.edu/ml/citation_policy.html> ;
-	oml:hasQuality <http://openml.org/openml/quality#numinstances> ;
+	oml:hasQuality <http://openml.org/openml/quality/numinstances/1> ;
 	dct:identifier "31";
 	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
 	oml:processingDate "2020-11-20T19:44:53"^^xsd:dateTime .
@@ -58,7 +58,7 @@
 	dct:title "class" ;
     dct:type <http://openml.org/openml/feature-type#nominal> .
 
-<http://openml.org/openml/quality#numinstances> a oml:Quality ;
+<http://openml.org/openml/quality/numinstances/1> a oml:Quality ;
 	dct:title "number of instances" ;
     oml:value "1000" .
 
