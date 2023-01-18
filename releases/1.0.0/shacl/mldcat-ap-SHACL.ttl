@@ -202,9 +202,9 @@
     shacl:path <http://openml.org/openml#evaluationEngine>
   ], [
     shacl:class <http://openml.org/openml#Quality>;
-    shacl:description "the qualities that need to be set"@en;
+    shacl:description "The qualities that need to be set"@en;
     shacl:name "includes"@en;
-    shacl:path <https://www.openml.org/model#includes>
+    shacl:path <http://openml.org/openml#includes>
   ];
   shacl:targetClass <http://openml.org/openml#DataQualityList> .
 
@@ -361,6 +361,11 @@
     shacl:maxCount 1;
     shacl:name "byte size"@en;
     shacl:path dcat:byteSize
+  ], [
+    shacl:class <http://spdx.org/rdf/terms#Checksum>;
+    shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en;
+    shacl:name "checksum"@en;
+    shacl:path <http://spdx.org/rdf/terms#checksum>
   ], [
     shacl:class <http://spdx.org/rdf/terms#Checksum>;
     shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."@en;
@@ -958,14 +963,14 @@
     shacl:path <http://openml.org/openml#featureIndex>
   ], [
     shacl:nodeKind shacl:Literal;
-    shacl:description "";
     shacl:maxCount 1;
-    shacl:path <https://www.openml.org/model#intervalEnd>
+    shacl:name "interval end"@en;
+    shacl:path <http://openml.org/openml#intervalEnd>
   ], [
     shacl:nodeKind shacl:Literal;
-    shacl:description "";
     shacl:maxCount 1;
-    shacl:path <https://www.openml.org/model#intervalStart>
+    shacl:name "interval start"@en;
+    shacl:path <http://openml.org/openml#intervalStart>
   ], [
     shacl:class <http://openml.org/openml#QualityType>;
     shacl:description "A classification for a quality."@en;
@@ -987,21 +992,24 @@
   shacl:closed false;
   shacl:property [
     shacl:nodeKind shacl:Literal;
-    shacl:description "";
+    shacl:description "An explanation of the quality type."@en;
     shacl:maxCount 1;
-    shacl:path <https://www.openml.org/model#description>
+    shacl:name "description"@en;
+    shacl:path dc:description
   ], [
     shacl:nodeKind shacl:Literal;
-    shacl:description "";
+    shacl:description "An unambiguous identifier for the quality type."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
-    shacl:path <https://www.openml.org/model#id>
+    shacl:name "id"@en;
+    shacl:path dc:identifier
   ], [
     shacl:nodeKind shacl:Literal;
-    shacl:description "";
+    shacl:description "The name assigned to the quality type."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
-    shacl:path <https://www.openml.org/model#name>
+    shacl:name "name"@en;
+    shacl:path dc:title
   ];
   shacl:targetClass <http://openml.org/openml#QualityType> .
 

@@ -139,12 +139,12 @@
         {
           "sh:class": "http://openml.org/openml#Quality",
           "sh:description": {
-            "en": "the qualities that need to be set"
+            "en": "The qualities that need to be set"
           },
           "sh:name": {
             "en": "includes"
           },
-          "sh:path": "https://www.openml.org/model#includes"
+          "sh:path": "http://openml.org/openml#includes"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#DataQualityList"
@@ -937,15 +937,19 @@
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": "",
           "sh:maxCount": "1",
-          "sh:path": "https://www.openml.org/model#intervalEnd"
+          "sh:name": {
+            "en": "interval end"
+          },
+          "sh:path": "http://openml.org/openml#intervalEnd"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": "",
           "sh:maxCount": "1",
-          "sh:path": "https://www.openml.org/model#intervalStart"
+          "sh:name": {
+            "en": "interval start"
+          },
+          "sh:path": "http://openml.org/openml#intervalStart"
         },
         {
           "sh:class": "http://openml.org/openml#QualityType",
@@ -981,23 +985,38 @@
       "sh:property": [
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": "",
+          "sh:description": {
+            "en": "An explanation of the quality type."
+          },
           "sh:maxCount": "1",
-          "sh:path": "https://www.openml.org/model#description"
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": "",
+          "sh:description": {
+            "en": "An unambiguous identifier for the quality type."
+          },
           "sh:maxCount": "1",
           "sh:minCount": "1",
-          "sh:path": "https://www.openml.org/model#id"
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": "",
+          "sh:description": {
+            "en": "The name assigned to the quality type."
+          },
           "sh:maxCount": "1",
           "sh:minCount": "1",
-          "sh:path": "https://www.openml.org/model#name"
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#QualityType"
@@ -1764,6 +1783,16 @@
             "en": "byte size"
           },
           "sh:path": "http://www.w3.org/ns/dcat#byteSize"
+        },
+        {
+          "sh:class": "http://spdx.org/rdf/terms#Checksum",
+          "sh:description": {
+            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."
+          },
+          "sh:name": {
+            "en": "checksum"
+          },
+          "sh:path": "http://spdx.org/rdf/terms#checksum"
         },
         {
           "sh:class": "http://spdx.org/rdf/terms#Checksum",

@@ -1,0 +1,565 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oml: <http://data.europa.eu/m8g/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://openml.org/openml/mldcat-ap/1.0.0> a owl:Ontology;
+  dct:created "2023-01-13"^^xsd:date;
+  dct:creator <http://publications.europa.eu/resource/authority/corporate-body/DIGIT>;
+  dct:description "This is an application profile, aimed to extend the use of DCAT-AP, originally envisaged for the description of a machine learning process, developed in collaboration with OpenML.";
+  dct:license <https://creativecommons.org/licenses/by/4.0/>;
+  dct:title "MLDCAT-AP";
+  vann:preferredNamespacePrefix "mldcat-ap";
+  vann:preferredNamespaceURI "http://openml.org/openml/mldcat-ap";
+  rdfs:seeAlso <https://www.openml.org/>;
+  owl:versionIRI <http://openml.org/openml/mldcat-ap/1.0.0>;
+  owl:versionInfo "1.0.0" .
+
+dcat:Catalog a owl:Class;
+  rdfs:comment "A catalogue or repository that hosts the Datasets or Data Services being described."@en;
+  rdfs:label "Catalogue"@en .
+
+dct:description a owl:DatatypeProperty;
+  rdfs:comment "An explanation of the attribute."@en, "An explanation of the quality type."@en,
+    "This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en,
+    "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en,
+    "This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description."@en;
+  rdfs:label "description"@en .
+
+dct:title a owl:DatatypeProperty;
+  rdfs:comment "The label of the attribute."@en, "The name assigned to the quality type."@en,
+    "This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en,
+    "This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."@en,
+    "This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name."@en,
+    "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en;
+  rdfs:label "name"@en, "title"@en .
+
+dcat:dataset a owl:ObjectProperty;
+  rdfs:comment "This property links the Catalogue with a Dataset that is part of the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the next property service to implement an empty Catalogue check."@en;
+  rdfs:label "dataset"@en .
+
+dct:publisher a owl:ObjectProperty;
+  rdfs:comment "This property refers to an entity (organisation) responsible for making the Catalogue available."@en,
+    "This property refers to an entity (organisation) responsible for making the Dataset available."@en;
+  rdfs:label "publisher"@en .
+
+dcat:record a owl:ObjectProperty;
+  rdfs:comment "This property refers to a Catalogue Record that is part of the Catalogue."@en;
+  rdfs:label "record"@en .
+
+dcat:service a owl:DatatypeProperty;
+  vann:usageNote "As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check."@en;
+  rdfs:comment "This property refers to a site or end-point (Data Service) that is listed in the Catalogue."@en;
+  rdfs:label "service"@en .
+
+dcat:CatalogRecord a owl:Class;
+  rdfs:comment "A description of an entry of a Dataset in the Catalogue."@en;
+  rdfs:label "Catalogue Record"@en .
+
+dct:modified a owl:DatatypeProperty;
+  rdfs:comment "This property contains the most recent date on which the Catalogue entry was changed or modified."@en;
+  rdfs:label "modification date"@en .
+
+<http://openml.org/openml#descriptionVersion> a owl:DatatypeProperty;
+  rdfs:comment "It refers to the version of the description. '1' for original version."@en;
+  rdfs:label "description version"@en .
+
+foaf:primaryTopic a owl:ObjectProperty;
+  rdfs:comment "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."@en;
+  rdfs:label "primary topic"@en .
+
+dcat:DataService a owl:Class;
+  rdfs:comment "A collection of operations that provides access to one or more datasets or data processing functions."@en;
+  rdfs:label "Data Service"@en .
+
+dcat:endPointURL a owl:DatatypeProperty;
+  rdfs:comment "The root location or primary endpoint of the service (an IRI)."@en;
+  rdfs:label "endpoint URL"@en .
+
+dcat:servesDataset a owl:ObjectProperty;
+  rdfs:comment "This property refers to a collection of data that this data service can distribute."@en;
+  rdfs:label "serves dataset"@en .
+
+dcat:Dataset a owl:Class;
+  rdfs:comment "A conceptual entity that represents the information published."@en;
+  rdfs:label "Dataset"@en .
+
+dct:accessRights a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right\">Access Rights Named Authority List</a>."@en;
+  rdfs:comment "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public."@en;
+  rdfs:label "access rights"@en .
+
+<http://openml.org/openml#collectionDate> a owl:DatatypeProperty;
+  rdfs:comment "The date the data was originally collected, given by the uploader."@en;
+  rdfs:label "collectionDate"@en .
+
+dct:identifier a owl:DatatypeProperty;
+  rdfs:comment "An unambiguous identifier for the quality type."@en, "File identifier"@en,
+    "Pointer to the did."@en, "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en;
+  rdfs:label "did"@en, "id"@en, "identifier"@en .
+
+dct:isReferencedBy a owl:ObjectProperty;
+  rdfs:comment "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en;
+  rdfs:label "is referenced by"@en .
+
+dct:issued a owl:DatatypeProperty;
+  rdfs:comment "This property contains the date of formal issuance (e.g., publication) of the Dataset."@en;
+  rdfs:label "issued"@en .
+
+dcat:keyword a owl:DatatypeProperty;
+  rdfs:comment "This property contains a keyword or tag describing the Dataset."@en;
+  rdfs:label "keyword"@en, "tag"@en .
+
+dcat:landingPage a owl:ObjectProperty;
+  rdfs:comment "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en;
+  rdfs:label "landing page"@en .
+
+adms:status a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/dataset-status.html\">Dataset status</a> code list."@en;
+  rdfs:comment "The status of the dataset in the context of the publication process."@en;
+  rdfs:label "status"@en .
+
+<https://www.w3.org/2002/07/owl#versionInfo> a owl:DatatypeProperty;
+  rdfs:comment "This property contains a version number or other version designation of the Dataset."@en;
+  rdfs:label "version info"@en .
+
+<http://openml.org/openml#versionLabel> a owl:DatatypeProperty;
+  rdfs:comment "Version label provided by user, something relevant to the user. Can also be a date, hash, or some other type of id."@en;
+  rdfs:label "versionLabel"@en .
+
+<http://openml.org/openml#access_policy> a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/dataset-visibility.html\">Dataset visibility</a> code list."@en;
+  rdfs:comment "Who can see the dataset. Typical values: 'Everyone','All my friends','Only me'. Can also be any of the user's circles."@en;
+  rdfs:label "visibility"@en .
+
+dct:contributor a owl:ObjectProperty;
+  rdfs:comment "People who contributed to the current version of the datadat (e.g. reformatting)"@en;
+  rdfs:label "contributor"@en .
+
+dct:creator a owl:ObjectProperty;
+  rdfs:comment "This property refers to the entity responsible for producing the dataset."@en;
+  rdfs:label "creator"@en .
+
+dcat:distribution a owl:ObjectProperty;
+  rdfs:comment "This property links the Dataset to an available Distribution."@en;
+  rdfs:label "distribution"@en .
+
+dct:hasVersion a owl:ObjectProperty;
+  rdfs:comment "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset."@en;
+  rdfs:label "has version"@en .
+
+dct:isVersionOf a owl:ObjectProperty;
+  rdfs:comment "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."@en;
+  rdfs:label "is version of"@en .
+
+dcat:Distribution a owl:Class;
+  rdfs:comment "A physical embodiment of the Dataset in a particular format."@en;
+  rdfs:label "Distribution"@en .
+
+dcat:accessURL a owl:ObjectProperty;
+  rdfs:comment "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."@en;
+  rdfs:label "access URL"@en .
+
+dcat:byteSize a owl:DatatypeProperty;
+  rdfs:comment "This property contains the size of a Distribution in bytes."@en;
+  rdfs:label "byte size"@en .
+
+<http://spdx.org/rdf/terms#checksum> a owl:ObjectProperty;
+  rdfs:comment "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."@en;
+  rdfs:label "checksum"@en .
+
+<http://openml.org/openml#defaultTargetAttribute> a owl:DatatypeProperty;
+  vann:usageNote "Can also have multiple values (comma-separated). Of course, tasks can be defined that use another attribute as target."@en;
+  rdfs:comment "The default target attribute, if it exists."@en;
+  rdfs:label "default target attribute"@en .
+
+dcat:downloadURL a owl:ObjectProperty;
+  rdfs:comment "This property contains a URL that is a direct link to a downloadable file in a given format."@en;
+  rdfs:label "download URL"@en .
+
+dct:format a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/file-type\">EU Vocabularies File Type Named Authority List</a>."@en;
+  rdfs:comment "This property refers to the file format of the Distribution."@en;
+  rdfs:label "format"@en .
+
+<http://www.w3.org/ns/odrl/2/hasPolicy> a owl:ObjectProperty;
+  rdfs:comment "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary."@en;
+  rdfs:label "has policy"@en .
+
+<http://openml.org/openml#ignoreAttribute> a owl:DatatypeProperty;
+  rdfs:comment "Attributes that should be excluded in modelling, such as identifiers and indexes."@en;
+  rdfs:label "ignore attribute"@en .
+
+dct:language a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"http://publications.europa.eu/resource/authority/language\">EU Vocabularies Languages Named Authority List</a>."@en;
+  rdfs:comment "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages."@en;
+  rdfs:label "language"@en .
+
+<http://openml.org/openml#processingDate> a owl:DatatypeProperty;
+  rdfs:comment "Date of processing."@en;
+  rdfs:label "processingDate"@en .
+
+<http://openml.org/openml#processingError> a owl:DatatypeProperty;
+  rdfs:comment "Errors discovered while processing the dataset."@en;
+  rdfs:label "processing error"@en .
+
+<http://openml.org/openml#processingWarning> a owl:DatatypeProperty;
+  rdfs:comment "Warnings while processing the dataset."@en;
+  rdfs:label "processing warning"@en .
+
+<http://openml.org/openml#rowIDAttribute> a owl:DatatypeProperty;
+  rdfs:comment "The attribute that represents the row-id column, if present in the dataset."@en;
+  rdfs:label "row ID attribute"@en .
+
+dcat:accessService a owl:ObjectProperty;
+  rdfs:comment "This property refers to a data service that gives access to the distribution of the dataset."@en;
+  rdfs:label "access service"@en .
+
+<http://openml.org/openml#hasFeature> a owl:ObjectProperty;
+  rdfs:comment "The attribute or column being part of a distribution."@en;
+  rdfs:label "has feature"@en .
+
+<http://openml.org/openml#hasQuality> a owl:ObjectProperty;
+  rdfs:comment "A computed characteristic that describes a distribution."@en;
+  rdfs:label "has quality"@en .
+
+dct:license a owl:ObjectProperty;
+  rdfs:comment "This property refers to the licence under which the Distribution is made available."@en;
+  rdfs:label "licence"@en, "license"@en .
+
+dct:LicenseDocument a owl:Class;
+  rdfs:comment "A legal document giving official permission to do something with a resource."@en;
+  rdfs:label "Licence document"@en .
+
+foaf:Agent a owl:Class;
+  rdfs:comment "Any entity carrying out actions with respect to the (Core) entities Catalogue, Datasets, Data Services and Distributions. If the Agent is an organisation, the use of the Organization Ontology is recommended."@en;
+  rdfs:label "Agent"@en .
+
+foaf:name a owl:DatatypeProperty;
+  rdfs:comment "This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)"@en;
+  rdfs:label "name"@en .
+
+<http://openml.org/openml#Collection> a owl:Class;
+  rdfs:comment "A collection is a group of task or runs to easily refer to them and share them with others."@en;
+  rdfs:label "Collection"@en .
+
+<http://openml.org/openml#creationDate> a owl:DatatypeProperty;
+  rdfs:label "creation date"@en .
+
+<http://openml.org/openml#visibility> a owl:DatatypeProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/collection-visibility.html\">Collection visibility</a> code list."@en;
+  rdfs:label "visibility"@en .
+
+<http://openml.org/openml#hasUploader> a owl:ObjectProperty;
+  rdfs:label "has uploader"@en .
+
+<http://openml.org/openml#CostMatrix> a owl:Class;
+  rdfs:label "Cost Matrix"@en .
+
+<http://openml.org/openml#DataQualityList> a owl:Class;
+  rdfs:comment "The list of quality to be uploaded."@en;
+  rdfs:label "Data Quality List"@en .
+
+<http://openml.org/openml#evaluationEngine> a owl:DatatypeProperty;
+  rdfs:comment "The engine responsible for extracting the features."@en;
+  rdfs:label "evaluation engine id"@en .
+
+<http://openml.org/openml#includes> a owl:ObjectProperty;
+  rdfs:comment "the qualities that need to be set"@en;
+  rdfs:label "includes"@en .
+
+<http://openml.org/openml#EstimationProcedure> a owl:Class;
+  rdfs:comment "It defines how models should be evaluated, typically by defining specific kinds of train- and test splits."@en;
+  rdfs:label "Estimation Procedure"@en;
+  rdfs:subClassOf <http://openml.org/openml#Measure> .
+
+<http://openml.org/openml#dataSplitsURL> a owl:ObjectProperty;
+  rdfs:label "data splits URL"@en .
+
+dct:type a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/estimationprocedure-type.html\">Estimation Procedure type</a> code list."@en,
+    "The recommended controlled vocabulary is the <a href=\"./codelist/feature-type.html\">Feature type</a> code list."@en,
+    "The recommended controlled vocabulary is the <a href=\"./codelist/flowparameter-type.html\">Flow Parameter type</a> code list."@en,
+    "The recommended controlled vocabulary is the <a href=\"./codelist/predictionfeature-type.html\">Prediction Feature type</a> code list."@en;
+  rdfs:comment "A classification for a quality."@en, "A classification of the attribute."@en;
+  rdfs:label "type"@en .
+
+<http://openml.org/openml#hasParameter> a owl:ObjectProperty;
+  rdfs:label "has parameter"@en .
+
+<http://openml.org/openml#Evaluation> a owl:Class;
+  rdfs:label "Evaluation"@en .
+
+<http://openml.org/openml#arrayData> a owl:DatatypeProperty;
+  rdfs:label "array data"@en .
+
+<http://openml.org/openml#fold> a owl:DatatypeProperty;
+  rdfs:label "fold"@en .
+
+<http://openml.org/openml#intervalEnd> a owl:DatatypeProperty;
+  rdfs:label "interval end"@en .
+
+<http://openml.org/openml#intervalStart> a owl:DatatypeProperty;
+  rdfs:label "interval start"@en .
+
+rdfs:label a owl:DatatypeProperty;
+  rdfs:label "label"@en .
+
+<http://openml.org/openml#repeat> a owl:DatatypeProperty;
+  rdfs:label "repeat"@en .
+
+<http://openml.org/openml#sample> a owl:DatatypeProperty;
+  rdfs:label "sample"@en .
+
+<http://openml.org/openml#sampleSize> a owl:DatatypeProperty;
+  rdfs:label "sample size"@en .
+
+<http://openml.org/openml#stdev> a owl:DatatypeProperty;
+  rdfs:label "stdev"@en .
+
+<http://openml.org/openml#value> a owl:DatatypeProperty;
+  rdfs:comment "The value of the quality."@en;
+  rdfs:label "value"@en .
+
+<http://openml.org/openml#hasFlow> a owl:ObjectProperty;
+  rdfs:label "has flow"@en .
+
+<http://openml.org/openml#EvaluationMeasure> a owl:Class;
+  rdfs:comment "A way to score the outputs of machine learning models (e.g. predictions)."@en;
+  rdfs:label "Evaluation Measure"@en;
+  rdfs:subClassOf <http://openml.org/openml#Measure> .
+
+<http://openml.org/openml#implementation> a owl:DatatypeProperty;
+  rdfs:label "implementation"@en .
+
+<http://openml.org/openml#valueBad> a owl:DatatypeProperty;
+  rdfs:label "value bad"@en .
+
+<http://openml.org/openml#valueGood> a owl:DatatypeProperty;
+  rdfs:label "value good"@en .
+
+<http://openml.org/openml#Feature> a owl:Class;
+  rdfs:comment "The attribute or column in which a distribution is structured."@en;
+  rdfs:label "Feature"@en .
+
+<http://openml.org/openml#Flow> a owl:Class;
+  vann:usageNote "Flows contain all the information necessary to build a model, including its exact structure and any software dependencies. Given a flow, supported machine learning libraries can reproduce the model exactly."@en;
+  rdfs:comment "A machine learning pipelines or neural architectures, or (untrained) machine learning models, such as in general."@en;
+  rdfs:label "Flow"@en .
+
+<http://openml.org/openml#className> a owl:DatatypeProperty;
+  rdfs:label "class name"@en .
+
+<http://openml.org/openml#customName> a owl:DatatypeProperty;
+  rdfs:label "custom name"@en .
+
+<http://openml.org/openml#externalVersion> a owl:DatatypeProperty;
+  rdfs:label "external version"@en .
+
+<http://openml.org/openml#status> a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/flow-status.html\">Flow status</a> code list."@en;
+  rdfs:label "status"@en .
+
+<http://openml.org/openml#uploaded> a owl:DatatypeProperty;
+  rdfs:label "uploaded"@en .
+
+<http://openml.org/openml#version> a owl:DatatypeProperty;
+  rdfs:label "version"@en .
+
+<http://openml.org/openml#hasDependency> a owl:ObjectProperty;
+  rdfs:label "has dependency"@en .
+
+<http://openml.org/openml#hasFlowParameter> a owl:ObjectProperty;
+  rdfs:label "has flow parameter"@en .
+
+<http://openml.org/openml#FlowParameter> a owl:Class;
+  rdfs:label "Flow Parameter"@en .
+
+<http://openml.org/openml#defaultValue> a owl:DatatypeProperty;
+  rdfs:label "default value"@en .
+
+<http://openml.org/openml#recommendedRange> a owl:DatatypeProperty;
+  rdfs:label "recommended range"@en .
+
+<http://openml.org/openml#Library> a owl:Class;
+  rdfs:label "Library"@en .
+
+<http://openml.org/openml#MachineLearningModel> a owl:Class;
+  rdfs:label "Machine Learning Model"@en .
+
+<http://openml.org/openml#ethicalConsiderations> a owl:DatatypeProperty;
+  rdfs:label "ethical considerations"@en .
+
+<http://openml.org/openml#evaluationResults> a owl:DatatypeProperty;
+  rdfs:label "evaluation results"@en .
+
+<http://openml.org/openml#intendedUse> a owl:DatatypeProperty;
+  rdfs:label "intended use"@en .
+
+<http://openml.org/openml#trainingProcess> a owl:DatatypeProperty;
+  rdfs:label "training process"@en .
+
+<http://openml.org/openml#hasOutputFilePrediction> a owl:ObjectProperty;
+  rdfs:label "has output file prediction"@en .
+
+<http://openml.org/openml#trainedOn> a owl:ObjectProperty;
+  rdfs:label "trained on"@en .
+
+<http://openml.org/openml#Measure> a owl:Class;
+  rdfs:label "Measure"@en .
+
+<http://openml.org/openml#OutputFileDescription> a owl:Class;
+  rdfs:comment "The degree or extent of something, as determined by measurement or calculation."@en;
+  rdfs:label "Output File Description"@en .
+
+<http://openml.org/openml#url> a owl:DatatypeProperty, owl:ObjectProperty;
+  rdfs:label "url"@en .
+
+<http://openml.org/openml#OutputFilePrediction> a owl:Class;
+  rdfs:label "Output File Prediction"@en .
+
+<http://openml.org/openml#Parameter> a owl:Class;
+  rdfs:label "Parameter"@en .
+
+<http://openml.org/openml#ParameterSetting> a owl:Class;
+  rdfs:label "Parameter Setting"@en .
+
+<http://openml.org/openml#component> a owl:DatatypeProperty;
+  rdfs:label "component"@en .
+
+<http://openml.org/openml#Prediction> a owl:Class;
+  rdfs:label "Prediction"@en .
+
+<http://openml.org/openml#hasPredictionFeature> a owl:ObjectProperty;
+  rdfs:label "has prediction feature"@en .
+
+<http://openml.org/openml#PredictionFeature> a owl:Class;
+  rdfs:label "Prediction Feature"@en .
+
+<http://openml.org/openml#Quality> a owl:Class;
+  rdfs:comment "A quality measured on a dataset."@en;
+  rdfs:label "Quality"@en .
+
+<http://openml.org/openml#featureIndex> a owl:DatatypeProperty;
+  rdfs:comment "The index of the quality that is set."@en;
+  rdfs:label "feature index"@en .
+
+<http://openml.org/openml#QualityType> a owl:Class;
+  vann:usageNote "Examples are size, shape, statistical properties, benchmarks, and the presence of missing values."@en;
+  rdfs:comment "A measureable property of datasets."@en;
+  rdfs:label "Quality Type"@en;
+  rdfs:subClassOf <http://openml.org/openml#Measure> .
+
+<http://openml.org/openml#Run> a owl:Class;
+  vann:usageNote "Runs can be created and shared automatically from supported machine learning libraries. They contain the exact hyperparameters used, all detailed results, and potentially the trained models."@en;
+  rdfs:comment "An evaluation of machine learning models (flows) trained on a given task."@en;
+  rdfs:label "Run"@en .
+
+<http://openml.org/openml#errorMessage> a owl:DatatypeProperty;
+  rdfs:label "error message"@en .
+
+<http://openml.org/openml#runDetails> a owl:DatatypeProperty;
+  rdfs:label "run details"@en .
+
+<http://openml.org/openml#setupId> a owl:DatatypeProperty;
+  rdfs:label "setup Id"@en .
+
+<http://openml.org/openml#setupString> a owl:DatatypeProperty;
+  rdfs:label "setup string"@en .
+
+<http://openml.org/openml#hasEvaluation> a owl:ObjectProperty;
+  rdfs:label "has evaluation"@en .
+
+<http://openml.org/openml#hasOutputFileDescription> a owl:ObjectProperty;
+  rdfs:label "has output file description"@en .
+
+<http://openml.org/openml#hasParameterSetting> a owl:ObjectProperty;
+  rdfs:label "has parameter"@en .
+
+<http://openml.org/openml#hasTask> a owl:ObjectProperty;
+  rdfs:label "has task"@en .
+
+<http://openml.org/openml#RunCollection> a owl:Class;
+  rdfs:comment "A group of runs to easily refer to them and share them with others."@en;
+  rdfs:label "Run Collection"@en;
+  rdfs:subClassOf <http://openml.org/openml#Collection> .
+
+<http://openml.org/openml#hasRun> a owl:ObjectProperty;
+  rdfs:label "has run"@en .
+
+<http://openml.org/openml#Split> a owl:Class;
+  rdfs:label "Split"@en .
+
+<http://openml.org/openml#isAppliedTo> a owl:ObjectProperty;
+  rdfs:label "is applied to"@en .
+
+<http://openml.org/openml#Task> a owl:Class;
+  vann:usageNote "Tasks specify train and test sets, which target feature(s) to predict for supervised problems, and possibly which evaluation measure to optimize. They make the problem reproducible and machine-readable."@en;
+  rdfs:comment "A task defines specific problems to be solved using a given dataset."@en;
+  rdfs:label "Task"@en .
+
+<http://openml.org/openml#hasCostMatrix> a owl:ObjectProperty;
+  rdfs:label "has cost matrix"@en .
+
+<http://openml.org/openml#hasEstimationProcedure> a owl:ObjectProperty;
+  rdfs:label "has estimation procedure"@en .
+
+<http://openml.org/openml#hasEvaluationMeasure> a owl:ObjectProperty;
+  rdfs:label "has evaluation measure"@en .
+
+<http://openml.org/openml#hasOutput> a owl:ObjectProperty;
+  rdfs:label "has output"@en .
+
+<http://openml.org/openml#hasTaskType> a owl:ObjectProperty;
+  vann:usageNote "The recommended controlled vocabulary is the <a href=\"./codelist/task-type.html\">Task type</a> code list."@en;
+  rdfs:label "has task type"@en .
+
+<http://openml.org/openml#sourceData> a owl:ObjectProperty;
+  rdfs:label "source data"@en .
+
+<http://openml.org/openml#targetFeature> a owl:ObjectProperty;
+  rdfs:label "target feature"@en .
+
+<http://openml.org/openml#TaskCollection> a owl:Class;
+  rdfs:comment "A group of tasks to easily refer to them and share them with others."@en;
+  rdfs:label "Task Collection"@en;
+  rdfs:subClassOf <http://openml.org/openml#Collection> .
+
+<http://openml.org/openml#TaskType> a owl:Class;
+  rdfs:label "Task Type"@en .
+
+skos:definition a owl:DatatypeProperty;
+  rdfs:label "description"@en .
+
+skos:prefLabel a owl:DatatypeProperty;
+  rdfs:label "name"@en .
+
+<http://spdx.org/rdf/terms#Checksum> a owl:Class;
+  rdfs:comment "A value that allows the contents of a file to be authenticated. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented."@en;
+  rdfs:label "Checksum"@en .
+
+<http://spdx.org/rdf/terms#algorithm> a owl:ObjectProperty;
+  vann:usageNote "The members of this property are the <a href=\"https://spdx.org/rdf/terms/#d4e2129\">supported checksum algorithms</a>."@en;
+  rdfs:comment "This property identifies the algorithm used to produce the subject Checksum."@en;
+  rdfs:label "algorithm"@en .
+
+<http://spdx.org/rdf/terms#checksumValue> a owl:DatatypeProperty;
+  rdfs:comment "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm."@en;
+  rdfs:label "checksum value"@en .
