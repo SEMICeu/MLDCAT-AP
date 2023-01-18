@@ -33,7 +33,7 @@
             "@id": "http://openml.org/openml/distribution/31",
             "@type": "Distribution",
             "Distribution.accessService": "http://openml.org/openml/dataService/1",
-            "Distribution.accessUrl": "https://www.openml.org/search?type=data&status=active&id=31",
+            "Distribution.accessUrl": "https://www.openml.org/search?type=data%26status=active%26id=31",
             "Distribution.checksum": "http://openml.org/openml/checksum/31",
             "Distribution.defaultTargetAttribute": "class",
             "Distribution.downloadUrl": "https://www.openml.org/data/download/31/dataset_31_credit-g.arff",
