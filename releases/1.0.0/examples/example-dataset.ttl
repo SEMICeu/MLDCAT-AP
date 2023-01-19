@@ -19,13 +19,13 @@
 
 <http://openml.org/openml/checksum/31>
   spdx:algorithm spdx:checksumAlgorithm_md5 ;
-  spdx:checksumValue "9a475053fed0c26ee95cd4525e50074c"^^rdfs:Literal ;
+  spdx:checksumValue "9a475053fed0c26ee95cd4525e50074c"^^xsd:hexBinary ;
   a spdx:Checksum .
 
 <http://openml.org/openml/dataService/1>
   dc:title "REST API for sharing, organizing and reusing machine learning datasets, code, and experiments."^^rdfs:Literal ;
   a dcat:DataService ;
-  dcat:endPointURL <https://www.openml.org/apis> ;
+  dcat:endpointURL <https://www.openml.org/apis> ;
   dcat:servesDataset <http://openml.org/openml/dataset/31> .
 
 <http://openml.org/openml/dataset/31>

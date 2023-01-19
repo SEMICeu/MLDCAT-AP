@@ -61,7 +61,7 @@
     },
     "Checksum.checksumValue": {
       "@id": "http://spdx.org/rdf/terms#checksumValue",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
     },
     "Collection": "http://openml.org/openml#Collection",
     "Collection.creationDate": {
@@ -106,7 +106,7 @@
     "DataService": "http://www.w3.org/ns/dcat#DataService",
     "DataService.endpointUrl": {
       "@container": "@set",
-      "@id": "http://www.w3.org/ns/dcat#endPointURL",
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
       "@type": "@id"
     },
     "DataService.servesDataset": {

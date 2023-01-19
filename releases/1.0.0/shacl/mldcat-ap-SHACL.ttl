@@ -132,7 +132,7 @@
     shacl:name "algorithm"@en;
     shacl:path <http://spdx.org/rdf/terms#algorithm>
   ], [
-    shacl:nodeKind shacl:Literal;
+    shacl:datatype xsd:hexBinary;
     shacl:description "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -215,7 +215,7 @@
     shacl:description "The root location or primary endpoint of the service (an IRI)."@en;
     shacl:minCount 1;
     shacl:name "endpoint URL"@en;
-    shacl:path dcat:endPointURL
+    shacl:path dcat:endpointURL
   ], [
     shacl:class dcat:Dataset;
     shacl:description "This property refers to a collection of data that this data service can distribute."@en;
