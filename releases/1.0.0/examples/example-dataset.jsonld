@@ -40,7 +40,7 @@
             "Distribution.format": "http://sweetontology.net/reprDataFormat/ARFF",
             "Distribution.hasFeature": "http://openml.org/openml/feature/31-1",
             "Distribution.hasPolicy": "https://archive.ics.uci.edu/ml/citation_policy.html",
-            "Distribution.hasQuality": "http://openml.org/openml/quality/numinstances/1",
+            "Distribution.hasQuality": "http://openml.org/openml/quality/numberofinstances/1",
             "Distribution.identifier": "31",
             "Distribution.language": "http://publications.europa.eu/resource/authority/language/ENG",
             "Distribution.processingDate": {
@@ -68,10 +68,10 @@
             "Feature.type": "http://openml.org/openml/feature-type#nominal"
         },
         {
-            "@id": "http://openml.org/openml/quality/numinstances/1",
+            "@id": "http://openml.org/openml/quality/numberofinstances/1",
             "@type": "Quality",
             "Quality.value": "1000",
-            "Quality.type": "http://openml.org/openml/quality/numinstances"
+            "Quality.type": "http://openml.org/openml/qualitytype/numberofinstances"
         },
         {
             "@id": "http://openml.org/openml/agent/1",

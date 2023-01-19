@@ -49,7 +49,7 @@
 <http://openml.org/openml/distribution/31>
   oml:defaultTargetAttribute "class"^^rdfs:Literal ;
   oml:hasFeature <http://openml.org/openml/feature/31-1> ;
-  oml:hasQuality <http://openml.org/openml/quality/numinstances/1> ;
+  oml:hasQuality <http://openml.org/openml/quality/numberofinstances/1> ;
   oml:processingDate "2020-11-20T19:44:53"^^xsd:dateTime ;
   dc:format <http://sweetontology.net/reprDataFormat/ARFF> ;
   dc:identifier "31"^^rdfs:Literal ;
@@ -66,7 +66,7 @@
   dc:type <http://openml.org/openml/feature-type#nominal> ;
   a oml:Feature .
 
-<http://openml.org/openml/quality/numinstances/1>
+<http://openml.org/openml/quality/numberofinstances/1>
   oml:value "1000"^^rdfs:Literal ;
-  dc:type <http://openml.org/openml/quality/numinstances> ;
+  dc:type <http://openml.org/openml/qualitytype/numberofinstances> ;
   a oml:Quality .
