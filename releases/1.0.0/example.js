@@ -64,7 +64,7 @@ $(document).ready(function () {
 	var editors = [];
 
     var examples_id = "#examples";
-	var examples_class = "h3";
+	var examples_class = ".h3";
 	var folder = "./html/examples/";
 	var $examples = $(examples_id);
 
