@@ -1,3 +1,4 @@
+![SEMIC Core Vocabulary](/semic-icon-small.png)
 # MLDCAT-AP
 
 This is an application profile, aimed to extend the use of DCAT-AP, originally envisaged for the description of a machine learning process, developed in collaboration with [OpenML](https://www.openml.org/).
