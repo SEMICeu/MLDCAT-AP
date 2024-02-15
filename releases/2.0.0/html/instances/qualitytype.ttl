@@ -1,0 +1,205 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://openml.org/openml/qualitytype/autocorrelation> a <http://openml.org/openml#QualityType>;
+  rdfs:label "AutoCorrelation"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_decisionstumpauc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_DecisionStumpAUC"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_decisionstumperrrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_DecisionStumpErrRate"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_decisionstumpkappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_DecisionStumpKappa"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_naivebayesauc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_NaiveBayesAUC"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_naivebayeserrrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_NaiveBayesErrRate"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_naivebayeskappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_NaiveBayesKappa"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_knn1nauc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_kNN1NAUC"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_knn1nerrrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_kNN1NErrRate"@en .
+
+<http://openml.org/openml/qualitytype/cfssubseteval_knn1nkappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "CfsSubsetEval_kNN1NKappa"@en .
+
+<http://openml.org/openml/qualitytype/classentropy> a <http://openml.org/openml#QualityType>;
+  rdfs:label "ClassEntropy"@en .
+
+<http://openml.org/openml/qualitytype/decisionstumpauc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "DecisionStumpAUC"@en .
+
+<http://openml.org/openml/qualitytype/decisionstumperrrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "DecisionStumpErrRate"@en .
+
+<http://openml.org/openml/qualitytype/decisionstumpkappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "DecisionStumpKappa"@en .
+
+<http://openml.org/openml/qualitytype/dimensionality> a <http://openml.org/openml#QualityType>;
+  rdfs:label "Dimensionality"@en .
+
+<http://openml.org/openml/qualitytype/equivalentnumberofatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "EquivalentNumberOfAtts"@en .
+
+<http://openml.org/openml/qualitytype/j48.00001.auc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.00001.AUC"@en .
+
+<http://openml.org/openml/qualitytype/j48.00001.errrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.00001.ErrRate"@en .
+
+<http://openml.org/openml/qualitytype/j48.00001.kappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.00001.Kappa"@en .
+
+<http://openml.org/openml/qualitytype/j48.0001.auc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.0001.AUC"@en .
+
+<http://openml.org/openml/qualitytype/j48.0001.errrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.0001.ErrRate"@en .
+
+<http://openml.org/openml/qualitytype/j48.0001.kappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.0001.Kappa"@en .
+
+<http://openml.org/openml/qualitytype/j48.001.auc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.001.AUC"@en .
+
+<http://openml.org/openml/qualitytype/j48.001.errrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.001.ErrRate"@en .
+
+<http://openml.org/openml/qualitytype/j48.001.kappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "J48.001.Kappa"@en .
+
+<http://openml.org/openml/qualitytype/majorityclasspercentage> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MajorityClassPercentage"@en .
+
+<http://openml.org/openml/qualitytype/majorityclasssize> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MajorityClassSize"@en .
+
+<http://openml.org/openml/qualitytype/maxattributeentropy> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxAttributeEntropy"@en .
+
+<http://openml.org/openml/qualitytype/maxkurtosisofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxKurtosisOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/maxmeansofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxMeansOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/maxmutualinformation> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxMutualInformation"@en .
+
+<http://openml.org/openml/qualitytype/maxnominalattdistinctvalues> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxNominalAttDistinctValues"@en .
+
+<http://openml.org/openml/qualitytype/maxskewnessofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxSkewnessOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/maxstddevofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MaxStdDevOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/meanattributeentropy> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanAttributeEntropy"@en .
+
+<http://openml.org/openml/qualitytype/meankurtosisofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanKurtosisOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/meanmeansofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanMeansOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/meanmutualinformation> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanMutualInformation"@en .
+
+<http://openml.org/openml/qualitytype/meannoisetosignalratio> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanNoiseToSignalRatio"@en .
+
+<http://openml.org/openml/qualitytype/meannominalattdistinctvalues> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanNominalAttDistinctValues"@en .
+
+<http://openml.org/openml/qualitytype/meanskewnessofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanSkewnessOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/meanstddevofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MeanStdDevOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/minattributeentropy> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinAttributeEntropy"@en .
+
+<http://openml.org/openml/qualitytype/minkurtosisofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinKurtosisOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/minmeansofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinMeansOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/minmutualinformation> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinMutualInformation"@en .
+
+<http://openml.org/openml/qualitytype/minnominalattdistinctvalues> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinNominalAttDistinctValues"@en .
+
+<http://openml.org/openml/qualitytype/minskewnessofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinSkewnessOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/minstddevofnumericatts> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinStdDevOfNumericAtts"@en .
+
+<http://openml.org/openml/qualitytype/minorityclasspercentage> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinorityClassPercentage"@en .
+
+<http://openml.org/openml/qualitytype/minorityclasssize> a <http://openml.org/openml#QualityType>;
+  rdfs:label "MinorityClassSize"@en .
+
+<http://openml.org/openml/qualitytype/naivebayesauc> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NaiveBayesAUC"@en .
+
+<http://openml.org/openml/qualitytype/naivebayeserrrate> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NaiveBayesErrRate"@en .
+
+<http://openml.org/openml/qualitytype/naivebayeskappa> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NaiveBayesKappa"@en .
+
+<http://openml.org/openml/qualitytype/numberofbinaryfeatures> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfBinaryFeatures"@en .
+
+<http://openml.org/openml/qualitytype/numberofclasses> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfClasses"@en .
+
+<http://openml.org/openml/qualitytype/numberoffeatures> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfFeatures"@en .
+
+<http://openml.org/openml/qualitytype/numberofinstances> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfInstances"@en .
+
+<http://openml.org/openml/qualitytype/numberofinstanceswithmissingvalues> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfInstancesWithMissingValues"@en .
+
+<http://openml.org/openml/qualitytype/numberofmissingvalues> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfMissingValues"@en .
+
+<http://openml.org/openml/qualitytype/numberofnumericfeatures> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfNumericFeatures"@en .
+
+<http://openml.org/openml/qualitytype/numberofsymbolicfeatures> a <http://openml.org/openml#QualityType>;
+  rdfs:label "NumberOfSymbolicFeatures"@en .

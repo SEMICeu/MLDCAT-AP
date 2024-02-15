@@ -1,0 +1,859 @@
+{
+  "@context": {
+    "Agent": "http://xmlns.com/foaf/0.1/Agent",
+    "Agent.name": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "Algorithm": "http://www.w3.org/ns/mls#Algorithm",
+    "Algorithm.hasAlgorithmType": {
+      "@id": "http://w3id.org/mlso/hasAlgorithmType",
+      "@type": "@id"
+    },
+    "Algorithm.hasLearningMethodType": {
+      "@id": "http://w3id.org/mlso/hasLearningMethodType",
+      "@type": "@id"
+    },
+    "BibliographicReference": "http://purl.org/spar/biro/BibliographicReference",
+    "BibliographicReference.bibliographicCitation": {
+      "@id": "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "BibliographicReference.format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "BibliographicReference.references": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/references",
+      "@type": "@id"
+    },
+    "Catalogue": "http://www.w3.org/ns/dcat#Catalog",
+    "Catalogue.dataset": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#dataset",
+      "@type": "@id"
+    },
+    "Catalogue.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Catalogue.publisher": {
+      "@id": "http://purl.org/dc/terms/publisher",
+      "@type": "@id"
+    },
+    "Catalogue.record": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#record",
+      "@type": "@id"
+    },
+    "Catalogue.service": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#service",
+      "@type": "@id"
+    },
+    "Catalogue.title": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "CatalogueRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "CatalogueRecord.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "CatalogueRecord.descriptionVersion": {
+      "@id": "http://openml.org/openml#descriptionVersion"
+    },
+    "CatalogueRecord.modificationDate": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "CatalogueRecord.primaryTopic": {
+      "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type": "@id"
+    },
+    "Checksum": "http://spdx.org/rdf/terms#Checksum",
+    "Checksum.algorithm": {
+      "@id": "http://spdx.org/rdf/terms#algorithm",
+      "@type": "@id"
+    },
+    "Checksum.checksumValue": {
+      "@id": "http://spdx.org/rdf/terms#checksumValue",
+      "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+    },
+    "ChecksumAlgorithm": "http://spdx.org/rdf/terms#ChecksumAlgorithm",
+    "Collection": "http://openml.org/openml#Collection",
+    "Collection.creationDate": {
+      "@id": "http://openml.org/openml#creationDate"
+    },
+    "Collection.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Collection.hasUploader": {
+      "@id": "http://openml.org/openml#hasUploader",
+      "@type": "@id"
+    },
+    "Collection.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Collection.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Collection.visibility": {
+      "@id": "http://openml.org/openml#visibility",
+      "@type": "@id"
+    },
+    "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
+    "CostMatrix": "http://openml.org/openml#CostMatrix",
+    "DataQuality": "http://openml.org/openml#DataQuality",
+    "DataQuality.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "DataQuality.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "DataQuality.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "DataService": "http://www.w3.org/ns/dcat#DataService",
+    "DataService.endpointUrl": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
+      "@type": "@id"
+    },
+    "DataService.servesDataset": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#servesDataset",
+      "@type": "@id"
+    },
+    "DataService.title": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "Dataset.accessRights": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
+    },
+    "Dataset.collectionDate": {
+      "@id": "http://openml.org/openml#collectionDate"
+    },
+    "Dataset.contributor": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": "@id"
+    },
+    "Dataset.creator": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "Dataset.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Dataset.distribution": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#distribution",
+      "@type": "@id"
+    },
+    "Dataset.hasVersion": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/hasVersion",
+      "@type": "@id"
+    },
+    "Dataset.identifier": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Dataset.isReferencedBy": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/isReferencedBy",
+      "@type": "@id"
+    },
+    "Dataset.isVersionOf": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/isVersionOf",
+      "@type": "@id"
+    },
+    "Dataset.issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "Dataset.keyword": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "Dataset.landingPage": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#landingPage",
+      "@type": "@id"
+    },
+    "Dataset.publisher": {
+      "@id": "http://purl.org/dc/terms/publisher",
+      "@type": "@id"
+    },
+    "Dataset.status": {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "@id"
+    },
+    "Dataset.title": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Dataset.versionInfo": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Dataset.versionLabel": {
+      "@id": "http://openml.org/openml#versionLabel"
+    },
+    "Dataset.visibility": {
+      "@id": "http://openml.org/openml#access_policy",
+      "@type": "@id"
+    },
+    "Distribution": "http://www.w3.org/ns/dcat#Distribution",
+    "Distribution.accessService": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#accessService",
+      "@type": "@id"
+    },
+    "Distribution.accessUrl": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#accessURL",
+      "@type": "@id"
+    },
+    "Distribution.byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize"
+    },
+    "Distribution.checksum": {
+      "@id": "http://spdx.org/rdf/terms#checksum",
+      "@type": "@id"
+    },
+    "Distribution.defaultTargetAttribute": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#defaultTargetAttribute"
+    },
+    "Distribution.downloadUrl": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "@id"
+    },
+    "Distribution.format": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
+    },
+    "Distribution.hasFeature": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasFeature",
+      "@type": "@id"
+    },
+    "Distribution.hasPolicy": {
+      "@id": "http://www.w3.org/ns/odrl/2/hasPolicy",
+      "@type": "@id"
+    },
+    "Distribution.hasQualityMeasurement": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dqv#hasQualityMeasurement",
+      "@type": "@id"
+    },
+    "Distribution.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Distribution.ignoreAttribute": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#ignoreAttribute"
+    },
+    "Distribution.language": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/language",
+      "@type": "@id"
+    },
+    "Distribution.license": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "Distribution.processingDate": {
+      "@id": "http://openml.org/openml#processingDate"
+    },
+    "Distribution.processingError": {
+      "@id": "http://openml.org/openml#processingError"
+    },
+    "Distribution.processingWarning": {
+      "@id": "http://openml.org/openml#processingWarning"
+    },
+    "Distribution.rowIdAttribute": {
+      "@id": "http://openml.org/openml#rowIDAttribute"
+    },
+    "Distribution.title": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "Engagement": "http://data.europa.eu/m8g/Engagement",
+    "Engagement.download": {
+      "@id": "http://data.europa.eu/m8g/download",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Engagement.like": {
+      "@id": "http://data.europa.eu/m8g/like",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EstimationProcedure": "http://openml.org/openml#EstimationProcedure",
+    "EstimationProcedure.dataSplitsUrl": {
+      "@id": "http://openml.org/openml#dataSplitsURL",
+      "@type": "@id"
+    },
+    "EstimationProcedure.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "EstimationProcedure.hasParameter": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasParameter",
+      "@type": "@id"
+    },
+    "EstimationProcedure.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "EstimationProcedure.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "EstimationProcedure.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "Evaluation": "http://openml.org/openml#Evaluation",
+    "Evaluation.arrayData": {
+      "@id": "http://openml.org/openml#arrayData"
+    },
+    "Evaluation.fold": {
+      "@id": "http://openml.org/openml#fold"
+    },
+    "Evaluation.hasFlow": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasFlow",
+      "@type": "@id"
+    },
+    "Evaluation.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Evaluation.intervalEnd": {
+      "@id": "http://openml.org/openml#intervalEnd"
+    },
+    "Evaluation.intervalStart": {
+      "@id": "http://openml.org/openml#intervalStart"
+    },
+    "Evaluation.label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Evaluation.repeat": {
+      "@id": "http://openml.org/openml#repeat"
+    },
+    "Evaluation.sample": {
+      "@id": "http://openml.org/openml#sample"
+    },
+    "Evaluation.sampleSize": {
+      "@id": "http://openml.org/openml#sampleSize"
+    },
+    "Evaluation.stdev": {
+      "@id": "http://openml.org/openml#stdev"
+    },
+    "Evaluation.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Evaluation.value": {
+      "@id": "http://openml.org/openml#value"
+    },
+    "EvaluationMeasure": "http://openml.org/openml#EvaluationMeasure",
+    "EvaluationMeasure.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "EvaluationMeasure.implementation": {
+      "@id": "http://openml.org/openml#implementation"
+    },
+    "EvaluationMeasure.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "EvaluationMeasure.value": {
+      "@id": "http://openml.org/openml#value"
+    },
+    "EvaluationMeasure.valueBad": {
+      "@id": "http://openml.org/openml#valueBad"
+    },
+    "EvaluationMeasure.valueGood": {
+      "@id": "http://openml.org/openml#valueGood"
+    },
+    "Feature": "http://openml.org/openml#Feature",
+    "Feature.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Feature.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Feature.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "Flow": "http://openml.org/openml#Flow",
+    "Flow.className": {
+      "@id": "http://openml.org/openml#className"
+    },
+    "Flow.customName": {
+      "@id": "http://openml.org/openml#customName"
+    },
+    "Flow.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Flow.externalVersion": {
+      "@id": "http://openml.org/openml#externalVersion"
+    },
+    "Flow.hasDependency": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasDependency",
+      "@type": "@id"
+    },
+    "Flow.hasFlowParameter": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasFlowParameter",
+      "@type": "@id"
+    },
+    "Flow.hasUploader": {
+      "@id": "http://openml.org/openml#hasUploader",
+      "@type": "@id"
+    },
+    "Flow.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Flow.keyword": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "Flow.status": {
+      "@id": "http://openml.org/openml#status",
+      "@type": "@id"
+    },
+    "Flow.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Flow.uploaded": {
+      "@id": "http://openml.org/openml#uploaded"
+    },
+    "Flow.version": {
+      "@id": "http://openml.org/openml#version"
+    },
+    "FlowParameter": "http://openml.org/openml#FlowParameter",
+    "FlowParameter.defaultValue": {
+      "@id": "http://openml.org/openml#defaultValue"
+    },
+    "FlowParameter.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "FlowParameter.recommendedRange": {
+      "@id": "http://openml.org/openml#recommendedRange"
+    },
+    "FlowParameter.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "FlowParameter.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "ImageObject": "http://data.europa.eu/m8g/ImageObject",
+    "Library": "http://openml.org/openml#Library",
+    "Library.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Library.version": {
+      "@id": "http://openml.org/openml#version"
+    },
+    "LicenceDocument": "http://purl.org/dc/terms/LicenseDocument",
+    "LinguisticSystem": "http://purl.org/dc/terms/LinguisticSystem",
+    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "MachineLearningModel": "http://data.europa.eu/m8g/MachineLearningModel",
+    "MachineLearningModel.bias": {
+      "@id": "http://openml.org/openml#bias"
+    },
+    "MachineLearningModel.contributor": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": "@id"
+    },
+    "MachineLearningModel.created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "MachineLearningModel.creator": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "MachineLearningModel.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "MachineLearningModel.evaluationResults": {
+      "@id": "http://openml.org/openml#evaluationResults"
+    },
+    "MachineLearningModel.fineTunedFrom": {
+      "@id": "http://data.europa.eu/m8g/fineTunedFrom",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasBibliographicReference": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasBibliographicReference",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasEngagement": {
+      "@id": "http://data.europa.eu/m8g/hasEngagement",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasOutputFilePrediction": {
+      "@id": "http://openml.org/openml#hasOutputFilePrediction",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasRepository": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasRepository",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasRisk": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasRisk",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasUploader": {
+      "@id": "http://openml.org/openml#hasUploader",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasVariation": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasVariation",
+      "@type": "@id"
+    },
+    "MachineLearningModel.howToUse": {
+      "@id": "http://openml.org/openml#howToUse"
+    },
+    "MachineLearningModel.intendedUse": {
+      "@id": "http://openml.org/openml#intendedUse"
+    },
+    "MachineLearningModel.keyword": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "MachineLearningModel.language": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/language",
+      "@type": "@id"
+    },
+    "MachineLearningModel.license": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "MachineLearningModel.limitations": {
+      "@id": "http://openml.org/openml#limitations"
+    },
+    "MachineLearningModel.logo": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/logo",
+      "@type": "@id"
+    },
+    "MachineLearningModel.name": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "MachineLearningModel.testedOn": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/testedOn",
+      "@type": "@id"
+    },
+    "MachineLearningModel.trainedOn": {
+      "@id": "http://data.europa.eu/m8g/trainedOn",
+      "@type": "@id"
+    },
+    "MachineLearningModel.trainingProcess": {
+      "@id": "http://openml.org/openml#trainingProcess"
+    },
+    "MachineLearningModel.type": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "MachineLearningModel.validatedOn": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/validatedOn",
+      "@type": "@id"
+    },
+    "MachineLearningModel.version": {
+      "@id": "http://openml.org/openml#version"
+    },
+    "Measure": "http://openml.org/openml#Measure",
+    "MediaTypeOrExtent": "http://purl.org/dc/terms/MediaTypeOrExtent",
+    "OutputFileDescription": "http://openml.org/openml#OutputFileDescription",
+    "OutputFileDescription.id": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "OutputFileDescription.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "OutputFileDescription.url": {
+      "@id": "http://openml.org/openml#url"
+    },
+    "OutputFilePrediction": "http://openml.org/openml#OutputFilePrediction",
+    "OutputFilePrediction.checksum": {
+      "@container": "@set",
+      "@id": "http://spdx.org/rdf/terms#checksum",
+      "@type": "@id"
+    },
+    "OutputFilePrediction.format": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
+    },
+    "OutputFilePrediction.id": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "OutputFilePrediction.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "OutputFilePrediction.url": {
+      "@id": "http://openml.org/openml#url",
+      "@type": "@id"
+    },
+    "Paper": "https://linkedpaperswithcode.com/class/paper",
+    "Paper.abstract": {
+      "@id": "http://purl.org/dc/terms/abstract"
+    },
+    "Paper.creator": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "Paper.date": {
+      "@id": "http://purl.org/dc/terms/date"
+    },
+    "Paper.hasDocument": {
+      "@id": "http://data.europa.eu/m8g/hasDocument",
+      "@type": "@id"
+    },
+    "Paper.hasModel": {
+      "@container": "@set",
+      "@id": "https://linkedpaperswithcode.com/property/hasModel",
+      "@type": "@id"
+    },
+    "Paper.hasRepository": {
+      "@container": "@set",
+      "@id": "https://linkedpaperswithcode.com/property/hasRepository",
+      "@type": "@id"
+    },
+    "Paper.subject": {
+      "@id": "http://purl.org/dc/terms/subject"
+    },
+    "Paper.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Parameter": "http://openml.org/openml#Parameter",
+    "Parameter.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Parameter.value": {
+      "@id": "http://openml.org/openml#value"
+    },
+    "ParameterSetting": "http://openml.org/openml#ParameterSetting",
+    "ParameterSetting.component": {
+      "@id": "http://openml.org/openml#component"
+    },
+    "ParameterSetting.name": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "ParameterSetting.value": {
+      "@id": "http://openml.org/openml#value"
+    },
+    "Policy": "http://www.w3.org/ns/odrl/2/Policy",
+    "Prediction": "http://openml.org/openml#Prediction",
+    "Prediction.format": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
+    },
+    "Prediction.hasPredictionFeature": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasPredictionFeature",
+      "@type": "@id"
+    },
+    "PredictionFeature": "http://openml.org/openml#PredictionFeature",
+    "PredictionFeature.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "PredictionFeature.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "QualityMeasurement": "http://www.w3.org/ns/dqv#QualityMeasurement",
+    "QualityMeasurement.dataset": {
+      "@container": "@set",
+      "@id": "http://purl.org/linked-data/cube#dataSet",
+      "@type": "@id"
+    },
+    "QualityMeasurement.featureIndex": {
+      "@id": "http://openml.org/openml#featureIndex"
+    },
+    "QualityMeasurement.intervalEnd": {
+      "@id": "http://openml.org/openml#intervalEnd"
+    },
+    "QualityMeasurement.intervalStart": {
+      "@id": "http://openml.org/openml#intervalStart"
+    },
+    "QualityMeasurement.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "QualityMeasurement.value": {
+      "@id": "http://www.w3.org/ns/dqv#value"
+    },
+    "QualityMeasurementDataset": "http://www.w3.org/ns/dqv#QualityMeasurementDataset",
+    "QualityMeasurementDataset.evaluationEngineId": {
+      "@id": "http://openml.org/openml#evaluationEngine"
+    },
+    "QualityMeasurementDataset.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Repository": "https://linkedpaperswithcode.com/class/repository",
+    "Repository.hasFile": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasFile",
+      "@type": "@id"
+    },
+    "Resource": "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "RightsStatement": "http://purl.org/dc/terms/RightsStatement",
+    "Risk": "http://data.europa.eu/m8g/Risk",
+    "Risk.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Run": "http://openml.org/openml#Run",
+    "Run.errorMessage": {
+      "@id": "http://openml.org/openml#errorMessage"
+    },
+    "Run.hasEvaluation": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasEvaluation",
+      "@type": "@id"
+    },
+    "Run.hasFlow": {
+      "@id": "http://openml.org/openml#hasFlow",
+      "@type": "@id"
+    },
+    "Run.hasOutputFileDescription": {
+      "@id": "http://openml.org/openml#hasOutputFileDescription",
+      "@type": "@id"
+    },
+    "Run.hasOutputFilePrediction": {
+      "@id": "http://openml.org/openml#hasOutputFilePrediction",
+      "@type": "@id"
+    },
+    "Run.hasParameter": {
+      "@id": "http://openml.org/openml#hasParameterSetting",
+      "@type": "@id"
+    },
+    "Run.hasTask": {
+      "@id": "http://openml.org/openml#hasTask",
+      "@type": "@id"
+    },
+    "Run.hasUploader": {
+      "@id": "http://openml.org/openml#hasUploader",
+      "@type": "@id"
+    },
+    "Run.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Run.keyword": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "Run.runDetails": {
+      "@id": "http://openml.org/openml#runDetails"
+    },
+    "Run.setupId": {
+      "@id": "http://openml.org/openml#setupId"
+    },
+    "Run.setupString": {
+      "@id": "http://openml.org/openml#setupString"
+    },
+    "Run.theAlgorithmExecutedByTheRun": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/mls#realizes",
+      "@type": "@id"
+    },
+    "RunCollection": "http://openml.org/openml#RunCollection",
+    "RunCollection.hasRun": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasRun",
+      "@type": "@id"
+    },
+    "Split": "http://openml.org/openml#Split",
+    "Split.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Split.id": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Split.isAppliedTo": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#isAppliedTo",
+      "@type": "@id"
+    },
+    "Split.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Task": "http://openml.org/openml#Task",
+    "Task.hasCostMatrix": {
+      "@id": "http://openml.org/openml#hasCostMatrix",
+      "@type": "@id"
+    },
+    "Task.hasEstimationProcedure": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasEstimationProcedure",
+      "@type": "@id"
+    },
+    "Task.hasEvaluationMeasure": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasEvaluationMeasure",
+      "@type": "@id"
+    },
+    "Task.hasOutput": {
+      "@id": "http://openml.org/openml#hasOutput",
+      "@type": "@id"
+    },
+    "Task.hasTaskType": {
+      "@id": "http://openml.org/openml#hasTaskType",
+      "@type": "@id"
+    },
+    "Task.id": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "Task.keyword": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "Task.sourceData": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#sourceData",
+      "@type": "@id"
+    },
+    "Task.targetFeature": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#targetFeature",
+      "@type": "@id"
+    },
+    "Task.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "TaskCollection": "http://openml.org/openml#TaskCollection",
+    "TaskCollection.hasTask": {
+      "@container": "@set",
+      "@id": "http://openml.org/openml#hasTask",
+      "@type": "@id"
+    },
+    "TaskType": "http://openml.org/openml#TaskType",
+    "TaskType.description": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "TaskType.id": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "TaskType.title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "Xsd:hexBinary": "http://www.w3.org/2001/XMLSchema#hexBinary",
+    "Xsd:integer": "http://www.w3.org/2001/XMLSchema#integer"
+  }
+}
