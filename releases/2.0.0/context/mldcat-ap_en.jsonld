@@ -69,6 +69,7 @@
       "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
       "@type": "@id"
     },
+    "CataloguedResource": "http://www.w3.org/ns/dcat#Resource",
     "Checksum": "http://spdx.org/rdf/terms#Checksum",
     "Checksum.algorithm": {
       "@id": "http://spdx.org/rdf/terms#algorithm",
@@ -218,7 +219,8 @@
       "@type": "@id"
     },
     "Distribution.byteSize": {
-      "@id": "http://www.w3.org/ns/dcat#byteSize"
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
     },
     "Distribution.checksum": {
       "@id": "http://spdx.org/rdf/terms#checksum",
@@ -853,7 +855,9 @@
     "TaskType.title": {
       "@id": "http://purl.org/dc/terms/title"
     },
+    "TemporalLiteral": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "Xsd:hexBinary": "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "Xsd:integer": "http://www.w3.org/2001/XMLSchema#integer"
+    "Xsd:integer": "http://www.w3.org/2001/XMLSchema#integer",
+    "Xsd:nonNegativeInteger": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   }
 }

@@ -836,7 +836,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedureShape/0f3b4724ab67053c4416c3a956c4fb8786fbfd7f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.datasplitsURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:name": {
             "en": "data splits URL"
           },
@@ -1771,7 +1771,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePredictionShape/99a5581200a6990692abd7446ef78762a79ee8da",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.url",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "The url of the file to be downloaded."
           },
@@ -2834,11 +2834,18 @@
       "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     {
+      "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TemporalLiteralShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    {
       "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ResourceShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Resource"
     },
     {
       "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#HexBinaryShape",
@@ -2853,6 +2860,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    {
+      "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#nonNegativeIntegerShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
     },
     {
       "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ConceptShape",
@@ -3021,7 +3035,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogRecordShape/c65d45ed7195ead5f643ec8c8afd29c6dd9662bf",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.primarytopic",
-          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."
           },
@@ -3077,7 +3091,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.endpointURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "The root location or primary endpoint of the service (an IRI)."
           },
@@ -3277,7 +3291,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/95c69c99a1e3ade043911b51b942f206dea0e68d",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."
           },
@@ -3363,7 +3377,19 @@
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.contributor",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
           "sh:description": {
-            "en": "People who contributed to the current version of the datadat (e.g. reformatting)"
+            "en": "\tAn entity responsible for making contributions to the dataset."
+          },
+          "sh:name": {
+            "en": "contributor"
+          },
+          "sh:path": "http://purl.org/dc/terms/contributor"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/fe2ffe0b50cc4c20954873d72d0f815713857ec8",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.contributor",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "\tAn entity responsible for making contributions to the dataset."
           },
           "sh:name": {
             "en": "contributor"
@@ -3463,21 +3489,9 @@
           "sh:path": "http://spdx.org/rdf/terms#checksum"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.checksum",
-          "sh:class": "http://spdx.org/rdf/terms#Checksum",
-          "sh:description": {
-            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."
-          },
-          "sh:name": {
-            "en": "checksum"
-          },
-          "sh:path": "http://spdx.org/rdf/terms#checksum"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/653804840386e33525b3d39d205c174780be414b",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.accessURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."
           },
@@ -3490,7 +3504,7 @@
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/73765ca7a6e23ef17cf4e67a576e90a0c391f1c1",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.checksum",
           "sh:description": {
-            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."
+            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -3585,7 +3599,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.downloadURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "This property contains a URL that is a direct link to a downloadable file in a given format."
           },
@@ -3665,6 +3679,18 @@
             "en": "access URL"
           },
           "sh:path": "http://www.w3.org/ns/dcat#accessURL"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/ed8e40725c55813428b73d8e5042c6affe821ea2",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.bytesize",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+          "sh:description": {
+            "en": "This property contains the size of a Distribution in bytes."
+          },
+          "sh:name": {
+            "en": "byte size"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#byteSize"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230",

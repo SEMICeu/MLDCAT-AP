@@ -43,9 +43,11 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ChecksumShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ChecksumAlgorithmShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#LiteralShape>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TemporalLiteralShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ResourceShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#HexBinaryShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#IntegerShape>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#nonNegativeIntegerShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ConceptShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogRecordShape>,
@@ -174,7 +176,7 @@
   shacl:path dc:modified .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogRecordShape/c65d45ed7195ead5f643ec8c8afd29c6dd9662bf> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.primarytopic";
-  shacl:class dcat:Dataset;
+  shacl:class dcat:Resource;
   shacl:description "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."@en;
   shacl:name "primary topic"@en;
   shacl:path foaf:primaryTopic .
@@ -447,7 +449,7 @@
   shacl:path dcat:endpointURL .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.endpointURL";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:description "The root location or primary endpoint of the service (an IRI)."@en;
   shacl:name "endpoint URL"@en;
   shacl:path dcat:endpointURL .
@@ -570,7 +572,7 @@
   shacl:path owl:versionInfo .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/95c69c99a1e3ade043911b51b942f206dea0e68d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:description "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en;
   shacl:name "is referenced by"@en;
   shacl:path dc:isReferencedBy .
@@ -613,7 +615,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/fe2ffe0b50cc4c20954873d72d0f815713857ec8> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.contributor";
   shacl:class foaf:Agent;
-  shacl:description "People who contributed to the current version of the datadat (e.g. reformatting)"@en;
+  shacl:description """	An entity responsible for making contributions to the dataset."""@en;
   shacl:name "contributor"@en;
   shacl:path dc:contributor .
 
@@ -647,6 +649,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/cd035d5fcf2aa42f83e614e12afd8905d4d6bcf8>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/db1ddec760959e7876b98974163609b2ef0746a4>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/e0065293221c5851ec508ae96cd4ad03ffdedd19>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/ed8e40725c55813428b73d8e5042c6affe821ea2>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230>;
   shacl:targetClass dcat:Distribution .
 
@@ -682,19 +685,18 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.checksum";
   shacl:class <http://spdx.org/rdf/terms#Checksum>;
-  shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en,
-    "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."@en;
+  shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en;
   shacl:name "checksum"@en;
   shacl:path <http://spdx.org/rdf/terms#checksum> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/653804840386e33525b3d39d205c174780be414b> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.accessURL";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:description "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."@en;
   shacl:name "access URL"@en;
   shacl:path dcat:accessURL .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/73765ca7a6e23ef17cf4e67a576e90a0c391f1c1> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.checksum";
-  shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."@en;
+  shacl:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en;
   shacl:maxCount 1;
   shacl:name "checksum"@en;
   shacl:path <http://spdx.org/rdf/terms#checksum> .
@@ -742,7 +744,7 @@
   shacl:path <http://openml.org/openml#processingWarning> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.downloadURL";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:description "This property contains a URL that is a direct link to a downloadable file in a given format."@en;
   shacl:name "download URL"@en;
   shacl:path dcat:downloadURL .
@@ -782,6 +784,12 @@
   shacl:minCount 1;
   shacl:name "access URL"@en;
   shacl:path dcat:accessURL .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/ed8e40725c55813428b73d8e5042c6affe821ea2> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.bytesize";
+  shacl:datatype xsd:nonNegativeInteger;
+  shacl:description "This property contains the size of a Distribution in bytes."@en;
+  shacl:name "byte size"@en;
+  shacl:path dcat:byteSize .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.bytesize";
   shacl:description "This property contains the size of a Distribution in bytes."@en;
@@ -844,7 +852,7 @@
   shacl:targetClass <http://openml.org/openml#EstimationProcedure> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedureShape/0f3b4724ab67053c4416c3a956c4fb8786fbfd7f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.datasplitsURL";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:name "data splits URL"@en;
   shacl:path <http://openml.org/openml#dataSplitsURL> .
 
@@ -1694,7 +1702,7 @@
   shacl:path dc:format .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePredictionShape/99a5581200a6990692abd7446ef78762a79ee8da> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.url";
-  shacl:class rdfs:Resource;
+  shacl:class dcat:Resource;
   shacl:description "The url of the file to be downloaded."@en;
   shacl:name "url"@en;
   shacl:path <http://openml.org/openml#url> .
@@ -2039,7 +2047,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ResourceShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass rdfs:Resource .
+  shacl:targetClass dcat:Resource .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#RightsStatementShape> a shacl:NodeShape;
   shacl:closed false;
@@ -2452,3 +2460,11 @@
   shacl:minCount 1;
   shacl:name "title"@en;
   shacl:path dc:title .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TemporalLiteralShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass rdfs:Literal .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#nonNegativeIntegerShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:nonNegativeInteger .
