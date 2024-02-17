@@ -3291,6 +3291,18 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/95c69c99a1e3ade043911b51b942f206dea0e68d",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby",
+          "sh:class": "https://linkedpaperswithcode.com/class/paper",
+          "sh:description": {
+            "en": "A related resource that references, cites, or otherwise points to the described resource."
+          },
+          "sh:name": {
+            "en": "is referenced by"
+          },
+          "sh:path": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/95c69c99a1e3ade043911b51b942f206dea0e68d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby",
           "sh:class": "http://www.w3.org/ns/dcat#Resource",
           "sh:description": {
             "en": "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."
@@ -3746,10 +3758,22 @@
           "sh:path": "http://purl.org/dc/terms/type"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/66f17ab947f9a218de93f9de0e85439f7fde9672",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.featureindex",
+          "sh:class": "http://openml.org/openml#Feature",
+          "sh:description": {
+            "en": "The feature on which the quality is measure on."
+          },
+          "sh:name": {
+            "en": "feature index"
+          },
+          "sh:path": "http://openml.org/openml#featureIndex"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/6abc5b7e3a4da3720d6c5869dbe9ae202ed58096",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.featureindex",
           "sh:description": {
-            "en": "The index of the quality that is set."
+            "en": "The feature on which the quality is measure on."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -4018,6 +4042,18 @@
             "en": "date"
           },
           "sh:path": "http://purl.org/dc/terms/date"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.references",
+          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:description": {
+            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+          },
+          "sh:name": {
+            "en": "references"
+          },
+          "sh:path": "http://purl.org/dc/terms/references"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/bb8f1feb9d550240a3b56a28b751bad334c31adf",

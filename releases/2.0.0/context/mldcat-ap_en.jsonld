@@ -638,6 +638,11 @@
       "@id": "https://linkedpaperswithcode.com/property/hasRepository",
       "@type": "@id"
     },
+    "Paper.references": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/references",
+      "@type": "@id"
+    },
     "Paper.subject": {
       "@id": "http://purl.org/dc/terms/subject"
     },
@@ -687,7 +692,8 @@
       "@type": "@id"
     },
     "QualityMeasurement.featureIndex": {
-      "@id": "http://openml.org/openml#featureIndex"
+      "@id": "http://openml.org/openml#featureIndex",
+      "@type": "@id"
     },
     "QualityMeasurement.intervalEnd": {
       "@id": "http://openml.org/openml#intervalEnd"

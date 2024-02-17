@@ -1026,6 +1026,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Dataset.hasversion">has version</a>
                             , <a href="#Dataset.identifier">identifier</a>
                             , <a href="#Dataset.isreferencedby">is referenced by</a>
+                            , <a href="#Dataset.isreferencedby">is referenced by</a>
                             , <a href="#Dataset.isversionof">is version of</a>
                             , <a href="#Dataset.issued">issued</a>
                             , <a href="#Dataset.keyword">keyword</a>
@@ -1448,6 +1449,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     An unambiguous identifier for the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Dataset.isreferencedby"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/isReferencedBy"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20is referenced by%20in%20Dataset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Dataset.isreferencedby" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/isReferencedBy"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/isReferencedBy"
+                                           data-placement="right">
+                                        is referenced by</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Paper" data-placement="right">Paper</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A related resource that references, cites, or otherwise points to the described resource.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -4540,6 +4584,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Paper.hasdocument">has document</a>
                             , <a href="#Paper.hasmodel">has model</a>
                             , <a href="#Paper.hasrepository">has repository</a>
+                            , <a href="#Paper.references">references</a>
                             , <a href="#Paper.subject">subject</a>
                             , <a href="#Paper.title">title</a>
                             .
@@ -4839,6 +4884,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="Paper.references"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/references"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20references%20in%20Paper&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Paper.references" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/references"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/references"
+                                           data-placement="right">
+                                        references</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Dataset" data-placement="right">Dataset</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A related resource that is referenced, cited, or otherwise pointed to by the described resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Paper.subject"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/subject"
@@ -5084,7 +5172,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Literal" data-placement="right">Literal</a>
+                                            <a href="#Feature" data-placement="right">Feature</a>
                                         
                                     
                                 </td>
@@ -5092,7 +5180,7 @@ The main entities are those that form the core of the Application Profile.
                                     0..1
                                 </td>
                                 <td property="rdfs:comment">
-                                    The index of the quality that is set.
+                                    The feature on which the quality is measure on.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -14346,6 +14434,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -14475,6 +14567,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Dataset.identifier">identifier </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Dataset">Dataset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Dataset</div></td>
+								<td></td>
+								<td><a href="#Dataset.isreferencedby">is referenced by </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/isReferencedBy</div></td>
 							</tr>
 						
 					
@@ -16229,6 +16331,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -16304,6 +16410,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Paper.hasrepository">has repository </a></td>
 								<td><div class="shorten">https://linkedpaperswithcode.com/property/hasRepository</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Paper">Paper</a></td>
+								<td><div class="shorten">https://linkedpaperswithcode.com/class/paper</div></td>
+								<td></td>
+								<td><a href="#Paper.references">references </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/references</div></td>
 							</tr>
 						
 					

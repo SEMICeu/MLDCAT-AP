@@ -572,8 +572,10 @@
   shacl:path owl:versionInfo .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DatasetShape/95c69c99a1e3ade043911b51b942f206dea0e68d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby";
-  shacl:class dcat:Resource;
-  shacl:description "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en;
+  shacl:class <https://linkedpaperswithcode.com/class/paper>,
+    dcat:Resource;
+  shacl:description "A related resource that references, cites, or otherwise points to the described resource."@en,
+    "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en;
   shacl:name "is referenced by"@en;
   shacl:path dc:isReferencedBy .
 
@@ -1733,6 +1735,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/3ca0b4a60fc6b1bb99a5f48951c237361c47eb2c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/60b32db6353eb994e20f096114098505957145fc>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/65cf1e33dd53877deac84ec9b7c5dda38aa45e59>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/bb8f1feb9d550240a3b56a28b751bad334c31adf>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/be141beb82405379965eacea839830ade52f23b7>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/c1d40f7102c8201949576e76be48b991b47958d9>,
@@ -1773,6 +1776,12 @@
   shacl:minCount 1;
   shacl:name "date"@en;
   shacl:path dc:date .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.references";
+  shacl:class dcat:Dataset;
+  shacl:description "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en;
+  shacl:name "references"@en;
+  shacl:path dc:references .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PaperShape/bb8f1feb9d550240a3b56a28b751bad334c31adf> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.date";
   shacl:description "A point or period of time associated with an event in the lifecycle of the resource."@en;
@@ -1975,6 +1984,7 @@
   shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/236f0210baaf149903750c43bbe7012c21debb2a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/30b25fb6495edb460ff0fbb23052ae4edc00f388>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/322371a77364a50f049d46180f6192532eea26dc>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/66f17ab947f9a218de93f9de0e85439f7fde9672>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/6abc5b7e3a4da3720d6c5869dbe9ae202ed58096>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/74feba662f4f65577bf45a8dd94f8faec0f03592>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/7b94c69361e00163d16d78016cd994668c7fccda>,
@@ -2000,8 +2010,14 @@
   shacl:name "type"@en;
   shacl:path dc:type .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/66f17ab947f9a218de93f9de0e85439f7fde9672> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.featureindex";
+  shacl:class <http://openml.org/openml#Feature>;
+  shacl:description "The feature on which the quality is measure on."@en;
+  shacl:name "feature index"@en;
+  shacl:path <http://openml.org/openml#featureIndex> .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementShape/6abc5b7e3a4da3720d6c5869dbe9ae202ed58096> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.featureindex";
-  shacl:description "The index of the quality that is set."@en;
+  shacl:description "The feature on which the quality is measure on."@en;
   shacl:maxCount 1;
   shacl:name "feature index"@en;
   shacl:path <http://openml.org/openml#featureIndex> .
