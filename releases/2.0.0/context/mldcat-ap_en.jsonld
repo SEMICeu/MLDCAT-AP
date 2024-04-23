@@ -142,21 +142,22 @@
       "@type": "@id"
     },
     "Dataset.creator": {
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "Dataset.datasetDistribution": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#distribution",
       "@type": "@id"
     },
     "Dataset.description": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/description"
     },
-    "Dataset.distribution": {
-      "@container": "@set",
-      "@id": "http://www.w3.org/ns/dcat#distribution",
-      "@type": "@id"
-    },
     "Dataset.hasVersion": {
       "@container": "@set",
-      "@id": "http://purl.org/dc/terms/hasVersion",
+      "@id": "http://www.w3.org/ns/dcat#hasVersion",
       "@type": "@id"
     },
     "Dataset.identifier": {
@@ -173,9 +174,6 @@
       "@id": "http://purl.org/dc/terms/isVersionOf",
       "@type": "@id"
     },
-    "Dataset.issued": {
-      "@id": "http://purl.org/dc/terms/issued"
-    },
     "Dataset.keyword": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/dcat#keyword"
@@ -188,6 +186,9 @@
     "Dataset.publisher": {
       "@id": "http://purl.org/dc/terms/publisher",
       "@type": "@id"
+    },
+    "Dataset.releaseDate": {
+      "@id": "http://purl.org/dc/terms/issued"
     },
     "Dataset.status": {
       "@id": "http://www.w3.org/ns/adms#status",
@@ -731,6 +732,11 @@
     "Run.errorMessage": {
       "@id": "http://openml.org/openml#errorMessage"
     },
+    "Run.executes": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/mls#realizes",
+      "@type": "@id"
+    },
     "Run.hasEvaluation": {
       "@container": "@set",
       "@id": "http://openml.org/openml#hasEvaluation",
@@ -775,11 +781,6 @@
     },
     "Run.setupString": {
       "@id": "http://openml.org/openml#setupString"
-    },
-    "Run.theAlgorithmExecutedByTheRun": {
-      "@container": "@set",
-      "@id": "http://www.w3.org/ns/mls#realizes",
-      "@type": "@id"
     },
     "RunCollection": "http://openml.org/openml#RunCollection",
     "RunCollection.hasRun": {
