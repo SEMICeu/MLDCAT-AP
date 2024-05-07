@@ -506,6 +506,11 @@
       "@id": "http://openml.org/openml#hasOutputFilePrediction",
       "@type": "@id"
     },
+    "MachineLearningModel.hasProvider": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasProvider",
+      "@type": "@id"
+    },
     "MachineLearningModel.hasRepository": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/hasRepository",

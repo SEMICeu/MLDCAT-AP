@@ -564,6 +564,15 @@
           "sh:path": "http://data.europa.eu/m8g/logo"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dddcbb5371839d6bf753afe8030c4ad597455154",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprovider",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:name": {
+            "en": "has provider"
+          },
+          "sh:path": "http://data.europa.eu/m8g/hasProvider"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader",
           "sh:maxCount": "1",

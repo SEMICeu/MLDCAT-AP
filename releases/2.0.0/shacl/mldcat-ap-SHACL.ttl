@@ -1360,6 +1360,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c3cfd2ec7ba3be5bc30b444648dbc4ff3faa43c6>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/db84124bfa16ef2cceb7157ac9ea78c898642d04>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dddcbb5371839d6bf753afe8030c4ad597455154>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/fc55cadac83ff05637ea2231ec5969864decbbc4>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/fe2ffe0b50cc4c20954873d72d0f815713857ec8>;
@@ -1563,6 +1564,11 @@
   shacl:description "An image or logo of the model."@en;
   shacl:name "logo"@en;
   shacl:path <http://data.europa.eu/m8g/logo> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dddcbb5371839d6bf753afe8030c4ad597455154> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprovider";
+  shacl:class foaf:Agent;
+  shacl:name "has provider"@en;
+  shacl:path <http://data.europa.eu/m8g/hasProvider> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader";
   shacl:maxCount 1;
