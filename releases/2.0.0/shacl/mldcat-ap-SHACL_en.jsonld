@@ -348,18 +348,6 @@
           "sh:path": "http://data.europa.eu/m8g/trainedOn"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/44e0945e932b142aa37108f9c7baac138213357d",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.license",
-          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
-          "sh:description": {
-            "en": "The licence under which the resource is made available."
-          },
-          "sh:name": {
-            "en": "license"
-          },
-          "sh:path": "http://purl.org/dc/terms/license"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction",
           "sh:description": {
@@ -550,6 +538,18 @@
             "en": "has uploader"
           },
           "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dbcf2adef675735c48b532392359af27af5e8b71",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.licence",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "en": "The licence under which the resource is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
@@ -1409,15 +1409,6 @@
           "sh:path": "http://openml.org/openml#hasDependency"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/9de8e7edb47b32c34e5371edeba277587bf31143",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasdependency",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "has dependency"
-          },
-          "sh:path": "http://openml.org/openml#hasDependency"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.identifier",
           "sh:description": {
@@ -1458,18 +1449,6 @@
             "en": "has uploader"
           },
           "sh:path": "http://openml.org/openml#hasUploader"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.title",
-          "sh:description": {
-            "en": "The name assigned to the resource."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#Flow"
@@ -2926,6 +2905,18 @@
           "sh:path": "http://www.w3.org/ns/dcat#dataset"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8772a17b46da88b8aa26c30e24bc3d9ef17fb940",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.creator",
+          "sh:description": {
+            "en": "An entity responsible for the creation of the catalogue."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.description",
           "sh:description": {
@@ -2936,6 +2927,30 @@
             "en": "description"
           },
           "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9e9d878c1c354206edc1d411f33c82d4d01e5a8f",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.modificationdate",
+          "sh:description": {
+            "en": "The most recent date on which the Catalogue was modified."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "modification date"
+          },
+          "sh:path": "http://purl.org/dc/terms/modified"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9eaae476a881de13b9430537ace6e70da7327dbd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.licence",
+          "sh:description": {
+            "en": "A licence under which the Catalogue can be used or reused."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/a0ccdf3bd7f5d161d07f375a26e68c18ca91dc19",
@@ -2950,6 +2965,18 @@
           "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b362d2bdbbe8ba1c689e5554cca2bcbd295546de",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.releasedate",
+          "sh:description": {
+            "en": "\tThe date of formal issuance (e.g., publication) of the Catalogue."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "release date"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b3ec0655204c62a2531244aaeab12f1a2c5e5b5d",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.publisher",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
@@ -2960,6 +2987,30 @@
             "en": "publisher"
           },
           "sh:path": "http://purl.org/dc/terms/publisher"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c0d17764e84e711728581fda7356a51e99a9040a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.identifier",
+          "sh:description": {
+            "en": "A unique identifier of the item."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c1d40f7102c8201949576e76be48b991b47958d9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.creator",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "An entity responsible for the creation of the catalogue."
+          },
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c26f8a3ac6445e9f36176f951acd9d235af5ffd9",
@@ -2974,6 +3025,30 @@
           "sh:path": "http://www.w3.org/ns/dcat#service"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/da28472666d298998330cb159b2c1e90b4446250",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage",
+          "sh:description": {
+            "en": "A web page that acts as the main page for the Catalogue"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "homepage"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/homepage"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/dbcf2adef675735c48b532392359af27af5e8b71",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.licence",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "en": "A licence under which the Catalogue can be used or reused."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.title",
           "sh:description": {
@@ -2984,6 +3059,18 @@
             "en": "title"
           },
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/fb8568b313de736f9184db23272b6317700e9e7e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage",
+          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:description": {
+            "en": "A web page that acts as the main page for the Catalogue"
+          },
+          "sh:name": {
+            "en": "homepage"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/homepage"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Catalog"
@@ -3898,18 +3985,6 @@
             "en": "has learning method type"
           },
           "sh:path": "http://w3id.org/mlso/hasLearningMethodType"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/b10ba00e2d58fe51a71b935f390fcb69dc53d208",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.hasalgorithmtype",
-          "sh:description": {
-            "en": "A relation between an algorithm the category of algorithms that belongs to."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "has algorithm type"
-          },
-          "sh:path": "http://w3id.org/mlso/hasAlgorithmType"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/e2bcc17dd09d47b81f8849751c156a5004602523",

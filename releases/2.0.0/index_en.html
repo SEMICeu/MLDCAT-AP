@@ -51,7 +51,7 @@
       edDraftURI: "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0",
       latestVersion: "https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/",
       specStatus: "LD",
-      publishDate: "2024-04-19",
+      publishDate: "2024-05-07",
       editors: myeditors,
       authors: myauthors,
       github: "SEMICeu/MLDCAT-AP",
@@ -148,7 +148,7 @@ MLDCAT-AP (Machine Learning DCAT-AP) is an application profile that extends DCAT
 <section id="specstatus">
     <h2>Status</h2>
         <p>
-            This Application Profile has the status SEMIC Candidate Recommendation published at 2024-04-19.
+            This Application Profile has the status SEMIC Candidate Recommendation published at 2024-05-07.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="MLDCAT-AP">Changelog</a>.
@@ -543,7 +543,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    0..1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A relation between an algorithm the category of algorithms that belongs to.
@@ -647,10 +647,17 @@ The main entities are those that form the core of the Application Profile.
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Catalogue.dataset">dataset</a>
+                            For this entity the following properties are defined: <a href="#Catalogue.creator">creator</a>
+                            , <a href="#Catalogue.dataset">dataset</a>
                             , <a href="#Catalogue.description">description</a>
+                            , <a href="#Catalogue.homepage">homepage</a>
+                            , <a href="#Catalogue.identifier">identifier</a>
+                            , <a href="#Catalogue.keyword">keyword</a>
+                            , <a href="#Catalogue.licence">licence</a>
+                            , <a href="#Catalogue.modificationdate">modification date</a>
                             , <a href="#Catalogue.publisher">publisher</a>
                             , <a href="#Catalogue.record">record</a>
+                            , <a href="#Catalogue.releasedate">release date</a>
                             , <a href="#Catalogue.service">service</a>
                             , <a href="#Catalogue.title">title</a>
                             .
@@ -691,6 +698,49 @@ The main entities are those that form the core of the Application Profile.
                         </tr>
                     </thead>
                     <tbody class="supertype">
+                        
+                            <tr id="Catalogue.creator"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/creator"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20creator%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.creator" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/creator"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/creator"
+                                           data-placement="right">
+                                        creator</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Agent" data-placement="right">Agent</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An entity responsible for the creation of the catalogue.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
                         
                             <tr id="Catalogue.dataset"
                                 typeof="rdfs:Property"
@@ -778,6 +828,221 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="Catalogue.homepage"
+                                typeof="rdfs:Property"
+                                resource="http://xmlns.com/foaf/0.1/homepage"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20homepage%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.homepage" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://xmlns.com/foaf/0.1/homepage"
+                                           data-toggle="tooltip"
+                                           data-content="http://xmlns.com/foaf/0.1/homepage"
+                                           data-placement="right">
+                                        homepage</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Document" data-placement="right">Document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A web page that acts as the main page for the Catalogue
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Catalogue.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20identifier%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A unique identifier of the item.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Catalogue.keyword"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/dcat#keyword"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20keyword%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.keyword" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/dcat#keyword"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/dcat#keyword"
+                                           data-placement="right">
+                                        keyword</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A keyword or tag describing the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Catalogue.licence"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/license"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20licence%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.licence" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/license"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/license"
+                                           data-placement="right">
+                                        licence</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Licencedocument" data-placement="right">Licence document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A licence under which the Catalogue can be used or reused.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Catalogue.modificationdate"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/modified"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20modification date%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.modificationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/modified"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/modified"
+                                           data-placement="right">
+                                        modification date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#TemporalLiteral" data-placement="right">Temporal Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The most recent date on which the Catalogue was modified.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Catalogue.publisher"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/publisher"
@@ -850,6 +1115,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     This property refers to a Catalogue Record that is part of the Catalogue.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Catalogue.releasedate"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/issued"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20release date%20in%20Catalogue&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Catalogue.releasedate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/issued"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/issued"
+                                           data-placement="right">
+                                        release date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#TemporalLiteral" data-placement="right">Temporal Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    	The date of formal issuance (e.g., publication) of the Catalogue.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2979,7 +3287,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#MachineLearningModel.intendeduse">intended use</a>
                             , <a href="#MachineLearningModel.keyword">keyword</a>
                             , <a href="#MachineLearningModel.language">language</a>
-                            , <a href="#MachineLearningModel.license">license</a>
+                            , <a href="#MachineLearningModel.licence">licence</a>
                             , <a href="#MachineLearningModel.limitations">limitations</a>
                             , <a href="#MachineLearningModel.logo">logo</a>
                             , <a href="#MachineLearningModel.name">name</a>
@@ -3845,12 +4153,12 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="MachineLearningModel.license"
+                            <tr id="MachineLearningModel.licence"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/license"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20license%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23MachineLearningModel.license" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20licence%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23MachineLearningModel.licence" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3860,7 +4168,7 @@ The main entities are those that form the core of the Application Profile.
                                            data-toggle="tooltip"
                                            data-content="http://purl.org/dc/terms/license"
                                            data-placement="right">
-                                        license</a>
+                                        licence</a>
                                 </td>
                                 <td>
                                     
@@ -9139,7 +9447,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1..*
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     
@@ -9397,7 +9705,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     The name assigned to the resource.
@@ -14031,6 +14339,20 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 					
 						
 					
@@ -14044,6 +14366,30 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.creator">creator </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/creator</div></td>
+							</tr>
+						
 					
 						
 							<tr>
@@ -14070,6 +14416,56 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Catalogue">Catalogue</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
 								<td></td>
+								<td><a href="#Catalogue.homepage">homepage </a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/homepage</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.identifier">identifier </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.keyword">keyword </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/dcat#keyword</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.licence">licence </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/license</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.modificationdate">modification date </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/modified</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
 								<td><a href="#Catalogue.publisher">publisher </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/publisher</div></td>
 							</tr>
@@ -14082,6 +14478,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Catalogue.record">record </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/dcat#record</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Catalogue">Catalogue</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+								<td></td>
+								<td><a href="#Catalogue.releasedate">release date </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/issued</div></td>
 							</tr>
 						
 					
@@ -16128,7 +16534,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/MachineLearningModel</div></td>
 								<td></td>
-								<td><a href="#MachineLearningModel.license">license </a></td>
+								<td><a href="#MachineLearningModel.licence">licence </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/license</div></td>
 							</tr>
 						

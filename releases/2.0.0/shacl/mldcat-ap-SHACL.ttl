@@ -78,7 +78,6 @@
   shacl:closed false;
   shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/06dd8527be578ba457fe751ba25cbbf12fb4181e>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/5194505a7ca9aa7799053a0f1ce433f62b60448c>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/b10ba00e2d58fe51a71b935f390fcb69dc53d208>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/e2bcc17dd09d47b81f8849751c156a5004602523>;
   shacl:targetClass <http://www.w3.org/ns/mls#Algorithm> .
 
@@ -93,12 +92,6 @@
   shacl:description "A relation between an algorithm learning method and the category of algorithm learning methods that it belongs to."@en;
   shacl:name "has learning method type"@en;
   shacl:path <http://w3id.org/mlso/hasLearningMethodType> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/b10ba00e2d58fe51a71b935f390fcb69dc53d208> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.hasalgorithmtype";
-  shacl:description "A relation between an algorithm the category of algorithms that belongs to."@en;
-  shacl:maxCount 1;
-  shacl:name "has algorithm type"@en;
-  shacl:path <http://w3id.org/mlso/hasAlgorithmType> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/e2bcc17dd09d47b81f8849751c156a5004602523> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.hasalgorithmtype";
   shacl:class skos:Concept;
@@ -192,11 +185,20 @@
   shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/337cf55721093cc585693a5397601643d59a4c46>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/67dcdb36167ca7969c0532898e11a98e9c2a80f5>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/7b94c69361e00163d16d78016cd994668c7fccda>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8772a17b46da88b8aa26c30e24bc3d9ef17fb940>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9e9d878c1c354206edc1d411f33c82d4d01e5a8f>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9eaae476a881de13b9430537ace6e70da7327dbd>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/a0ccdf3bd7f5d161d07f375a26e68c18ca91dc19>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b362d2bdbbe8ba1c689e5554cca2bcbd295546de>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b3ec0655204c62a2531244aaeab12f1a2c5e5b5d>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c0d17764e84e711728581fda7356a51e99a9040a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c1d40f7102c8201949576e76be48b991b47958d9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c26f8a3ac6445e9f36176f951acd9d235af5ffd9>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>;
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/da28472666d298998330cb159b2c1e90b4446250>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/dbcf2adef675735c48b532392359af27af5e8b71>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/fb8568b313de736f9184db23272b6317700e9e7e>;
   shacl:targetClass dcat:Catalog .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/337cf55721093cc585693a5397601643d59a4c46> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.record";
@@ -217,11 +219,29 @@
   shacl:name "dataset"@en;
   shacl:path dcat:dataset .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8772a17b46da88b8aa26c30e24bc3d9ef17fb940> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.creator";
+  shacl:description "An entity responsible for the creation of the catalogue."@en;
+  shacl:maxCount 1;
+  shacl:name "creator"@en;
+  shacl:path dc:creator .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.description";
   shacl:description "A free-text account of the Catalogue."@en;
   shacl:minCount 1;
   shacl:name "description"@en;
   shacl:path dc:description .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9e9d878c1c354206edc1d411f33c82d4d01e5a8f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.modificationdate";
+  shacl:description "The most recent date on which the Catalogue was modified."@en;
+  shacl:maxCount 1;
+  shacl:name "modification date"@en;
+  shacl:path dc:modified .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9eaae476a881de13b9430537ace6e70da7327dbd> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.licence";
+  shacl:description "A licence under which the Catalogue can be used or reused."@en;
+  shacl:maxCount 1;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/a0ccdf3bd7f5d161d07f375a26e68c18ca91dc19> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.publisher";
   shacl:description "This property refers to an entity (organisation) responsible for making the resource available."@en;
@@ -229,11 +249,29 @@
   shacl:name "publisher"@en;
   shacl:path dc:publisher .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b362d2bdbbe8ba1c689e5554cca2bcbd295546de> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.releasedate";
+  shacl:description """	The date of formal issuance (e.g., publication) of the Catalogue."""@en;
+  shacl:maxCount 1;
+  shacl:name "release date"@en;
+  shacl:path dc:issued .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b3ec0655204c62a2531244aaeab12f1a2c5e5b5d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.publisher";
   shacl:class foaf:Agent;
   shacl:description "This property refers to an entity (organisation) responsible for making the resource available."@en;
   shacl:name "publisher"@en;
   shacl:path dc:publisher .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c0d17764e84e711728581fda7356a51e99a9040a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.identifier";
+  shacl:description "A unique identifier of the item."@en;
+  shacl:maxCount 1;
+  shacl:name "identifier"@en;
+  shacl:path dc:identifier .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c1d40f7102c8201949576e76be48b991b47958d9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.creator";
+  shacl:class foaf:Agent;
+  shacl:description "An entity responsible for the creation of the catalogue."@en;
+  shacl:name "creator"@en;
+  shacl:path dc:creator .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/c26f8a3ac6445e9f36176f951acd9d235af5ffd9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.service";
   shacl:class dcat:DataService;
@@ -241,11 +279,29 @@
   shacl:name "service"@en;
   shacl:path dcat:service .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/da28472666d298998330cb159b2c1e90b4446250> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage";
+  shacl:description "A web page that acts as the main page for the Catalogue"@en;
+  shacl:maxCount 1;
+  shacl:name "homepage"@en;
+  shacl:path foaf:homepage .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/dbcf2adef675735c48b532392359af27af5e8b71> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.licence";
+  shacl:class dc:LicenseDocument;
+  shacl:description "A licence under which the Catalogue can be used or reused."@en;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.title";
   shacl:description "A name given to the Catalogue."@en;
   shacl:minCount 1;
   shacl:name "title"@en;
   shacl:path dc:title .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/fb8568b313de736f9184db23272b6317700e9e7e> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage";
+  shacl:class foaf:Document;
+  shacl:description "A web page that acts as the main page for the Catalogue"@en;
+  shacl:name "homepage"@en;
+  shacl:path foaf:homepage .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ChecksumAlgorithmShape> a shacl:NodeShape;
   shacl:closed false;
@@ -1169,12 +1225,10 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/80fefcd1a8cde98c8d0b49e987b9739b45f3de51>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/99dc863bcbf09a65747a34916868535d8af40c03>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/9daea498107980cdc9485787ddc3a03aa5d3c1c8>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/9de8e7edb47b32c34e5371edeba277587bf31143>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/c0d17764e84e711728581fda7356a51e99a9040a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/db84124bfa16ef2cceb7157ac9ea78c898642d04>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/e6b10372e56872f25144e0c3995ff1ec62327458>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>;
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/e6b10372e56872f25144e0c3995ff1ec62327458>;
   shacl:targetClass <http://openml.org/openml#Flow> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.status";
@@ -1237,11 +1291,6 @@
   shacl:name "has dependency"@en;
   shacl:path <http://openml.org/openml#hasDependency> .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/9de8e7edb47b32c34e5371edeba277587bf31143> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasdependency";
-  shacl:minCount 1;
-  shacl:name "has dependency"@en;
-  shacl:path <http://openml.org/openml#hasDependency> .
-
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/c0d17764e84e711728581fda7356a51e99a9040a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.identifier";
   shacl:description "An unambiguous identifier for the resource."@en;
   shacl:maxCount 1;
@@ -1263,12 +1312,6 @@
   shacl:maxCount 1;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.title";
-  shacl:description "The name assigned to the resource."@en;
-  shacl:minCount 1;
-  shacl:name "title"@en;
-  shacl:path dc:title .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#HexBinaryShape> a shacl:NodeShape;
   shacl:closed false;
@@ -1341,7 +1384,6 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/3a8fcb0a351c6cd00e40b0e8714ea64e230eaa18>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/40313e5690da6ffe24adc84c2634655362636058>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/44e0945e932b142aa37108f9c7baac138213357d>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/6dc2a375f04122fef1497324a860c05b1989d711>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/801537e929e2949a55ca3e052d22022f08a50569>,
@@ -1359,6 +1401,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c1d40f7102c8201949576e76be48b991b47958d9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c3cfd2ec7ba3be5bc30b444648dbc4ff3faa43c6>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/db84124bfa16ef2cceb7157ac9ea78c898642d04>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dbcf2adef675735c48b532392359af27af5e8b71>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dddcbb5371839d6bf753afe8030c4ad597455154>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458>,
@@ -1454,12 +1497,6 @@
   shacl:maxCount 1;
   shacl:name "trained on"@en;
   shacl:path <http://data.europa.eu/m8g/trainedOn> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/44e0945e932b142aa37108f9c7baac138213357d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.license";
-  shacl:class dc:LicenseDocument;
-  shacl:description "The licence under which the resource is made available."@en;
-  shacl:name "license"@en;
-  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction";
   shacl:description "The file in which the model is expressed."@en;
@@ -1558,6 +1595,12 @@
   shacl:class foaf:Agent;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dbcf2adef675735c48b532392359af27af5e8b71> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.licence";
+  shacl:class dc:LicenseDocument;
+  shacl:description "The licence under which the resource is made available."@en;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.logo";
   shacl:class <http://data.europa.eu/m8g/ImageObject>;
