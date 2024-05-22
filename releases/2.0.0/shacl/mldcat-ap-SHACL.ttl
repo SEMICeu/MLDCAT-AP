@@ -1288,6 +1288,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/9daea498107980cdc9485787ddc3a03aa5d3c1c8> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasdependency";
   shacl:class <http://openml.org/openml#Library>;
+  shacl:description "The libraries that a flow depends on."@en;
   shacl:name "has dependency"@en;
   shacl:path <http://openml.org/openml#hasDependency> .
 
@@ -1305,10 +1306,12 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/db84124bfa16ef2cceb7157ac9ea78c898642d04> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasuploader";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/e6b10372e56872f25144e0c3995ff1ec62327458> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasuploader";
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:maxCount 1;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
@@ -1494,6 +1497,7 @@
   shacl:path <http://data.europa.eu/m8g/hasVariation> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/40313e5690da6ffe24adc84c2634655362636058> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainedon";
+  shacl:description "The training dataset used to train the machine learning model."@en;
   shacl:maxCount 1;
   shacl:name "trained on"@en;
   shacl:path <http://data.europa.eu/m8g/trainedOn> .
@@ -1542,6 +1546,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/9b6937ed7c7bcbe5d153673c99cf0e1f9100fad6> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainedon";
   shacl:class dcat:Dataset;
+  shacl:description "The training dataset used to train the machine learning model."@en;
   shacl:name "trained on"@en;
   shacl:path <http://data.europa.eu/m8g/trainedOn> .
 
@@ -1576,12 +1581,14 @@
   shacl:path <http://openml.org/openml#hasOutputFilePrediction> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/bd70758c74c0383865b0344b21228e87ab3d7302> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainedon";
+  shacl:description "The training dataset used to train the machine learning model."@en;
   shacl:minCount 1;
   shacl:name "trained on"@en;
   shacl:path <http://data.europa.eu/m8g/trainedOn> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c1d40f7102c8201949576e76be48b991b47958d9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.creator";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for making the resource."@en;
   shacl:name "creator"@en;
   shacl:path dc:creator .
 
@@ -1593,6 +1600,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/db84124bfa16ef2cceb7157ac9ea78c898642d04> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
 
@@ -1610,10 +1618,12 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dddcbb5371839d6bf753afe8030c4ad597455154> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprovider";
   shacl:class foaf:Agent;
+  shacl:description "A natural or legal person, public authority, agency or other body that develops a Machine Learning Model or places it on the market or puts the it into service under its own name or trademark, whether for payment or free of charge."@en;
   shacl:name "has provider"@en;
   shacl:path <http://data.europa.eu/m8g/hasProvider> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader";
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:maxCount 1;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
@@ -1626,6 +1636,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/fe2ffe0b50cc4c20954873d72d0f815713857ec8> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.contributor";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for making contributions to the resource."@en;
   shacl:name "contributor"@en;
   shacl:path dc:contributor .
 
@@ -1780,12 +1791,14 @@
   shacl:targetClass <https://linkedpaperswithcode.com/class/paper> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/02cdb01e26c51e7f0c6faaab7db8291d68ff7edc> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument";
+  shacl:description "This property specifies the url or location of the document itself."@en;
   shacl:maxCount 1;
   shacl:name "has document"@en;
   shacl:path <http://data.europa.eu/m8g/hasDocument> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/1cf19b8f20dc9c7b053680153b1fea667f845f4a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasrepository";
   shacl:class <https://linkedpaperswithcode.com/class/repository>;
+  shacl:description "This property specifies a repository."@en;
   shacl:name "has repository"@en;
   shacl:path <https://linkedpaperswithcode.com/property/hasRepository> .
 
@@ -1802,6 +1815,7 @@
   shacl:path dc:abstract .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/60b32db6353eb994e20f096114098505957145fc> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument";
+  shacl:description "This property specifies the url or location of the document itself."@en;
   shacl:minCount 1;
   shacl:name "has document"@en;
   shacl:path <http://data.europa.eu/m8g/hasDocument> .
@@ -1826,11 +1840,13 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/be141beb82405379965eacea839830ade52f23b7> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument";
   shacl:class foaf:Document;
+  shacl:description "This property specifies the url or location of the document itself."@en;
   shacl:name "has document"@en;
   shacl:path <http://data.europa.eu/m8g/hasDocument> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/c1d40f7102c8201949576e76be48b991b47958d9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.creator";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for making the resource."@en;
   shacl:name "creator"@en;
   shacl:path dc:creator .
 
@@ -1842,6 +1858,7 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/d97c8dfe754f6ee5ceb4ed84943e5960cef9e457> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasmodel";
   shacl:class <http://data.europa.eu/m8g/MachineLearningModel>;
+  shacl:description "The model that is used by a paper or an evaluation."@en;
   shacl:name "has model"@en;
   shacl:path <https://linkedpaperswithcode.com/property/hasModel> .
 
@@ -2035,6 +2052,7 @@
   shacl:path dc:type .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/30b25fb6495edb460ff0fbb23052ae4edc00f388> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.intervalstart";
+  shacl:description "The minimum value of the Quality Measure."@en;
   shacl:maxCount 1;
   shacl:name "interval start"@en;
   shacl:path <http://openml.org/openml#intervalStart> .
@@ -2076,6 +2094,7 @@
   shacl:path <http://www.w3.org/ns/dqv#value> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/a07d612ff8fcb71acf6529aa9452dcfb4cff1c89> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.intervalend";
+  shacl:description "The maximum value of the Quality Measure."@en;
   shacl:maxCount 1;
   shacl:name "interval end"@en;
   shacl:path <http://openml.org/openml#intervalEnd> .
@@ -2268,10 +2287,12 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/db84124bfa16ef2cceb7157ac9ea78c898642d04> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasuploader";
   shacl:class foaf:Agent;
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/e6b10372e56872f25144e0c3995ff1ec62327458> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasuploader";
+  shacl:description "An entity responsible for uploading the resource."@en;
   shacl:maxCount 1;
   shacl:name "has uploader"@en;
   shacl:path <http://openml.org/openml#hasUploader> .
