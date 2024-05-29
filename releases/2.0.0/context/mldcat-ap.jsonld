@@ -756,6 +756,19 @@
     "Resource": "http://www.w3.org/2000/01/rdf-schema#Resource",
     "RightsStatement": "http://purl.org/dc/terms/RightsStatement",
     "Risk": "http://data.europa.eu/m8g/Risk",
+    "Risk.description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "Risk.mitigation": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/mitigation"
+    },
+    "Risk.probability": {
+      "@id": "http://data.europa.eu/m8g/probability"
+    },
+    "Risk.severity": {
+      "@id": "http://data.europa.eu/m8g/severity"
+    },
     "Risk.title": {
       "@id": "http://purl.org/dc/terms/title"
     },

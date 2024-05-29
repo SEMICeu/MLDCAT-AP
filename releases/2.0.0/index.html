@@ -61,7 +61,7 @@
       edDraftURI: "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0",
       latestVersion: "https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/",
       specStatus: "LD",
-      publishDate: "2024-05-22",
+      publishDate: "2024-05-29",
       editors: myeditors,
       authors: myauthors,
       github: "SEMICeu/MLDCAT-AP",
@@ -158,7 +158,7 @@ MLDCAT-AP (Machine Learning DCAT-AP) is an application profile that extends DCAT
 <section id="specstatus">
     <h2>Status</h2>
         <p>
-            This Application Profile has the status SEMIC Candidate Recommendation published at 2024-05-22.
+            This Application Profile has the status SEMIC Candidate Recommendation published at 2024-05-29.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="MLDCAT-AP">Changelog</a>.
@@ -11890,7 +11890,7 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    A foreseeable harm or misunderstanding.
+                    The combination of the probability of an occurrence of harm and the severity of that harm
                 </dd>
                 
                 
@@ -11900,7 +11900,11 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Risk.title">title</a>
+                            For this entity the following properties are defined: <a href="#Risk.description">description</a>
+                            , <a href="#Risk.mitigation">mitigation</a>
+                            , <a href="#Risk.probability">probability</a>
+                            , <a href="#Risk.severity">severity</a>
+                            , <a href="#Risk.title">title</a>
                             .
                     </dd>
                 
@@ -11940,6 +11944,178 @@ They are included in the Application Profile because they form the range of prop
                     </thead>
                     <tbody class="supertype">
                         
+                            <tr id="Risk.description"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20description%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Risk.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An account of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.mitigation"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/mitigation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20mitigation%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Risk.mitigation" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/mitigation"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/mitigation"
+                                           data-placement="right">
+                                        mitigation</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The action of reducing the severity of the risk.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.probability"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/probability"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20probability%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Risk.probability" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/probability"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/probability"
+                                           data-placement="right">
+                                        probability</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The likelihood that a given event will occur.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.severity"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/severity"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20severity%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.0.0%23Risk.severity" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/severity"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/severity"
+                                           data-placement="right">
+                                        severity</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The extent of the damage resulting from an event occurring.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Risk.title"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/title"
@@ -11968,7 +12144,7 @@ They are included in the Application Profile because they form the range of prop
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    
+                                    A name associated to the risk.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -17261,9 +17437,65 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
 					
 						
 					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Risk">Risk</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/Risk</div></td>
+								<td></td>
+								<td><a href="#Risk.description">description </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Risk">Risk</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/Risk</div></td>
+								<td></td>
+								<td><a href="#Risk.mitigation">mitigation </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/mitigation</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Risk">Risk</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/Risk</div></td>
+								<td></td>
+								<td><a href="#Risk.probability">probability </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/probability</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Risk">Risk</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/Risk</div></td>
+								<td></td>
+								<td><a href="#Risk.severity">severity </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/severity</div></td>
+							</tr>
+						
 					
 						
 							<tr>

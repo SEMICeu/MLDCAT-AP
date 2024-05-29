@@ -635,8 +635,59 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description",
+          "sh:description": {
+            "en": "An account of the resource."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/4daa9aacc626099b659ec07cfb0777d05d7d4a38",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.severity",
+          "sh:description": {
+            "en": "The extent of the damage resulting from an event occurring."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "severity"
+          },
+          "sh:path": "http://data.europa.eu/m8g/severity"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description",
+          "sh:description": {
+            "en": "An account of the resource."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/99bdaf21611408d1c559c296b8504976dba55b93",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.probability",
+          "sh:description": {
+            "en": "The likelihood that a given event will occur."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "probability"
+          },
+          "sh:path": "http://data.europa.eu/m8g/probability"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title",
+          "sh:description": {
+            "en": "A name associated to the risk."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "en": "title"
@@ -646,6 +697,9 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title",
+          "sh:description": {
+            "en": "A name associated to the risk."
+          },
           "sh:minCount": "1",
           "sh:name": {
             "en": "title"

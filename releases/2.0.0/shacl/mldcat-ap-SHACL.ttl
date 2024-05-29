@@ -2125,16 +2125,46 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
+  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/362d1bf0eab8051024cf5ec1345eb1ce50762580>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/4daa9aacc626099b659ec07cfb0777d05d7d4a38>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/8f61614144aa7bca188b24f5976593dc08aad0e6>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/99bdaf21611408d1c559c296b8504976dba55b93>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>;
   shacl:targetClass <http://data.europa.eu/m8g/Risk> .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/362d1bf0eab8051024cf5ec1345eb1ce50762580> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description";
+  shacl:description "An account of the resource."@en;
+  shacl:maxCount 1;
+  shacl:name "description"@en;
+  shacl:path dc:description .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/4daa9aacc626099b659ec07cfb0777d05d7d4a38> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.severity";
+  shacl:description "The extent of the damage resulting from an event occurring."@en;
+  shacl:maxCount 1;
+  shacl:name "severity"@en;
+  shacl:path <http://data.europa.eu/m8g/severity> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/8f61614144aa7bca188b24f5976593dc08aad0e6> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description";
+  shacl:description "An account of the resource."@en;
+  shacl:minCount 1;
+  shacl:name "description"@en;
+  shacl:path dc:description .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/99bdaf21611408d1c559c296b8504976dba55b93> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.probability";
+  shacl:description "The likelihood that a given event will occur."@en;
+  shacl:maxCount 1;
+  shacl:name "probability"@en;
+  shacl:path <http://data.europa.eu/m8g/probability> .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title";
+  shacl:description "A name associated to the risk."@en;
   shacl:maxCount 1;
   shacl:name "title"@en;
   shacl:path dc:title .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title";
+  shacl:description "A name associated to the risk."@en;
   shacl:minCount 1;
   shacl:name "title"@en;
   shacl:path dc:title .
