@@ -1,5 +1,5 @@
 {
-    "@context": "https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/context/mldcat-ap.jsonld",
+    "@context": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/context/mldcat-ap.jsonld",
     "@graph": [
         {
             "@id": "http://openml.org/openml/dataset/31",

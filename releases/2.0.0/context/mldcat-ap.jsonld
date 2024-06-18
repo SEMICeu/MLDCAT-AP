@@ -481,7 +481,9 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
+    "HexBinary": "http://www.w3.org/2001/XMLSchema#hexBinary",
     "ImageObject": "http://data.europa.eu/m8g/ImageObject",
+    "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "Library": "http://openml.org/openml#Library",
     "Library.title": {
       "@id": "http://purl.org/dc/terms/title"
@@ -530,6 +532,11 @@
     },
     "MachineLearningModel.hasOutputFilePrediction": {
       "@id": "http://openml.org/openml#hasOutputFilePrediction",
+      "@type": "@id"
+    },
+    "MachineLearningModel.hasPrediction": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasPrediction",
       "@type": "@id"
     },
     "MachineLearningModel.hasProvider": {
@@ -587,12 +594,18 @@
     "MachineLearningModel.name": {
       "@id": "http://purl.org/dc/terms/title"
     },
+    "MachineLearningModel.runnedOn": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/runnedOn",
+      "@type": "@id"
+    },
     "MachineLearningModel.testedOn": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/testedOn",
       "@type": "@id"
     },
     "MachineLearningModel.trainedOn": {
+      "@container": "@set",
       "@id": "http://data.europa.eu/m8g/trainedOn",
       "@type": "@id"
     },
@@ -614,6 +627,7 @@
     },
     "Measure": "http://openml.org/openml#Measure",
     "MediaTypeOrExtent": "http://purl.org/dc/terms/MediaTypeOrExtent",
+    "NonNegativeInteger": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "OutputFileDescription": "http://openml.org/openml#OutputFileDescription",
     "OutputFileDescription.id": {
       "@id": "http://purl.org/dc/terms/identifier"
@@ -906,9 +920,6 @@
     "TaskType.title": {
       "@id": "http://purl.org/dc/terms/title"
     },
-    "TemporalLiteral": "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "Xsd:hexBinary": "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "Xsd:integer": "http://www.w3.org/2001/XMLSchema#integer",
-    "Xsd:nonNegativeInteger": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    "TemporalLiteral": "http://www.w3.org/2000/01/rdf-schema#Literal"
   }
 }

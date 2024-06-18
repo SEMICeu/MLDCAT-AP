@@ -120,6 +120,30 @@
           "sh:path": "http://data.europa.eu/m8g/download"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EngagementShape/42ac60286a2dd3fae26fd143d55d104820a4cfa6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Engagement.download",
+          "sh:description": {
+            "en": "The number of downloads of the machine learning model."
+          },
+          "sh:name": {
+            "en": "download"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/download"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EngagementShape/67a3a19307770c116b04ea5625ad2a1fc3bf1fb4",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Engagement.like",
+          "sh:description": {
+            "en": "The number of likes the machine learning model received."
+          },
+          "sh:name": {
+            "en": "like"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/like"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EngagementShape/9a454a5a2034224e68c6d7f6f37b15b865dc5b73",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Engagement.download",
           "sh:description": {
@@ -171,6 +195,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/00e08d7f2fe5a17c59705d38fad158427b438296",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasrepository",
+          "sh:description": {
+            "en": "The repository associated."
+          },
+          "sh:name": {
+            "en": "has repository"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasRepository"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/03f872d74868adb8a0b2cd9f98e45e3e8825f0fa",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.validatedon",
           "sh:class": "http://www.w3.org/ns/dcat#Dataset",
@@ -181,6 +217,30 @@
             "en": "validated on"
           },
           "sh:path": "http://data.europa.eu/m8g/validatedOn"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/06ff27d600ebfab82f26c6758d77cec5feed8a17",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.intendeduse",
+          "sh:description": {
+            "en": "The objective or purpose of the model."
+          },
+          "sh:name": {
+            "en": "intended use"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#intendedUse"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.logo",
+          "sh:description": {
+            "en": "An image or logo of the model."
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/logo"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/0e6e22dc13d0b206842d78a0280d195612318d56",
@@ -255,6 +315,18 @@
           "sh:path": "http://data.europa.eu/m8g/hasEngagement"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/2400a356c445d175f7ced0a5a473c51df498dcad",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.created",
+          "sh:description": {
+            "en": "Date of creation of the resource."
+          },
+          "sh:name": {
+            "en": "created"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/created"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/29ba27566ab1f32c8bb73f3492436d4bd868d3d2",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.language",
           "sh:class": "http://purl.org/dc/terms/LinguisticSystem",
@@ -265,6 +337,30 @@
             "en": "language"
           },
           "sh:path": "http://purl.org/dc/terms/language"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/2fd3850ab494807d4d5cc3ac00cc92ede3ec5052",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.contributor",
+          "sh:description": {
+            "en": "An entity responsible for making contributions to the resource."
+          },
+          "sh:name": {
+            "en": "contributor"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/contributor"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/3129820ba639199dc3855b54ed02c9df71571866",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.evaluationresults",
+          "sh:description": {
+            "en": "A description of the evaluation against the validation dataset."
+          },
+          "sh:name": {
+            "en": "evaluation results"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#evaluationResults"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/31aa7a8aa9973dae8ae713419f96fdaf0aaa6448",
@@ -339,18 +435,6 @@
           "sh:path": "http://data.europa.eu/m8g/hasVariation"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/40313e5690da6ffe24adc84c2634655362636058",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainedon",
-          "sh:description": {
-            "en": "The training dataset used to train the machine learning model."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "trained on"
-          },
-          "sh:path": "http://data.europa.eu/m8g/trainedOn"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction",
           "sh:description": {
@@ -361,6 +445,126 @@
             "en": "has output file prediction"
           },
           "sh:path": "http://openml.org/openml#hasOutputFilePrediction"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.type",
+          "sh:description": {
+            "en": "The nature or genre of the resource."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f98147c83e4a53862e7dcd3413d16b4eff55db2",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.testedon",
+          "sh:description": {
+            "en": "The testing dataset used to evaluate the machine learning model."
+          },
+          "sh:name": {
+            "en": "tested on"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/testedOn"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/51a87039100a9397dd0b7c7921434786ad9789d6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainingprocess",
+          "sh:description": {
+            "en": "A description of the training process."
+          },
+          "sh:name": {
+            "en": "training process"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#trainingProcess"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/521be4314b4bb7c49af726be6045b53ad08bc177",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader",
+          "sh:description": {
+            "en": "An entity responsible for uploading the resource."
+          },
+          "sh:name": {
+            "en": "has uploader"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/595d669c717f5fdeb9cb52aa5e1fdeaac19004f9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasengagement",
+          "sh:description": {
+            "en": "Statistics resulting of user engagement."
+          },
+          "sh:name": {
+            "en": "has engagement"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasEngagement"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/5b368baf002180700705903d76b9632c34d33c20",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.runnedon",
+          "sh:description": {
+            "en": "The dataset on which a machine learning mode is executed."
+          },
+          "sh:name": {
+            "en": "runned on"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/runnedOn"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/5b3cd72708414496a600a6fb4cb8607973347071",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasvariation",
+          "sh:description": {
+            "en": "The model that is variant of this model."
+          },
+          "sh:name": {
+            "en": "has variation"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasVariation"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.keyword",
+          "sh:description": {
+            "en": "A keyword or tag describing the resource."
+          },
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/5c00085225811cf3c496c271219a028c71b8547d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.bias",
+          "sh:description": {
+            "en": "A description of the possible biases affecting the overall output of the model."
+          },
+          "sh:name": {
+            "en": "bias"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#bias"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.description",
+          "sh:description": {
+            "en": "An account of the resource."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/6dc2a375f04122fef1497324a860c05b1989d711",
@@ -375,6 +579,18 @@
           "sh:path": "http://openml.org/openml#version"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/7d4c667652f23f3a51353271e3800bca87ed3f68",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.creator",
+          "sh:description": {
+            "en": "An entity responsible for making the resource."
+          },
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/801537e929e2949a55ca3e052d22022f08a50569",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.created",
           "sh:description": {
@@ -387,6 +603,18 @@
           "sh:path": "http://purl.org/dc/terms/created"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/81d95ea4231e28c92d4dd43c0817d17f547afe98",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.limitations",
+          "sh:description": {
+            "en": "The limited capabilities of the model."
+          },
+          "sh:name": {
+            "en": "limitations"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#limitations"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/82a0088780f37bca3cf3cf432d6e6a82876dd6a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainingprocess",
           "sh:description": {
@@ -397,6 +625,18 @@
             "en": "training process"
           },
           "sh:path": "http://openml.org/openml#trainingProcess"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/8913b4aedaf16c8032ed289550ad2d83e94c97fd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.finetunedfrom",
+          "sh:description": {
+            "en": "The model from on which this model has been fine tuned."
+          },
+          "sh:name": {
+            "en": "fine tuned from"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/fineTunedFrom"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41",
@@ -447,6 +687,18 @@
           "sh:path": "http://data.europa.eu/m8g/trainedOn"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/a38e33decb21ddebecf480e2a0f61129b2715646",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.howtouse",
           "sh:description": {
@@ -457,6 +709,30 @@
             "en": "how to use"
           },
           "sh:path": "http://openml.org/openml#howToUse"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/a40b7a6f3c941d00eb296c12646c8a164a538f6a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprediction",
+          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:description": {
+            "en": "The predicted dataset generated as output of a machine learning model."
+          },
+          "sh:name": {
+            "en": "has prediction"
+          },
+          "sh:path": "http://data.europa.eu/m8g/hasPrediction"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/a765ad590d8bbf948c74779425be566fc507d50a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.runnedon",
+          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:description": {
+            "en": "The dataset on which a machine learning mode is executed."
+          },
+          "sh:name": {
+            "en": "runned on"
+          },
+          "sh:path": "http://data.europa.eu/m8g/runnedOn"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/b05d80d7f4e190836768b76560ec614a2ec10e27",
@@ -481,6 +757,18 @@
             "en": "fine tuned from"
           },
           "sh:path": "http://data.europa.eu/m8g/fineTunedFrom"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/b619ca5330ec1e53f13cce61e0437daed8814534",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasrisk",
+          "sh:description": {
+            "en": "It refers to a possible risk that can occur."
+          },
+          "sh:name": {
+            "en": "has risk"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasRisk"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/b7c1682ac55110d92f125d5980cda87210c9f892",
@@ -519,6 +807,18 @@
           "sh:path": "http://data.europa.eu/m8g/trainedOn"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/bda64b6b9c27a850b8782b17019e888c5edd7ce0",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.version",
+          "sh:description": {
+            "en": "The current version of the modeL"
+          },
+          "sh:name": {
+            "en": "version"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#version"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c1d40f7102c8201949576e76be48b991b47958d9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.creator",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
@@ -543,6 +843,42 @@
           "sh:path": "http://openml.org/openml#evaluationResults"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c79c3f1acd7a555dfeea3ee6bbf8f1353bb968d1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.validatedon",
+          "sh:description": {
+            "en": "The validation dataset used to fine-tune the machine learning model."
+          },
+          "sh:name": {
+            "en": "validated on"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/validatedOn"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/c9de12887ed96497a2822f278c35a1d6a07cf755",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction",
+          "sh:description": {
+            "en": "The file in which the model is expressed."
+          },
+          "sh:name": {
+            "en": "has output file prediction"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasOutputFilePrediction"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/d19f47dededfef77ff67cf0087abc5a1b1224826",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprovider",
+          "sh:description": {
+            "en": "A natural or legal person, public authority, agency or other body that develops a Machine Learning Model or places it on the market or puts the it into service under its own name or trademark, whether for payment or free of charge."
+          },
+          "sh:name": {
+            "en": "has provider"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasProvider"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/db84124bfa16ef2cceb7157ac9ea78c898642d04",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
@@ -553,6 +889,18 @@
             "en": "has uploader"
           },
           "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/db878f1cb93930f64561d0504123c66feacfad5a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.language",
+          "sh:description": {
+            "en": "A language of the resource."
+          },
+          "sh:name": {
+            "en": "language"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/language"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/dbcf2adef675735c48b532392359af27af5e8b71",
@@ -591,6 +939,18 @@
           "sh:path": "http://data.europa.eu/m8g/hasProvider"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b08d88d2235f5646f52d6d5b7cbe3396532967",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasbibliographicreference",
+          "sh:description": {
+            "en": "The reference to a paper."
+          },
+          "sh:name": {
+            "en": "has bibliographic reference"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasBibliographicReference"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasuploader",
           "sh:description": {
@@ -601,6 +961,54 @@
             "en": "has uploader"
           },
           "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/e9d118da1b9665f782d440a94730d7052e06e118",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.howtouse",
+          "sh:description": {
+            "en": "An explanation of how to use or deploy the model."
+          },
+          "sh:name": {
+            "en": "how to use"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#howToUse"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/f30149ffb6ec9d00dd5866b052105729fa27d02a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.licence",
+          "sh:description": {
+            "en": "The licence under which the resource is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/f594089021a9c74e82077c61e27093a078f693c8",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasprediction",
+          "sh:description": {
+            "en": "The predicted dataset generated as output of a machine learning model."
+          },
+          "sh:name": {
+            "en": "has prediction"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasPrediction"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/f93bb1218b12f5c67d9a4cc503745622953d4aaa",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.trainedon",
+          "sh:description": {
+            "en": "The training dataset used to train the machine learning model."
+          },
+          "sh:name": {
+            "en": "trained on"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/trainedOn"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/fc55cadac83ff05637ea2231ec5969864decbbc4",
@@ -659,6 +1067,30 @@
           "sh:path": "http://data.europa.eu/m8g/severity"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description",
+          "sh:description": {
+            "en": "An account of the resource."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/7bec943f77622717cf0383443e3469674a1358c8",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.severity",
+          "sh:description": {
+            "en": "The extent of the damage resulting from an event occurring."
+          },
+          "sh:name": {
+            "en": "severity"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/severity"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.description",
           "sh:description": {
@@ -695,6 +1127,30 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title",
+          "sh:description": {
+            "en": "A name associated to the risk."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/da454f290cb6c67095cc0bce535939155643806a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.probability",
+          "sh:description": {
+            "en": "The likelihood that a given event will occur."
+          },
+          "sh:name": {
+            "en": "probability"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/probability"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.title",
           "sh:description": {
@@ -705,6 +1161,18 @@
             "en": "title"
           },
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RiskShape/fd8a4b415f9532486f745090f5d0efd75af749ff",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Risk.mitigation",
+          "sh:description": {
+            "en": "The action of reducing the severity of the risk."
+          },
+          "sh:name": {
+            "en": "mitigation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/mitigation"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/Risk"
@@ -731,6 +1199,15 @@
             "en": "description"
           },
           "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/521be4314b4bb7c49af726be6045b53ad08bc177",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.hasuploader",
+          "sh:name": {
+            "en": "has uploader"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasUploader"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/575690151e9082fed0c6a338a0a7789e5003cc24",
@@ -772,6 +1249,36 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/9ebdae98241e4f451997ba6a4a2252e28ea561d9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.creationdate",
+          "sh:name": {
+            "en": "creation date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#creationDate"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.identifier",
           "sh:description": {
@@ -793,6 +1300,15 @@
           "sh:path": "http://openml.org/openml#creationDate"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/c444cc01076cf811746340d7f86d0733076eca56",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.visibility",
+          "sh:name": {
+            "en": "visibility"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#visibility"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.title",
           "sh:maxCount": "1",
@@ -809,6 +1325,15 @@
             "en": "visibility"
           },
           "sh:path": "http://openml.org/openml#visibility"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Collection.title",
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CollectionShape/db84124bfa16ef2cceb7157ac9ea78c898642d04",
@@ -877,6 +1402,30 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataQualityShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataquality.description",
+          "sh:description": {
+            "en": "An explanation of the quality type."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataQualityShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataquality.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataQualityShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataquality.identifier",
           "sh:description": {
@@ -898,6 +1447,18 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataQualityShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataquality.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -981,6 +1542,18 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.type",
+          "sh:description": {
+            "en": "A classification of the resource."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/60448300559a231c7fbe42095a2e00e681c355c1",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.hasparameter",
           "sh:class": "http://openml.org/openml#Parameter",
@@ -1000,6 +1573,15 @@
             "en": "identifier"
           },
           "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/7340f915e303c67321fcfc9928bb6810c184fdc3",
@@ -1032,6 +1614,27 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/929dd5e30e40bfa9d8a289f1d9a34b23705ae2c1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.hasparameter",
+          "sh:name": {
+            "en": "has parameter"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasParameter"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.identifier",
           "sh:description": {
@@ -1054,6 +1657,27 @@
             "en": "title"
           },
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/f4185b7ce09ab77e451632c47658c3152ae3135d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EstimationProcedure.datasplitsURL",
+          "sh:name": {
+            "en": "data splits URL"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#dataSplitsURL"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EstimationProcedureShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -1085,6 +1709,24 @@
           "sh:path": "http://openml.org/openml#sample"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/0c5186bf5ffb51acf13bf1b4f7f81d7069ffc31b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.repeat",
+          "sh:name": {
+            "en": "repeat"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#repeat"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/1347fa3c6fb7f413d350f188aafee894a89fc6d9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.stdev",
+          "sh:name": {
+            "en": "stdev"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#stdev"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/154e71d6dc0f952b89fd2e9f68d071c3f6e42616",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.hasflow",
           "sh:class": "http://openml.org/openml#Flow",
@@ -1103,6 +1745,15 @@
           "sh:path": "http://openml.org/openml#intervalStart"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/34ba47520d520f97bbcdea3c6fd3dc176d312689",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.sample",
+          "sh:name": {
+            "en": "sample"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#sample"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/388aea194bc8d3d0c7251c8dca3f58ec88a4afc3",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.samplesize",
           "sh:maxCount": "1",
@@ -1110,6 +1761,24 @@
             "en": "sample size"
           },
           "sh:path": "http://openml.org/openml#sampleSize"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.value",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/3e28a58e095830f46dc732d0aaca2d5045031c82",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.label",
+          "sh:name": {
+            "en": "label"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/3e779df5a94a3c5e8a20908d53988e76e25a9f75",
@@ -1148,6 +1817,27 @@
           "sh:path": "http://openml.org/openml#intervalEnd"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/bfed1db27b66d405a8e4d66436c106ce0ff0a98e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.fold",
+          "sh:name": {
+            "en": "fold"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#fold"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.identifier",
           "sh:description": {
@@ -1169,6 +1859,33 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/c78d7706b43548595b4467e3881689879f99bf16",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.arraydata",
+          "sh:name": {
+            "en": "array data"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#arrayData"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/cbf6bacd11e9fdadf66452e4777e3ab6d87fa450",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.hasflow",
+          "sh:name": {
+            "en": "has flow"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasFlow"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.title",
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/db15b7df9d94d285bd33d0966a4d2357f8333c31",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.value",
           "sh:maxCount": "1",
@@ -1176,6 +1893,15 @@
             "en": "value"
           },
           "sh:path": "http://openml.org/openml#value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/dcdd34d236afcea2dff359245e3e850fff527dae",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.intervalend",
+          "sh:name": {
+            "en": "interval end"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#intervalEnd"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/dd691ce5054b7a4098d2d14a32d28dc9cf556c1e",
@@ -1194,6 +1920,24 @@
             "en": "stdev"
           },
           "sh:path": "http://openml.org/openml#stdev"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/f514b6cd6ad42e2721caf84ccafa8d75b061a344",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.intervalstart",
+          "sh:name": {
+            "en": "interval start"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#intervalStart"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/f68b419ce51a53cbd5369b6b7d6a93cdc6b9a200",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Evaluation.samplesize",
+          "sh:name": {
+            "en": "sample size"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#sampleSize"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -1222,6 +1966,15 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.value",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#value"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/4dffd5261116dadc2a8fb45ae6588922fe5946b1",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.valuegood",
           "sh:maxCount": "1",
@@ -1229,6 +1982,33 @@
             "en": "value good"
           },
           "sh:path": "http://openml.org/openml#valueGood"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/7d225eb8f62de8369cd619a623c24c906e45b0f8",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.valuegood",
+          "sh:name": {
+            "en": "value good"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#valueGood"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/847a833648dd13df3c43c536ea70404d5499a868",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.implementation",
+          "sh:name": {
+            "en": "implementation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#implementation"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b",
@@ -1240,6 +2020,15 @@
           "sh:path": "http://openml.org/openml#value"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/a35b1d938e765d76649548d262ca112f91daa6b9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.valuebad",
+          "sh:name": {
+            "en": "value bad"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#valueBad"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.title",
           "sh:description": {
@@ -1249,6 +2038,18 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#EvaluationMeasureShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#EvaluationMeasure.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -1335,6 +2136,30 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FeatureShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Feature.type",
+          "sh:description": {
+            "en": "A classification of the resource."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FeatureShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Feature.description",
+          "sh:description": {
+            "en": "An explanation of the attribute."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FeatureShape/74feba662f4f65577bf45a8dd94f8faec0f03592",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Feature.type",
           "sh:description": {
@@ -1359,6 +2184,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FeatureShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Feature.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FeatureShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Feature.title",
           "sh:description": {
@@ -1378,6 +2215,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/0e527243fc7781144b48404f63919edbb54806eb",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasdependency",
+          "sh:description": {
+            "en": "The libraries that a flow depends on."
+          },
+          "sh:name": {
+            "en": "has dependency"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasDependency"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.status",
@@ -1415,6 +2264,15 @@
           "sh:path": "http://openml.org/openml#hasFlowParameter"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/32a707687b3fc18c29fe4d3f81d8120a978bc3e1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasflowparameter",
+          "sh:name": {
+            "en": "has flow parameter"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasFlowParameter"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.description",
           "sh:maxCount": "1",
@@ -1422,6 +2280,15 @@
             "en": "description"
           },
           "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.status",
+          "sh:name": {
+            "en": "status"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#status"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/45e40d6a74fddbdf912df94dbfa132c7f1523030",
@@ -1433,6 +2300,18 @@
           "sh:path": "http://openml.org/openml#customName"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/521be4314b4bb7c49af726be6045b53ad08bc177",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.hasuploader",
+          "sh:description": {
+            "en": "An entity responsible for uploading the resource."
+          },
+          "sh:name": {
+            "en": "has uploader"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/559dab14a90a8ddc0150dd1d09a443ecb37b90dd",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.status",
           "sh:minCount": "1",
@@ -1442,6 +2321,15 @@
           "sh:path": "http://openml.org/openml#status"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.keyword",
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/6732298630b75dc710a1117c7731b310d0dfe1f3",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.uploaded",
           "sh:minCount": "1",
@@ -1449,6 +2337,15 @@
             "en": "uploaded"
           },
           "sh:path": "http://openml.org/openml#uploaded"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/6e4f5560ba850e67e223027190a29d039a717d8a",
@@ -1467,6 +2364,15 @@
             "en": "class name"
           },
           "sh:path": "http://openml.org/openml#className"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/8d23042e921fdb0050ebaf59699a880b8ad23530",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.customname",
+          "sh:name": {
+            "en": "custom name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#customName"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/99dc863bcbf09a65747a34916868535d8af40c03",
@@ -1490,6 +2396,36 @@
           "sh:path": "http://openml.org/openml#hasDependency"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/acd4220bdb9cc6cbef44c50509862d7d56b890bb",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.classname",
+          "sh:name": {
+            "en": "class name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#className"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/bda64b6b9c27a850b8782b17019e888c5edd7ce0",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.version",
+          "sh:name": {
+            "en": "version"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#version"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/c0d17764e84e711728581fda7356a51e99a9040a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.identifier",
           "sh:description": {
@@ -1511,6 +2447,36 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/d41bd3859fb82e9c7f4d9df33f714a0872c83f22",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.externalversion",
+          "sh:name": {
+            "en": "external version"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#externalVersion"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/d439fecba1b27b3b7c6fc1b2c77882b20a460f22",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.uploaded",
+          "sh:name": {
+            "en": "uploaded"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#uploaded"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Flow.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -1588,6 +2554,27 @@
           "sh:path": "http://openml.org/openml#defaultValue"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.type",
+          "sh:description": {
+            "en": "A classification of the resource."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/a6263c1756d9f0414d9e657ebda42cdc267b66a5",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.recommendedrange",
           "sh:maxCount": "1",
@@ -1595,6 +2582,15 @@
             "en": "recommended range"
           },
           "sh:path": "http://openml.org/openml#recommendedRange"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/c1bc8ab10488381e9f1610e1cfd80b9e3eeb93ee",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.defaultvalue",
+          "sh:name": {
+            "en": "default value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#defaultValue"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
@@ -1609,6 +2605,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.title",
           "sh:description": {
@@ -1619,6 +2627,15 @@
             "en": "title"
           },
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#FlowParameterShape/fbb48848acdab853c200fb6be859ef663a2f2528",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#FlowParameter.recommendedrange",
+          "sh:name": {
+            "en": "recommended range"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#recommendedRange"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#FlowParameter"
@@ -1647,6 +2664,15 @@
           "sh:path": "http://openml.org/openml#version"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#LibraryShape/bda64b6b9c27a850b8782b17019e888c5edd7ce0",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Library.version",
+          "sh:name": {
+            "en": "version"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#version"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#LibraryShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Library.title",
           "sh:description": {
@@ -1656,6 +2682,18 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#LibraryShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Library.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -1686,12 +2724,33 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFileDescriptionShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFileDescription.id",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFileDescriptionShape/24ba6ebb8d32d4bb6139d7d7000c33ef67940785",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFileDescription.url",
           "sh:minCount": "1",
           "sh:name": {
             "en": "url"
           },
+          "sh:path": "http://openml.org/openml#url"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFileDescriptionShape/4d0b1b686b162926a45ac646d27c495e250fdc5d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFileDescription.url",
+          "sh:name": {
+            "en": "url"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://openml.org/openml#url"
         },
         {
@@ -1728,6 +2787,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFileDescriptionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFileDescription.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFileDescriptionShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFileDescription.id",
           "sh:description": {
@@ -1760,6 +2831,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.id",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/24ba6ebb8d32d4bb6139d7d7000c33ef67940785",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.url",
           "sh:description": {
@@ -1769,6 +2852,18 @@
           "sh:name": {
             "en": "url"
           },
+          "sh:path": "http://openml.org/openml#url"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/4d0b1b686b162926a45ac646d27c495e250fdc5d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.url",
+          "sh:description": {
+            "en": "The url of the file to be downloaded."
+          },
+          "sh:name": {
+            "en": "url"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://openml.org/openml#url"
         },
         {
@@ -1856,6 +2951,18 @@
           "sh:path": "http://openml.org/openml#url"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/c1577bd231c71b0b1910272999755d3414867cfd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.format",
+          "sh:description": {
+            "en": "The file format, physical medium, or dimensions of the resource."
+          },
+          "sh:name": {
+            "en": "format"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.title",
           "sh:description": {
@@ -1866,6 +2973,30 @@
             "en": "title"
           },
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/dc17e7a798aea475507009807c87717284c17830",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#OutputFilePrediction.checksum",
+          "sh:description": {
+            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."
+          },
+          "sh:name": {
+            "en": "checksum"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://spdx.org/rdf/terms#checksum"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#OutputFilePredictionShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635",
@@ -1900,6 +3031,15 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Parameter.value",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#value"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Parameter.value",
           "sh:minCount": "1",
@@ -1918,6 +3058,18 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Parameter.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -1962,6 +3114,15 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterSettingShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ParameterSetting.value",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#value"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterSettingShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ParameterSetting.component",
           "sh:maxCount": "1",
@@ -1980,6 +3141,27 @@
           "sh:name": {
             "en": "name"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterSettingShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ParameterSetting.component",
+          "sh:name": {
+            "en": "component"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#component"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ParameterSettingShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#ParameterSetting.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -2018,6 +3200,15 @@
           "sh:path": "http://openml.org/openml#hasPredictionFeature"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionShape/2ab27bdf42596d5077fba20b6dcf59afa7ce8dab",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Prediction.haspredictionfeature",
+          "sh:name": {
+            "en": "has prediction feature"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasPredictionFeature"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionShape/56a5771db3070b63fde9bb568ceb265be1cde63f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Prediction.haspredictionfeature",
           "sh:class": "http://openml.org/openml#PredictionFeature",
@@ -2052,6 +3243,15 @@
             "en": "format"
           },
           "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionShape/c1577bd231c71b0b1910272999755d3414867cfd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Prediction.format",
+          "sh:name": {
+            "en": "format"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/format"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#Prediction"
@@ -2080,6 +3280,15 @@
           "sh:path": "http://purl.org/dc/terms/type"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionFeatureShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PredictionFeature.type",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionFeatureShape/74feba662f4f65577bf45a8dd94f8faec0f03592",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PredictionFeature.type",
           "sh:minCount": "1",
@@ -2095,6 +3304,15 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PredictionFeatureShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#PredictionFeature.title",
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -2127,6 +3345,15 @@
           "sh:path": "http://www.w3.org/ns/mls#realizes"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/091e5ef41ba4c037c7fc3fc7ebd0c5e2a61d0fa0",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.setupstring",
+          "sh:name": {
+            "en": "setup string"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#setupString"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/0e6e22dc13d0b206842d78a0280d195612318d56",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasoutputfileprediction",
           "sh:minCount": "1",
@@ -2157,6 +3384,15 @@
           "sh:path": "http://www.w3.org/ns/mls#realizes"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/220f764894da495ebf38bab1467b62cee8ed1faa",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.errormessage",
+          "sh:name": {
+            "en": "error message"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#errorMessage"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/2676fb3c58ea581447d2088c07840b25f0f050eb",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasparameter",
           "sh:maxCount": "1",
@@ -2173,6 +3409,24 @@
             "en": "has flow"
           },
           "sh:path": "http://openml.org/openml#hasFlow"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/4692bfc7fad9507b243e1c04b07698ba401f9e23",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasoutputfiledescription",
+          "sh:name": {
+            "en": "has output file description"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasOutputFileDescription"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/46f5bca7bc2efff309309ccbe5d3b2c4bfd59705",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.rundetails",
+          "sh:name": {
+            "en": "run details"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#runDetails"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/4eafb6a8407472edb010c2645e6471622d634c2c",
@@ -2193,6 +3447,18 @@
           "sh:path": "http://openml.org/openml#hasTask"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/521be4314b4bb7c49af726be6045b53ad08bc177",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasuploader",
+          "sh:description": {
+            "en": "An entity responsible for uploading the resource."
+          },
+          "sh:name": {
+            "en": "has uploader"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasUploader"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/52712db7460a5532f8e4a412cb8caa0c029d6009",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasflow",
           "sh:maxCount": "1",
@@ -2211,6 +3477,15 @@
           "sh:path": "http://openml.org/openml#hasTask"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.keyword",
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/60448300559a231c7fbe42095a2e00e681c355c1",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasparameter",
           "sh:class": "http://openml.org/openml#ParameterSetting",
@@ -2227,6 +3502,24 @@
             "en": "run details"
           },
           "sh:path": "http://openml.org/openml#runDetails"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/8380452aad83241a35f826311f1c5154e4a63878",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasevaluation",
+          "sh:name": {
+            "en": "has evaluation"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasEvaluation"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/929dd5e30e40bfa9d8a289f1d9a34b23705ae2c1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasparameter",
+          "sh:name": {
+            "en": "has parameter"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasParameterSetting"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/9b4273b86fb7bc4b72ab1aeec3842bf74fb41927",
@@ -2256,6 +3549,18 @@
           "sh:path": "http://openml.org/openml#hasOutputFileDescription"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/ac581b0674c3566f9a857e4ce8a489eb5450d9d0",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.setupId",
           "sh:maxCount": "1",
@@ -2263,6 +3568,18 @@
             "en": "setup Id"
           },
           "sh:path": "http://openml.org/openml#setupId"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/aeb9436032b3f52a56cb2e93aa2dfbd0c26db1f2",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.executes",
+          "sh:description": {
+            "en": "The Algorithm executed by the run."
+          },
+          "sh:name": {
+            "en": "executes"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/mls#realizes"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/b9e1857c1f5f61fa0c840eb06b66959568ffbb98",
@@ -2286,6 +3603,24 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/c9de12887ed96497a2822f278c35a1d6a07cf755",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasoutputfileprediction",
+          "sh:name": {
+            "en": "has output file prediction"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasOutputFilePrediction"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/cbf6bacd11e9fdadf66452e4777e3ab6d87fa450",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hasflow",
+          "sh:name": {
+            "en": "has flow"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasFlow"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/ccf1428b613b5d52bad3569287d3d739648c8921",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.errormessage",
           "sh:maxCount": "1",
@@ -2293,6 +3628,15 @@
             "en": "error message"
           },
           "sh:path": "http://openml.org/openml#errorMessage"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/d2506391a4276d7cc8fa4a197ae82e2827133583",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.setupId",
+          "sh:name": {
+            "en": "setup Id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#setupId"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/d7009ea4c4ac660aebc7a52a0363ee0c23f27270",
@@ -2335,6 +3679,15 @@
             "en": "has evaluation"
           },
           "sh:path": "http://openml.org/openml#hasEvaluation"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunShape/fdd717f2a9085dd1fe62758538fd8ea27abcee8a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Run.hastask",
+          "sh:name": {
+            "en": "has task"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasTask"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#Run"
@@ -2361,6 +3714,15 @@
             "en": "has run"
           },
           "sh:path": "http://openml.org/openml#hasRun"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RunCollectionShape/e3855c9cddd410a3bbe9ac631f7b675f46a88fdb",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#RunCollection.hasrun",
+          "sh:name": {
+            "en": "has run"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasRun"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#RunCollection"
@@ -2370,6 +3732,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.id",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.description",
@@ -2390,6 +3764,15 @@
             "en": "id"
           },
           "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/9892e8196714fd873dce0340b4aef867f222e0b0",
@@ -2422,6 +3805,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.id",
           "sh:description": {
@@ -2432,6 +3827,15 @@
             "en": "id"
           },
           "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/f1aca48abf9ed1d2c76397924f97225733e9aae5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Split.isappliedto",
+          "sh:name": {
+            "en": "is applied to"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#isAppliedTo"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#SplitShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -2472,6 +3876,27 @@
           "sh:path": "http://openml.org/openml#hasCostMatrix"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.id",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/2719903253d87c481bdf27532584bf4ed8d19bc7",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hasoutput",
+          "sh:name": {
+            "en": "has output"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasOutput"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/2c84feed94fa939faa3c2d068e1d8b4d0f4349b9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hasevaluationmeasure",
           "sh:minCount": "1",
@@ -2488,6 +3913,18 @@
             "en": "has task type"
           },
           "sh:path": "http://openml.org/openml#hasTaskType"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.keyword",
+          "sh:description": {
+            "en": "A keyword or tag describing the resource."
+          },
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/5ce4782c868966fe77821b2aeb6afd2f27c4a6cc",
@@ -2547,6 +3984,24 @@
           "sh:path": "http://openml.org/openml#hasEvaluationMeasure"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/ae6a508b916462ba9ef198b37ece18498c5617dd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.sourcedata",
+          "sh:name": {
+            "en": "source data"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#sourceData"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/bc252d2e7068fe82281d2aa68b84a48b16a98406",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hasestimationprocedure",
+          "sh:name": {
+            "en": "has estimation procedure"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasEstimationProcedure"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.title",
           "sh:description": {
@@ -2577,6 +4032,18 @@
           "sh:path": "http://openml.org/openml#sourceData"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/d9c68c9863db3488bb6edb1d43506b0af9101af2",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hastasktype",
           "sh:minCount": "1",
@@ -2584,6 +4051,24 @@
             "en": "has task type"
           },
           "sh:path": "http://openml.org/openml#hasTaskType"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/dc0c5890d6cf9527f563c17e0650abccbc9746f6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hastasktype",
+          "sh:name": {
+            "en": "has task type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasTaskType"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/df80708f13cbf09589abe65265356011077f156b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hasevaluationmeasure",
+          "sh:name": {
+            "en": "has evaluation measure"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasEvaluationMeasure"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/e5a2169d4263f34bce3cdca9306a9c7729a1ddd2",
@@ -2613,6 +4098,15 @@
           "sh:path": "http://openml.org/openml#sourceData"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/f04a195873f0026e3a428fa0c9b5ff49e504948d",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hascostmatrix",
+          "sh:name": {
+            "en": "has cost matrix"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasCostMatrix"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/f3c9a44185e43e19eda99f7282c79a1143000aeb",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.hasoutput",
           "sh:minCount": "1",
@@ -2620,6 +4114,15 @@
             "en": "has output"
           },
           "sh:path": "http://openml.org/openml#hasOutput"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/f6f00e541b7bda8363b70d711b778614893197ee",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Task.targetfeature",
+          "sh:name": {
+            "en": "target feature"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#targetFeature"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -2658,6 +4161,15 @@
             "en": "has task"
           },
           "sh:path": "http://openml.org/openml#hasTask"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskCollectionShape/fdd717f2a9085dd1fe62758538fd8ea27abcee8a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskCollection.hastask",
+          "sh:name": {
+            "en": "has task"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasTask"
         }
       ],
       "sh:targetClass": "http://openml.org/openml#TaskCollection"
@@ -2667,6 +4179,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskTypeShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskType.id",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskTypeShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskType.description",
@@ -2689,6 +4213,15 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskTypeShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskType.description",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskTypeShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskType.description",
           "sh:minCount": "1",
@@ -2707,6 +4240,18 @@
           "sh:name": {
             "en": "title"
           },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#TaskTypeShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#TaskType.title",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
@@ -2779,6 +4324,15 @@
           "sh:path": "http://purl.org/dc/terms/bibliographicCitation"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#BibliographicReferenceShape/308d8047a7daaf8e28147fd7f9223fd62521bd28",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#BibliographicReference.bibliographiccitation",
+          "sh:name": {
+            "en": "bibliographic citation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/bibliographicCitation"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#BibliographicReferenceShape/419d4dd1ae984aa2905d9628506915979360a8b4",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#BibliographicReference.bibliographiccitation",
           "sh:maxCount": "1",
@@ -2786,6 +4340,18 @@
             "en": "bibliographic citation"
           },
           "sh:path": "http://purl.org/dc/terms/bibliographicCitation"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#BibliographicReferenceShape/61d3ec2b1eb4ee541999f05c4a695db49038c866",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#BibliographicReference.references",
+          "sh:description": {
+            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+          },
+          "sh:name": {
+            "en": "references"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/references"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#BibliographicReferenceShape/76a80b965577e70ddaa1ad1bd18df4759b0dd505",
@@ -2816,6 +4382,15 @@
             "en": "format"
           },
           "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#BibliographicReferenceShape/c1577bd231c71b0b1910272999755d3414867cfd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#BibliographicReference.format",
+          "sh:name": {
+            "en": "format"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/format"
         }
       ],
       "sh:targetClass": "http://purl.org/spar/biro/BibliographicReference"
@@ -2825,6 +4400,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ChecksumShape/18334d9daf21fe247c499aab3d04ddd1d4f391b7",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Checksum.checksumvalue",
+          "sh:description": {
+            "en": "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm."
+          },
+          "sh:name": {
+            "en": "checksum value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://spdx.org/rdf/terms#checksumValue"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ChecksumShape/3eab73d86ca644be3c17cec9470a00ee097d8515",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Checksum.checksumvalue",
@@ -2848,6 +4435,18 @@
             "en": "checksum value"
           },
           "sh:path": "http://spdx.org/rdf/terms#checksumValue"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ChecksumShape/9ab7a34ae99cd75fd914a221bacfffd1bb9cde4c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Checksum.algorithm",
+          "sh:description": {
+            "en": "This property identifies the algorithm used to produce the subject Checksum."
+          },
+          "sh:name": {
+            "en": "algorithm"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://spdx.org/rdf/terms#algorithm"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#ChecksumShape/9eeeae00a6e87149f282ea21e521ffb5231213ec",
@@ -2962,6 +4561,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/01d5c746936ff78bb5eb353a1b0e49303cb2fd31",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.dataset",
+          "sh:description": {
+            "en": "This property links the Catalogue with a Dataset that is part of the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the next property service to implement an empty Catalogue check."
+          },
+          "sh:name": {
+            "en": "dataset"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#dataset"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/337cf55721093cc585693a5397601643d59a4c46",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.record",
           "sh:class": "http://www.w3.org/ns/dcat#CatalogRecord",
@@ -2972,6 +4583,42 @@
             "en": "record"
           },
           "sh:path": "http://www.w3.org/ns/dcat#record"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/34db0dabef6e2aa992eab790fc3e8d1e3f83bc12",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.record",
+          "sh:description": {
+            "en": "This property refers to a Catalogue Record that is part of the Catalogue."
+          },
+          "sh:name": {
+            "en": "record"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#record"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/4be37093e4c3ba0d5b5a18ef6b97778d6d689392",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.releasedate",
+          "sh:description": {
+            "en": "\tThe date of formal issuance (e.g., publication) of the Catalogue."
+          },
+          "sh:name": {
+            "en": "release date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.keyword",
+          "sh:description": {
+            "en": "A keyword or tag describing the resource."
+          },
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://www.w3.org/ns/dcat#keyword"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/67dcdb36167ca7969c0532898e11a98e9c2a80f5",
@@ -2986,6 +4633,30 @@
           "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/6b7242b6b89977700c05e4875131fbb975c4235e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.modificationdate",
+          "sh:description": {
+            "en": "The most recent date on which the Catalogue was modified."
+          },
+          "sh:name": {
+            "en": "modification date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/modified"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.description",
+          "sh:description": {
+            "en": "A free-text account of the Catalogue."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/7b94c69361e00163d16d78016cd994668c7fccda",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.dataset",
           "sh:class": "http://www.w3.org/ns/dcat#Dataset",
@@ -2996,6 +4667,18 @@
             "en": "dataset"
           },
           "sh:path": "http://www.w3.org/ns/dcat#dataset"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/7d4c667652f23f3a51353271e3800bca87ed3f68",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.creator",
+          "sh:description": {
+            "en": "An entity responsible for the creation of the catalogue."
+          },
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8772a17b46da88b8aa26c30e24bc3d9ef17fb940",
@@ -3010,6 +4693,18 @@
           "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8d36a62f83db7f94097e27edb51306e17e0d40f3",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage",
+          "sh:description": {
+            "en": "A web page that acts as the main page for the Catalogue"
+          },
+          "sh:name": {
+            "en": "homepage"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://xmlns.com/foaf/0.1/homepage"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.description",
           "sh:description": {
@@ -3020,6 +4715,18 @@
             "en": "description"
           },
           "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/93f73e69bb03d2928fcf758a253ef316becdf9b9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.publisher",
+          "sh:description": {
+            "en": "This property refers to an entity (organisation) responsible for making the resource available."
+          },
+          "sh:name": {
+            "en": "publisher"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/9e9d878c1c354206edc1d411f33c82d4d01e5a8f",
@@ -3056,6 +4763,18 @@
             "en": "publisher"
           },
           "sh:path": "http://purl.org/dc/terms/publisher"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.identifier",
+          "sh:description": {
+            "en": "A unique identifier of the item."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/b362d2bdbbe8ba1c689e5554cca2bcbd295546de",
@@ -3118,6 +4837,18 @@
           "sh:path": "http://www.w3.org/ns/dcat#service"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.title",
+          "sh:description": {
+            "en": "A name given to the Catalogue."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/da28472666d298998330cb159b2c1e90b4446250",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.homepage",
           "sh:description": {
@@ -3139,6 +4870,30 @@
           "sh:name": {
             "en": "licence"
           },
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/e9a8f5414305eafd449b87a38bfe0c974341c9ac",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.service",
+          "sh:description": {
+            "en": "This property refers to a site or end-point (Data Service) that is listed in the Catalogue."
+          },
+          "sh:name": {
+            "en": "service"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#service"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/f30149ffb6ec9d00dd5866b052105729fa27d02a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.licence",
+          "sh:description": {
+            "en": "A licence under which the Catalogue can be used or reused."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/license"
         },
         {
@@ -3186,6 +4941,30 @@
           "sh:path": "http://purl.org/dc/terms/modified"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/33619d37d70a8fb82ad1950fbcb9a13c05bc6449",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.descriptionversion",
+          "sh:description": {
+            "en": "It refers to the version of the description. '1' for original version."
+          },
+          "sh:name": {
+            "en": "description version"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#descriptionVersion"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/387c76a64757677cc2b899f0c4a20803263a0449",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.primarytopic",
+          "sh:description": {
+            "en": "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."
+          },
+          "sh:name": {
+            "en": "primary topic"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/65eafe0643a998b84fc2d253de401f9ad8355770",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.primarytopic",
           "sh:description": {
@@ -3196,6 +4975,30 @@
             "en": "primary topic"
           },
           "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/6b7242b6b89977700c05e4875131fbb975c4235e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.modificationdate",
+          "sh:description": {
+            "en": "This property contains the most recent date on which the Catalogue entry was changed or modified."
+          },
+          "sh:name": {
+            "en": "modification date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/modified"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#CatalogueRecord.description",
+          "sh:description": {
+            "en": "A free-text account of the resource."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogRecordShape/9cfc04e7fc5c17860d295377c541e05a32bc8eeb",
@@ -3266,6 +5069,18 @@
           "sh:path": "http://www.w3.org/ns/dcat#servesDataset"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataServiceShape/3bde2663aaca96d953765ac2e525ef64710bf4d6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.endpointURL",
+          "sh:description": {
+            "en": "The root location or primary endpoint of the service (an IRI)."
+          },
+          "sh:name": {
+            "en": "endpoint URL"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#endpointURL"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataServiceShape/83ad7325cc6681e43e44550c269847065a95a14f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.endpointURL",
           "sh:description": {
@@ -3276,6 +5091,30 @@
             "en": "endpoint URL"
           },
           "sh:path": "http://www.w3.org/ns/dcat#endpointURL"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataServiceShape/ca2bd10c893237fa342edb75240b08731acda92f",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.servesdataset",
+          "sh:description": {
+            "en": "This property refers to a collection of data that this data service can distribute."
+          },
+          "sh:name": {
+            "en": "serves dataset"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#servesDataset"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataServiceShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#DataService.title",
+          "sh:description": {
+            "en": "A name given to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f",
@@ -3346,6 +5185,18 @@
           "sh:path": "http://www.w3.org/ns/adms#status"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/10c0ca4deadefb51c529f56ee01caf9bd2639ef4",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.accessrights",
+          "sh:description": {
+            "en": "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public."
+          },
+          "sh:name": {
+            "en": "access rights"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/accessRights"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/2ab9813b47309d4af98fdfe34189ea24baecc8cd",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.datasetdistribution",
           "sh:class": "http://www.w3.org/ns/dcat#Distribution",
@@ -3370,6 +5221,90 @@
           "sh:path": "http://www.w3.org/ns/adms#status"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/2f24e5e77199a0d328c94cb874400d574fc8e87f",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.versioninfo",
+          "sh:description": {
+            "en": "This property contains a version number or other version designation of the Dataset."
+          },
+          "sh:name": {
+            "en": "version info"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/2fd3850ab494807d4d5cc3ac00cc92ede3ec5052",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.contributor",
+          "sh:description": {
+            "en": "\tAn entity responsible for making contributions to the dataset."
+          },
+          "sh:name": {
+            "en": "contributor"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/contributor"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/2fd3850ab494807d4d5cc3ac00cc92ede3ec5052",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.contributor",
+          "sh:description": {
+            "en": "\tAn entity responsible for making contributions to the dataset."
+          },
+          "sh:name": {
+            "en": "contributor"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/contributor"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/30e78cd98aa6cd5dbc31678289abb5e0cc0b55c7",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.landingpage",
+          "sh:description": {
+            "en": "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information."
+          },
+          "sh:name": {
+            "en": "landing page"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#landingPage"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.status",
+          "sh:description": {
+            "en": "The status of the dataset in the context of the publication process."
+          },
+          "sh:name": {
+            "en": "status"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#status"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/3f1fe87dc7be37001827234cfe37b5314b16efcc",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby",
+          "sh:description": {
+            "en": "A related resource that references, cites, or otherwise points to the described resource."
+          },
+          "sh:name": {
+            "en": "is referenced by"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/3f1fe87dc7be37001827234cfe37b5314b16efcc",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isreferencedby",
+          "sh:description": {
+            "en": "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."
+          },
+          "sh:name": {
+            "en": "is referenced by"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/495a2bdea22c8a156f1a7926737cdf33529871fd",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.hasversion",
           "sh:class": "http://www.w3.org/ns/dcat#Dataset",
@@ -3380,6 +5315,18 @@
             "en": "has version"
           },
           "sh:path": "http://www.w3.org/ns/dcat#hasVersion"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/4be37093e4c3ba0d5b5a18ef6b97778d6d689392",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.releasedate",
+          "sh:description": {
+            "en": "This property contains the date of formal issuance (e.g., publication) of the Dataset."
+          },
+          "sh:name": {
+            "en": "release date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/532abc6f4975de87bbe22a9fa6932739f16a00db",
@@ -3394,6 +5341,18 @@
           "sh:path": "http://openml.org/openml#collectionDate"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/5bc739112726cd993c279f81380611cafc3a9857",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.keyword",
+          "sh:description": {
+            "en": "A keyword or tag describing the resource."
+          },
+          "sh:name": {
+            "en": "keyword"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/67dcdb36167ca7969c0532898e11a98e9c2a80f5",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.publisher",
           "sh:description": {
@@ -3404,6 +5363,18 @@
             "en": "publisher"
           },
           "sh:path": "http://purl.org/dc/terms/publisher"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.description",
+          "sh:description": {
+            "en": "A free-text account of the resource."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/797de37cf0e11c0819dbd38d85a43baa6352f22a",
@@ -3430,6 +5401,30 @@
           "sh:path": "http://purl.org/dc/terms/accessRights"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/7d4c667652f23f3a51353271e3800bca87ed3f68",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.creator",
+          "sh:description": {
+            "en": "This property refers to the  entity responsible for producing the dataset."
+          },
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/7d4deb7c49e904fb5ed9e288a4c8889edc59a9f3",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.collectionDate",
+          "sh:description": {
+            "en": "The date the data was originally collected, given by the uploader."
+          },
+          "sh:name": {
+            "en": "collectionDate"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#collectionDate"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.description",
           "sh:description": {
@@ -3440,6 +5435,18 @@
             "en": "description"
           },
           "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/93f73e69bb03d2928fcf758a253ef316becdf9b9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.publisher",
+          "sh:description": {
+            "en": "This property refers to an entity (organisation) responsible for making the resource available."
+          },
+          "sh:name": {
+            "en": "publisher"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/9512099dadc4456834bcbf88af15fccc7554129c",
@@ -3478,6 +5485,30 @@
           "sh:path": "http://purl.org/dc/terms/isReferencedBy"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/a67ea27b94da4be53ee7a2ce943c7b2974f79b60",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.isversionof",
+          "sh:description": {
+            "en": "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."
+          },
+          "sh:name": {
+            "en": "is version of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/isVersionOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/b362d2bdbbe8ba1c689e5554cca2bcbd295546de",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.releasedate",
           "sh:description": {
@@ -3514,6 +5545,18 @@
           "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/c444cc01076cf811746340d7f86d0733076eca56",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.visibility",
+          "sh:description": {
+            "en": "Who can see the dataset. Typical values: 'Everyone','All my friends','Only me'. Can also be any of the user's circles."
+          },
+          "sh:name": {
+            "en": "visibility"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#access_policy"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/cca453176d6acdfcf4bd42617b21c975c62b0887",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.visibility",
           "sh:description": {
@@ -3524,6 +5567,42 @@
             "en": "visibility"
           },
           "sh:path": "http://openml.org/openml#access_policy"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/cee351ca7e459eb55734fce188a2216ea0cc2b6a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.hasversion",
+          "sh:description": {
+            "en": "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset."
+          },
+          "sh:name": {
+            "en": "has version"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#hasVersion"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.title",
+          "sh:description": {
+            "en": "A name given to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/dac585c809627a90e9d9378c2b3b09862f178f9c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.versionLabel",
+          "sh:description": {
+            "en": "Version label provided by user, something relevant to the user. Can also be a date, hash, or some other type of id."
+          },
+          "sh:name": {
+            "en": "versionLabel"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#versionLabel"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/ee60fdd4b8581460f5fc4077813b8bb3e3d77441",
@@ -3548,6 +5627,18 @@
             "en": "is version of"
           },
           "sh:path": "http://purl.org/dc/terms/isVersionOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/f6f077451f13ccf5d721838425fcc37f6cebfe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Dataset.datasetdistribution",
+          "sh:description": {
+            "en": "This property links the Dataset to an available Distribution."
+          },
+          "sh:name": {
+            "en": "dataset distribution"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#distribution"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DatasetShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -3618,6 +5709,54 @@
           "sh:path": "http://openml.org/openml#rowIDAttribute"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/136bb2abfdf5aa444a60bb48633b362319dea4db",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.license",
+          "sh:description": {
+            "en": "The licence under which the resource is made available."
+          },
+          "sh:name": {
+            "en": "license"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/16c960b8afbda0b0c9ea93512295a86ef1c66978",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.rowIDattribute",
+          "sh:description": {
+            "en": "The attribute that represents the row-id column, if present in the dataset."
+          },
+          "sh:name": {
+            "en": "row ID attribute"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#rowIDAttribute"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/193f76584d643e39b083a5a961780cf712835813",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.processingwarning",
+          "sh:description": {
+            "en": "Warnings while processing the dataset."
+          },
+          "sh:name": {
+            "en": "processing warning"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#processingWarning"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/23d4c038584493decec780192681ef61694bff7c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.accessservice",
+          "sh:description": {
+            "en": "This property refers to a data service that gives access to the distribution of the dataset."
+          },
+          "sh:name": {
+            "en": "access service"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#accessService"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/2553d0eb185e3cdf9c6f992f68022e6f98bf591c",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.hasfeature",
           "sh:class": "http://openml.org/openml#Feature",
@@ -3628,6 +5767,18 @@
             "en": "has feature"
           },
           "sh:path": "http://openml.org/openml#hasFeature"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/27ee30c66ff3cd2714f73a4b488a5e0f6b64b7f6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.downloadURL",
+          "sh:description": {
+            "en": "This property contains a URL that is a direct link to a downloadable file in a given format."
+          },
+          "sh:name": {
+            "en": "download URL"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/29ba27566ab1f32c8bb73f3492436d4bd868d3d2",
@@ -3664,6 +5815,18 @@
             "en": "license"
           },
           "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/59cbd395c4b9167c030b3fd61001eeeee5034346",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.bytesize",
+          "sh:description": {
+            "en": "This property contains the size of a Distribution in bytes."
+          },
+          "sh:name": {
+            "en": "byte size"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#byteSize"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32",
@@ -3726,6 +5889,18 @@
           "sh:path": "http://www.w3.org/ns/dcat#accessService"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/7fea036935437a6abb4d7541b95ee0b430d9d51e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.hasqualitymeasurement",
+          "sh:description": {
+            "en": "Refers to the performed quality measurements. Quality measurements can be performed to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."
+          },
+          "sh:name": {
+            "en": "has quality measurement"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dqv#hasQualityMeasurement"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/86b0abd7196b83ba1afcf76da88c75cc7037958f",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.hasqualitymeasurement",
           "sh:description": {
@@ -3786,6 +5961,18 @@
           "sh:path": "http://openml.org/openml#processingWarning"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/956e2722bcc0b1f0a6eec10ab142299ed5fa8712",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.defaulttargetattribute",
+          "sh:description": {
+            "en": "The default target attribute, if it exists."
+          },
+          "sh:name": {
+            "en": "default target attribute"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#defaultTargetAttribute"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.downloadURL",
           "sh:class": "http://www.w3.org/ns/dcat#Resource",
@@ -3798,6 +5985,18 @@
           "sh:path": "http://www.w3.org/ns/dcat#downloadURL"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.accessURL",
+          "sh:description": {
+            "en": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."
+          },
+          "sh:name": {
+            "en": "access URL"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#accessURL"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/a5a1142622bf258910a43fbd2aeba04b46c12982",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.hasqualitymeasurement",
           "sh:class": "http://www.w3.org/ns/dqv#QualityMeasurement",
@@ -3808,6 +6007,30 @@
             "en": "has quality measurement"
           },
           "sh:path": "http://www.w3.org/ns/dqv#hasQualityMeasurement"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/a7dda5a5e4c99d1633067ffb9b5168fb17fb9b87",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.hasfeature",
+          "sh:description": {
+            "en": "The attribute or column being part of a distribution."
+          },
+          "sh:name": {
+            "en": "has feature"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#hasFeature"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/acf13c6a26e10d3615651c58e562492b2f2077f2",
@@ -3834,6 +6057,30 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.format",
+          "sh:description": {
+            "en": "This property refers to the file format of the Distribution."
+          },
+          "sh:name": {
+            "en": "format"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/cc7655a3775bf39fd20cf25a5a93f21440c84281",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.processingerror",
+          "sh:description": {
+            "en": "Errors discovered while processing the dataset."
+          },
+          "sh:name": {
+            "en": "processing error"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#processingError"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/cd035d5fcf2aa42f83e614e12afd8905d4d6bcf8",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.license",
           "sh:description": {
@@ -3846,6 +6093,42 @@
           "sh:path": "http://purl.org/dc/terms/license"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.title",
+          "sh:description": {
+            "en": "A name given to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/db878f1cb93930f64561d0504123c66feacfad5a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.language",
+          "sh:description": {
+            "en": "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages."
+          },
+          "sh:name": {
+            "en": "language"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/language"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/dc17e7a798aea475507009807c87717284c17830",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.checksum",
+          "sh:description": {
+            "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."
+          },
+          "sh:name": {
+            "en": "checksum"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://spdx.org/rdf/terms#checksum"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/e0065293221c5851ec508ae96cd4ad03ffdedd19",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.accessURL",
           "sh:description": {
@@ -3856,6 +6139,30 @@
             "en": "access URL"
           },
           "sh:path": "http://www.w3.org/ns/dcat#accessURL"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/e47e51e83422bb3a76b660610419c7f766a45bf2",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.ignoreattribute",
+          "sh:description": {
+            "en": "Attributes that should be excluded in modelling, such as identifiers and indexes."
+          },
+          "sh:name": {
+            "en": "ignore attribute"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#ignoreAttribute"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/e50da06d5549e5006773a3d786e95fba77026b93",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.processingDate",
+          "sh:description": {
+            "en": "Date of processing."
+          },
+          "sh:name": {
+            "en": "processingDate"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#processingDate"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/ed8e40725c55813428b73d8e5042c6affe821ea2",
@@ -3880,6 +6187,18 @@
             "en": "byte size"
           },
           "sh:path": "http://www.w3.org/ns/dcat#byteSize"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#DistributionShape/f64ea9c4b32a8afd45dc2afdcea6722b56707974",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Distribution.haspolicy",
+          "sh:description": {
+            "en": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary."
+          },
+          "sh:name": {
+            "en": "has policy"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/odrl/2/hasPolicy"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
@@ -3889,6 +6208,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/01d5c746936ff78bb5eb353a1b0e49303cb2fd31",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.dataset",
+          "sh:description": {
+            "en": "Indicates the data set of which this observation is a part."
+          },
+          "sh:name": {
+            "en": "dataset"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/linked-data/cube#dataSet"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/236f0210baaf149903750c43bbe7012c21debb2a",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.type",
@@ -3924,6 +6255,42 @@
             "en": "type"
           },
           "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.value",
+          "sh:description": {
+            "en": "Refers to values computed by metric."
+          },
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dqv#value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.type",
+          "sh:description": {
+            "en": "A classification for a quality."
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/60cc03bc167b623471b2578b7b7aafd76605d845",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.featureindex",
+          "sh:description": {
+            "en": "The feature on which the quality is measure on."
+          },
+          "sh:name": {
+            "en": "feature index"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://openml.org/openml#featureIndex"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/66f17ab947f9a218de93f9de0e85439f7fde9672",
@@ -4008,6 +6375,30 @@
             "en": "value"
           },
           "sh:path": "http://www.w3.org/ns/dqv#value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/dcdd34d236afcea2dff359245e3e850fff527dae",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.intervalend",
+          "sh:description": {
+            "en": "The maximum value of the Quality Measure."
+          },
+          "sh:name": {
+            "en": "interval end"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#intervalEnd"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementShape/f514b6cd6ad42e2721caf84ccafa8d75b061a344",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurement.intervalstart",
+          "sh:description": {
+            "en": "The minimum value of the Quality Measure."
+          },
+          "sh:name": {
+            "en": "interval start"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#intervalStart"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dqv#QualityMeasurement"
@@ -4017,6 +6408,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementDatasetShape/08f56f4206071d5e298e46c59965536e98a7cf14",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementDataset.evaluationengineid",
+          "sh:description": {
+            "en": "The engine responsible for extracting the features."
+          },
+          "sh:name": {
+            "en": "evaluation engine id"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://openml.org/openml#evaluationEngine"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementDatasetShape/6c7c1bd2ab3b7761e5be759a078a9fd93f411a57",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementDataset.identifier",
@@ -4040,6 +6443,18 @@
             "en": "evaluation engine id"
           },
           "sh:path": "http://openml.org/openml#evaluationEngine"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementDatasetShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#QualityMeasurementDataset.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#QualityMeasurementDatasetShape/c0d17764e84e711728581fda7356a51e99a9040a",
@@ -4074,6 +6489,18 @@
           "sh:path": "http://w3id.org/mlso/hasLearningMethodType"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/0e3bc6127e8a32d57110c4bb2534cb5bc787cd95",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.haslearningmethodtype",
+          "sh:description": {
+            "en": "A relation between an algorithm learning method and the category of algorithm learning methods that it belongs to."
+          },
+          "sh:name": {
+            "en": "has learning method type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://w3id.org/mlso/hasLearningMethodType"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/5194505a7ca9aa7799053a0f1ce433f62b60448c",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.haslearningmethodtype",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -4084,6 +6511,18 @@
             "en": "has learning method type"
           },
           "sh:path": "http://w3id.org/mlso/hasLearningMethodType"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/617adf7d8c36c7998dadc828ba13590c3df23c68",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Algorithm.hasalgorithmtype",
+          "sh:description": {
+            "en": "A relation between an algorithm the category of algorithms that belongs to."
+          },
+          "sh:name": {
+            "en": "has algorithm type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://w3id.org/mlso/hasAlgorithmType"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AlgorithmShape/e2bcc17dd09d47b81f8849751c156a5004602523",
@@ -4123,6 +6562,18 @@
             "en": "name"
           },
           "sh:path": "http://xmlns.com/foaf/0.1/name"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Agent.name",
+          "sh:description": {
+            "en": "This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)"
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://xmlns.com/foaf/0.1/name"
         }
       ],
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"
@@ -4139,6 +6590,18 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/00e08d7f2fe5a17c59705d38fad158427b438296",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasrepository",
+          "sh:description": {
+            "en": "This property specifies a repository."
+          },
+          "sh:name": {
+            "en": "has repository"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://linkedpaperswithcode.com/property/hasRepository"
+        },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/02cdb01e26c51e7f0c6faaab7db8291d68ff7edc",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument",
@@ -4188,6 +6651,18 @@
           "sh:path": "http://purl.org/dc/terms/abstract"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/47f9f2138d14c3c1a9c4eb9d8fdd450ff57d4f88",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument",
+          "sh:description": {
+            "en": "This property specifies the url or location of the document itself."
+          },
+          "sh:name": {
+            "en": "has document"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasDocument"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/60b32db6353eb994e20f096114098505957145fc",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasdocument",
           "sh:description": {
@@ -4198,6 +6673,18 @@
             "en": "has document"
           },
           "sh:path": "http://data.europa.eu/m8g/hasDocument"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/61d3ec2b1eb4ee541999f05c4a695db49038c866",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.references",
+          "sh:description": {
+            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+          },
+          "sh:name": {
+            "en": "references"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/references"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/65cf1e33dd53877deac84ec9b7c5dda38aa45e59",
@@ -4212,6 +6699,30 @@
           "sh:path": "http://purl.org/dc/terms/date"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/76a4a49179bb721c8e48039eda4641918b2f2160",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasmodel",
+          "sh:description": {
+            "en": "The model that is used by a paper or an evaluation."
+          },
+          "sh:name": {
+            "en": "has model"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://linkedpaperswithcode.com/property/hasModel"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/7d4c667652f23f3a51353271e3800bca87ed3f68",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.creator",
+          "sh:description": {
+            "en": "An entity responsible for making the resource."
+          },
+          "sh:name": {
+            "en": "creator"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.references",
           "sh:class": "http://www.w3.org/ns/dcat#Dataset",
@@ -4222,6 +6733,30 @@
             "en": "references"
           },
           "sh:path": "http://purl.org/dc/terms/references"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/8d02f4a907045e33ae2e03718624cf62852c5932",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.subject",
+          "sh:description": {
+            "en": "A topic of the resource."
+          },
+          "sh:name": {
+            "en": "subject"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/subject"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/90e0821d3a0f46a099b05675afd2baf2552f8457",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.date",
+          "sh:description": {
+            "en": "A point or period of time associated with an event in the lifecycle of the resource."
+          },
+          "sh:name": {
+            "en": "date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/date"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/bb8f1feb9d550240a3b56a28b751bad334c31adf",
@@ -4272,6 +6807,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.title",
+          "sh:description": {
+            "en": "A name given to the resource."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/d97c8dfe754f6ee5ceb4ed84943e5960cef9e457",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.hasmodel",
           "sh:class": "http://data.europa.eu/m8g/MachineLearningModel",
@@ -4282,6 +6829,18 @@
             "en": "has model"
           },
           "sh:path": "https://linkedpaperswithcode.com/property/hasModel"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/e06345e2596237e111aa03d74d1a87010f24c861",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Paper.abstract",
+          "sh:description": {
+            "en": "A summary of the resource."
+          },
+          "sh:name": {
+            "en": "abstract"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/abstract"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#PaperShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -4310,6 +6869,15 @@
           "sh:name": {
             "en": "has file"
           },
+          "sh:path": "http://data.europa.eu/m8g/hasFile"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#RepositoryShape/dfb6b75816bc1b7517fa8f164055d11830066bd3",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Repository.hasfile",
+          "sh:name": {
+            "en": "has file"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/hasFile"
         }
       ],
