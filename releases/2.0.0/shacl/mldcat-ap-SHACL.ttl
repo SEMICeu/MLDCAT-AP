@@ -310,7 +310,7 @@
   shacl:description "A keyword or tag describing the resource."@en;
   shacl:name "keyword"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path <https://www.w3.org/ns/dcat#keyword> .
+  shacl:path dcat:keyword .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/67dcdb36167ca7969c0532898e11a98e9c2a80f5> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#Catalogue.publisher";
   shacl:description "This property refers to an entity (organisation) responsible for making the resource available."@en;

@@ -50,7 +50,7 @@
     },
     "Catalogue.keyword": {
       "@container": "@set",
-      "@id": "https://www.w3.org/ns/dcat#keyword"
+      "@id": "http://www.w3.org/ns/dcat#keyword"
     },
     "Catalogue.licence": {
       "@id": "http://purl.org/dc/terms/license",

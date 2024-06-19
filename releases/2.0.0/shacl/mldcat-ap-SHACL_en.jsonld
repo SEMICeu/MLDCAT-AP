@@ -4606,7 +4606,7 @@
             "en": "keyword"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "https://www.w3.org/ns/dcat#keyword"
+          "sh:path": "http://www.w3.org/ns/dcat#keyword"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#CatalogShape/67dcdb36167ca7969c0532898e11a98e9c2a80f5",

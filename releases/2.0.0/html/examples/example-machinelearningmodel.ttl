@@ -1,14 +1,15 @@
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix biro: <http://purl.org/spar/biro/> .
 @prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix openml: <http://openml.org/openml#> .
 @prefix lpwc: <https://linkedpaperswithcode.com/class/> .
-@prefix biro: <http://purl.org/spar/biro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://huggingface.co/bigscience/bloomz-7b1> dcterms:created "2024-02-22T09:05:04"^^xsd:dateTime ;
-	openml:hasOutputFilePrediction <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors> ;
+	openml:hasOutputFilePrediction <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors>, <https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin> ;
 	cv:hasRepository <https://huggingface.co/bigscience/bloomz-7b1/tree/main> ;
 	cv:hasBibliographicReference <http://example.com/BibliographicReference/1> ;
 	openml:hasUploader <https://huggingface.co/Muennighoff> ;
@@ -26,11 +27,26 @@ Feel free to share your generations in the Community tab!""" ;
 	a cv:MachineLearningModel .
 
 <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors> dcterms:format <http://example.com/format/safetensors> ;
-	dcterms:title "model.safetensors" ;
+	dcterms:title "bloomz-7b1 safetensors format" ;
 	openml:url <https://huggingface.co/bigscience/bloomz-7b1/resolve/main/model.safetensors> ;
+	spdx:checksum <http://example.com/Checksum/1> ;
 	a openml:OutputFilePrediction .
 
-<https://huggingface.co/bigscience/bloomz-7b1/tree/main> cv:hasFile <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors> ;
+<http://example.com/Checksum/1> spdx:checksumValue "4e1e2bdcc97ec356cc92130d3802c81a324e9840b0ed417a9342ea728aa1d369"^^xsd:hexBinary ;
+	spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+	a spdx:Checksum .
+
+<https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin> dcterms:format <http://example.com/format/pytorch> ;
+	dcterms:title "bloomz-7b1 pytorch format" ;
+	openml:url <https://huggingface.co/bigscience/bloomz-7b1/resolve/main/pytorch_model.bin> ;
+	spdx:checksum <http://example.com/Checksum/2> ;
+	a openml:OutputFilePrediction .
+
+<http://example.com/Checksum/2> spdx:checksumValue "d1f5d9fc449dd5fbe045f62c609e2b70f63d2e63faf74d7e0adb895dc294f28e"^^xsd:hexBinary ;
+	spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+	a spdx:Checksum .
+
+<https://huggingface.co/bigscience/bloomz-7b1/tree/main> cv:hasFile <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors>, <https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin> ;
 	a lpwc:repository .
 
 <http://example.com/BibliographicReference/1> dcterms:bibliographicCitation """@article{muennighoff2022crosslingual,
@@ -49,3 +65,4 @@ year={2022}}""" ;
 
 <https://huggingface.co/Muennighoff> foaf:name "Niklas Muennighoff" ;
 	a foaf:Agent .
+
