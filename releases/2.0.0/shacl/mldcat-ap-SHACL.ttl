@@ -2228,7 +2228,6 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/362d1bf0eab8051024cf5ec1345eb1ce50762580>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/3a8fcb0a351c6cd00e40b0e8714ea64e230eaa18>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f98147c83e4a53862e7dcd3413d16b4eff55db2>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/51a87039100a9397dd0b7c7921434786ad9789d6>,
@@ -2399,12 +2398,6 @@
   shacl:description "The model that is variant of this model."@en;
   shacl:name "has variation"@en;
   shacl:path <http://data.europa.eu/m8g/hasVariation> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction";
-  shacl:description "The file in which the model is expressed."@en;
-  shacl:maxCount 1;
-  shacl:name "has output file prediction"@en;
-  shacl:path <http://openml.org/openml#hasOutputFilePrediction> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f381639bb6e021939f65b4f41409d1edaeade9b> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.type";
   shacl:description "The nature or genre of the resource."@en;

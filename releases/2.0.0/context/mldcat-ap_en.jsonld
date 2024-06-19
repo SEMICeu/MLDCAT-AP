@@ -531,6 +531,7 @@
       "@type": "@id"
     },
     "MachineLearningModel.hasOutputFilePrediction": {
+      "@container": "@set",
       "@id": "http://openml.org/openml#hasOutputFilePrediction",
       "@type": "@id"
     },

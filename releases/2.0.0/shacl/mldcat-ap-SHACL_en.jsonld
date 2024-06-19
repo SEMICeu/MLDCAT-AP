@@ -435,18 +435,6 @@
           "sh:path": "http://data.europa.eu/m8g/hasVariation"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4eafb6a8407472edb010c2645e6471622d634c2c",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.hasoutputfileprediction",
-          "sh:description": {
-            "en": "The file in which the model is expressed."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "has output file prediction"
-          },
-          "sh:path": "http://openml.org/openml#hasOutputFilePrediction"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/shacl/mldcat-ap-SHACL.ttl#MachineLearningModelShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0#MachineLearningModel.type",
           "sh:description": {
