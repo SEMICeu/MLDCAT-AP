@@ -1,10 +1,9 @@
 {
     "@context": [
-     "https://semiceu.github.io/MLDCAT-AP/releases/2.0.0/context/mldcat-ap.jsonld",
+     "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.0.0/context/mldcat-ap.jsonld",
       {
         "biro" : "http://purl.org/spar/biro/",
-        "cv"  : "http://data.europa.eu/m8g/",
-        "openml" : "http://openml.org/openml#",
+        "it6" : "http://data.europa.eu/it6/",
         "lpwc" : "https://linkedpaperswithcode.com/class/",
         "spdx" : "http://spdx.org/rdf/terms#",
         "xsd" : "http://www.w3.org/2001/XMLSchema#",
@@ -33,7 +32,7 @@
             "@id" : "https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors",
             "@type": "OutputFilePrediction",
             "OutputFilePrediction.format": "http://example.com/format/safetensors",
-            "OutputFilePrediction.identifier" : "bloomz-7b1.safetensors",
+            "OutputFilePrediction.id" : "bloomz-7b1.safetensors",
             "OutputFilePrediction.title" : "bloomz-7b1 safetensors format",
             "OutputFilePrediction.url" : "https://huggingface.co/bigscience/bloomz-7b1/resolve/main/model.safetensors",
             "OutputFilePrediction.checksum" : "http://example.com/Checksum/1"
@@ -48,7 +47,7 @@
             "@id" : "https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin",
             "@type": "OutputFilePrediction",
             "OutputFilePrediction.format": "http://example.com/format/pytorch",
-            "OutputFilePrediction.identifier" : "bloomz-7b1-pytorch",
+            "OutputFilePrediction.id" : "bloomz-7b1-pytorch",
             "OutputFilePrediction.title" : "bloomz-7b1 pytorch format",
             "OutputFilePrediction.url" : "https://huggingface.co/bigscience/bloomz-7b1/resolve/main/pytorch_model.bin",
             "OutputFilePrediction.checksum" : "http://example.com/Checksum/2"
