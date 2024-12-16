@@ -518,16 +518,6 @@
       "@id": "http://purl.org/dc/terms/title"
     },
     "HexBinary": "http://www.w3.org/2001/XMLSchema#hexBinary",
-    "HyperParameter": "http://data.europa.eu/it6/HyperParameter",
-    "HyperParameter.component": {
-      "@id": "http://data.europa.eu/it6/component"
-    },
-    "HyperParameter.name": {
-      "@id": "http://purl.org/dc/terms/title"
-    },
-    "HyperParameter.value": {
-      "@id": "http://data.europa.eu/it6/value"
-    },
     "ImageObject": "http://data.europa.eu/m8g/ImageObject",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "Library": "http://data.europa.eu/it6/Library",
@@ -775,6 +765,12 @@
       "@id": "http://purl.org/dc/terms/title"
     },
     "Parameter": "http://data.europa.eu/it6/Parameter",
+    "Parameter.component": {
+      "@id": "http://data.europa.eu/it6/component"
+    },
+    "Parameter.name": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
     "Parameter.title": {
       "@id": "http://purl.org/dc/terms/title"
     },

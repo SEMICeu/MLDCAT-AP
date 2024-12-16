@@ -266,6 +266,7 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#OutputFilePrediction">Output File Prediction</a> |
 			      <a href="#Paper">Paper</a> |
 			      <a href="#QualityMeasurement">Quality Measurement</a> |
+			      <a href="#Risk">Risk</a> |
                         </p>
                         <p>
                             The main entities are supported by:
@@ -293,7 +294,6 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#Flow">Flow</a> |
 			      <a href="#FlowParameter">Flow Parameter</a> |
 			      <a href="#Hardware">Hardware</a> |
-			      <a href="#HyperParameter">Hyper Parameter</a> |
 			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#Library">Library</a> |
 			      <a href="#Licencedocument">Licence document</a> |
@@ -302,6 +302,7 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#MediaTypeOrExtent">Media Type Or Extent</a> |
 			      <a href="#OutputFileDescription">Output File Description</a> |
 			      <a href="#Parameter">Parameter</a> |
+			      <a href="#Parameter">Parameter</a> |
 			      <a href="#Policy">Policy</a> |
 			      <a href="#Prediction">Prediction</a> |
 			      <a href="#PredictionFeature">Prediction Feature</a> |
@@ -309,7 +310,6 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#Repository">Repository</a> |
 			      <a href="#Resource">Resource</a> |
 			      <a href="#Rightsstatement">Rights statement</a> |
-			      <a href="#Risk">Risk</a> |
 			      <a href="#Run">Run</a> |
 			      <a href="#RunCollection">Run Collection</a> |
 			      <a href="#Split">Split</a> |
@@ -3280,8 +3280,6 @@ The main entities are those that form the core of the Application Profile.
 
 
 
-
-
    
         <section>
             <h3 id="MachineLearningModel">
@@ -5824,6 +5822,8 @@ The main entities are those that form the core of the Application Profile.
 
 
 
+
+
    
         <section>
             <h3 id="QualityMeasurement">
@@ -6173,6 +6173,436 @@ The main entities are those that form the core of the Application Profile.
 
 
 
+
+
+
+   
+        <section>
+            <h3 id="Risk">
+                <a href="http://data.europa.eu/it6/Risk"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/it6/Risk"
+                   data-placement="right">Risk</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20Risk&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The combination of the probability of an occurrence of harm and the severity of that harm.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Risk.description">description</a>
+                            , <a href="#Risk.mitigation">mitigation</a>
+                            , <a href="#Risk.nature">nature</a>
+                            , <a href="#Risk.probability">probability</a>
+                            , <a href="#Risk.severity">severity</a>
+                            , <a href="#Risk.source">source</a>
+                            , <a href="#Risk.title">title</a>
+                            , <a href="#Risk.type">type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Risk.description"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20description%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An account of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.mitigation"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/mitigation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20mitigation%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.mitigation" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/mitigation"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/mitigation"
+                                           data-placement="right">
+                                        mitigation</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The action of reducing the severity of the risk.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.nature"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/nature"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20nature%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.nature" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/nature"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/nature"
+                                           data-placement="right">
+                                        nature</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Concept" data-placement="right">Concept</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The nature of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.probability"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/probability"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20probability%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.probability" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/probability"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/probability"
+                                           data-placement="right">
+                                        probability</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The likelihood that a given event will occur.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.severity"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/severity"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20severity%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.severity" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/severity"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/severity"
+                                           data-placement="right">
+                                        severity</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The extent of the damage resulting from an event occurring.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.source"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/source"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20source%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.source" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/source"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/source"
+                                           data-placement="right">
+                                        source</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Concept" data-placement="right">Concept</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The source of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.title"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20title%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A name associated to the risk.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Risk.type"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/type"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20type%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.type" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/type"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/type"
+                                           data-placement="right">
+                                        type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Concept" data-placement="right">Concept</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The nature or genre of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
 
 
 
@@ -11195,218 +11625,6 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
-            <h3 id="HyperParameter">
-                <a href="http://data.europa.eu/it6/HyperParameter"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/it6/HyperParameter"
-                   data-placement="right">Hyper Parameter</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20HyperParameter&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The various configuration settings that are specified prior to training a model
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#HyperParameter.component">component</a>
-                            , <a href="#HyperParameter.name">name</a>
-                            , <a href="#HyperParameter.value">value</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="HyperParameter.component"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/component"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20component%20in%20Hyper Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23HyperParameter.component" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/component"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/component"
-                                           data-placement="right">
-                                        component</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="HyperParameter.name"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20name%20in%20Hyper Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23HyperParameter.name" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
-                                           data-placement="right">
-                                        name</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The name assigned to the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="HyperParameter.value"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/value"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20value%20in%20Hyper Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23HyperParameter.value" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/value"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/value"
-                                           data-placement="right">
-                                        value</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
             <h3 id="ImageObject">
                 <a href="http://data.europa.eu/m8g/ImageObject"
                    data-toggle="tooltip"
@@ -12080,7 +12298,10 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Parameter.title">title</a>
+                            For this entity the following properties are defined: <a href="#Parameter.component">component</a>
+                            , <a href="#Parameter.name">name</a>
+                            , <a href="#Parameter.title">title</a>
+                            , <a href="#Parameter.value">value</a>
                             , <a href="#Parameter.value">value</a>
                             .
                     </dd>
@@ -12121,6 +12342,92 @@ They are included in the Application Profile because they form the range of prop
                     </thead>
                     <tbody class="supertype">
                         
+                            <tr id="Parameter.component"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/component"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20component%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.component" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/component"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/component"
+                                           data-placement="right">
+                                        component</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.name"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20name%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name assigned to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Parameter.title"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/title"
@@ -12150,6 +12457,349 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                                 <td property="rdfs:comment">
                                     The name assigned to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.value"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/value"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20value%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.value" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/value"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/value"
+                                           data-placement="right">
+                                        value</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.value"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/value"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20value%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.value" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/value"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/value"
+                                           data-placement="right">
+                                        value</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Parameter">
+                <a href="http://data.europa.eu/it6/Parameter"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/it6/Parameter"
+                   data-placement="right">Parameter</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20Parameter&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The various configuration settings that are specified prior to and during training a model
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Parameter.component">component</a>
+                            , <a href="#Parameter.name">name</a>
+                            , <a href="#Parameter.title">title</a>
+                            , <a href="#Parameter.value">value</a>
+                            , <a href="#Parameter.value">value</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Parameter.component"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/component"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20component%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.component" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/component"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/component"
+                                           data-placement="right">
+                                        component</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.name"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20name%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name assigned to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.title"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20title%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name assigned to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Parameter.value"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/value"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20value%20in%20Parameter&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Parameter.value" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/value"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/value"
+                                           data-placement="right">
+                                        value</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -12977,436 +13627,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="Risk">
-                <a href="http://data.europa.eu/it6/Risk"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/it6/Risk"
-                   data-placement="right">Risk</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20Risk&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The combination of the probability of an occurrence of harm and the severity of that harm.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Risk.description">description</a>
-                            , <a href="#Risk.mitigation">mitigation</a>
-                            , <a href="#Risk.nature">nature</a>
-                            , <a href="#Risk.probability">probability</a>
-                            , <a href="#Risk.severity">severity</a>
-                            , <a href="#Risk.source">source</a>
-                            , <a href="#Risk.title">title</a>
-                            , <a href="#Risk.type">type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Risk.description"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/description"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20description%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.description" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/description"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/description"
-                                           data-placement="right">
-                                        description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    An account of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.mitigation"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/mitigation"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20mitigation%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.mitigation" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/mitigation"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/mitigation"
-                                           data-placement="right">
-                                        mitigation</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The action of reducing the severity of the risk.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.nature"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/nature"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20nature%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.nature" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/nature"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/nature"
-                                           data-placement="right">
-                                        nature</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Concept" data-placement="right">Concept</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The nature of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.probability"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/probability"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20probability%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.probability" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/probability"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/probability"
-                                           data-placement="right">
-                                        probability</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The likelihood that a given event will occur.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.severity"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/severity"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20severity%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.severity" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/severity"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/severity"
-                                           data-placement="right">
-                                        severity</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The extent of the damage resulting from an event occurring.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.source"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/source"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20source%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.source" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/source"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/source"
-                                           data-placement="right">
-                                        source</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Concept" data-placement="right">Concept</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The source of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.title"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20title%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    A name associated to the risk.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Risk.type"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/type"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20type%20in%20Risk&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Risk.type" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/type"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/type"
-                                           data-placement="right">
-                                        type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Concept" data-placement="right">Concept</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The nature or genre of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
 
 
    
@@ -13736,7 +13956,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#HyperParameter" data-placement="right">Hyper Parameter</a>
+                                            <a href="#Parameter" data-placement="right">Parameter</a>
                                         
                                     
                                 </td>
@@ -13779,7 +13999,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#HyperParameter" data-placement="right">Hyper Parameter</a>
+                                            <a href="#Parameter" data-placement="right">Parameter</a>
                                         
                                     
                                 </td>
@@ -17792,55 +18012,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#HyperParameter">Hyper Parameter</a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/HyperParameter</div></td>
-								<td></td>
-								<td><a href="#HyperParameter.component">component </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/component</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#HyperParameter">Hyper Parameter</a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/HyperParameter</div></td>
-								<td></td>
-								<td><a href="#HyperParameter.name">name </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#HyperParameter">Hyper Parameter</a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/HyperParameter</div></td>
-								<td></td>
-								<td><a href="#HyperParameter.value">value </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/value</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
 					<tr>
 						<td><a href="#ImageObject">Image Object</a></td>
 						<td><div class="shorten">http://data.europa.eu/m8g/ImageObject</div></td>
@@ -18748,6 +18919,18 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
 					
 						
 					
@@ -18759,8 +18942,115 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Parameter">Parameter</a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
 								<td></td>
+								<td><a href="#Parameter.component">component </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/component</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.name">name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
 								<td><a href="#Parameter.title">title </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.value">value </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/value</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.value">value </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/value</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.component">component </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/component</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.name">name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.title">title </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Parameter">Parameter</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Parameter</div></td>
+								<td></td>
+								<td><a href="#Parameter.value">value </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/value</div></td>
 							</tr>
 						
 					

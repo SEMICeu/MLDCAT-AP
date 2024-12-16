@@ -22,7 +22,6 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#FlowShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#FlowParameterShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HardwareShape>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MeasureShape>,
@@ -2450,61 +2449,6 @@
   shacl:closed false;
   shacl:targetClass xsd:hexBinary .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape> a shacl:NodeShape;
-  shacl:closed false;
-  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/db15b7df9d94d285bd33d0966a4d2357f8333c31>;
-  shacl:targetClass <http://data.europa.eu/it6/HyperParameter> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name";
-  shacl:description "The name assigned to the resource."@en;
-  shacl:maxCount 1;
-  shacl:name "name"@en;
-  shacl:path dc:title .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value";
-  shacl:name "value"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/it6/value> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.component";
-  shacl:maxCount 1;
-  shacl:name "component"@en;
-  shacl:path <http://data.europa.eu/it6/component> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name";
-  shacl:description "The name assigned to the resource."@en;
-  shacl:minCount 1;
-  shacl:name "name"@en;
-  shacl:path dc:title .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.component";
-  shacl:name "component"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/it6/component> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name";
-  shacl:description "The name assigned to the resource."@en;
-  shacl:name "name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path dc:title .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value";
-  shacl:minCount 1;
-  shacl:name "value"@en;
-  shacl:path <http://data.europa.eu/it6/value> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/db15b7df9d94d285bd33d0966a4d2357f8333c31> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value";
-  shacl:maxCount 1;
-  shacl:name "value"@en;
-  shacl:path <http://data.europa.eu/it6/value> .
-
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ImageObjectShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://data.europa.eu/m8g/ImageObject> .
@@ -3393,7 +3337,12 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687>,
+  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
@@ -3401,10 +3350,38 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>;
   shacl:targetClass <http://data.europa.eu/it6/Parameter> .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:maxCount 1;
+  shacl:name "name"@en;
+  shacl:path dc:title .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value";
   shacl:name "value"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/it6/value> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.component";
+  shacl:maxCount 1;
+  shacl:name "component"@en;
+  shacl:path <http://data.europa.eu/it6/component> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:minCount 1;
+  shacl:name "name"@en;
+  shacl:path dc:title .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.component";
+  shacl:name "component"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/it6/component> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:name "name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:title .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value";
   shacl:minCount 1;
@@ -4030,7 +4007,7 @@
   shacl:path <http://data.europa.eu/it6/hasEnvironmentalImpact> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a19fcda8c9d8234fee26a606e2037f888dacd4f9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter";
-  shacl:class <http://data.europa.eu/it6/HyperParameter>;
+  shacl:class <http://data.europa.eu/it6/Parameter>;
   shacl:description "The hyperparameter associated with the run."@en;
   shacl:name "has hyperparameter"@en;
   shacl:path <http://data.europa.eu/it6/hasHyperParameter> .
@@ -4041,7 +4018,7 @@
   shacl:path <http://data.europa.eu/it6/hasOutputFileDescription> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a5d041e8a6db541d492c9c80790f4986f4231dd9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter";
-  shacl:class <http://data.europa.eu/it6/HyperParameter>;
+  shacl:class <http://data.europa.eu/it6/Parameter>;
   shacl:description "The hyperparameter associated with this run."@en;
   shacl:name "has hyper parameter"@en;
   shacl:path <http://data.europa.eu/it6/hasHyperparameter> .

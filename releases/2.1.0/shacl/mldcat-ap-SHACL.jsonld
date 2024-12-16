@@ -1933,95 +1933,6 @@
       "sh:targetClass": "http://data.europa.eu/it6/Hardware"
     },
     {
-      "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name",
-          "sh:description": {
-            "en": "The name assigned to the resource."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value",
-          "sh:name": {
-            "en": "value"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/it6/value"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.component",
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "component"
-          },
-          "sh:path": "http://data.europa.eu/it6/component"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name",
-          "sh:description": {
-            "en": "The name assigned to the resource."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.component",
-          "sh:name": {
-            "en": "component"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/it6/component"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.name",
-          "sh:description": {
-            "en": "The name assigned to the resource."
-          },
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "value"
-          },
-          "sh:path": "http://data.europa.eu/it6/value"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameterShape/db15b7df9d94d285bd33d0966a4d2357f8333c31",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#HyperParameter.value",
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "value"
-          },
-          "sh:path": "http://data.europa.eu/it6/value"
-        }
-      ],
-      "sh:targetClass": "http://data.europa.eu/it6/HyperParameter"
-    },
-    {
       "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -3431,12 +3342,84 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/398fb93e389fba9a790e6adb0152f10f2ba6023a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value",
           "sh:name": {
             "en": "value"
           },
           "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/it6/value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/it6/value"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/6bba21316b3837a221afd5be2dcdac9de2c3dd4f",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.component",
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "component"
+          },
+          "sh:path": "http://data.europa.eu/it6/component"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/99f4c6aefe1524b5080fc1cf2a5f440542a02503",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.component",
+          "sh:name": {
+            "en": "component"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/it6/component"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "value"
+          },
           "sh:path": "http://data.europa.eu/it6/value"
         },
         {
@@ -3471,6 +3454,15 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/db15b7df9d94d285bd33d0966a4d2357f8333c31",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Parameter.value",
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:path": "http://data.europa.eu/it6/value"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ParameterShape/db15b7df9d94d285bd33d0966a4d2357f8333c31",
@@ -4110,7 +4102,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a19fcda8c9d8234fee26a606e2037f888dacd4f9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter",
-          "sh:class": "http://data.europa.eu/it6/HyperParameter",
+          "sh:class": "http://data.europa.eu/it6/Parameter",
           "sh:description": {
             "en": "The hyperparameter associated with the run."
           },
@@ -4131,7 +4123,7 @@
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a5d041e8a6db541d492c9c80790f4986f4231dd9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter",
-          "sh:class": "http://data.europa.eu/it6/HyperParameter",
+          "sh:class": "http://data.europa.eu/it6/Parameter",
           "sh:description": {
             "en": "The hyperparameter associated with this run."
           },
