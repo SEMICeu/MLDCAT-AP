@@ -690,12 +690,14 @@
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/09d2f660b1d992689d3541ab32939a7bde693569> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructure.haslibrary";
   shacl:description "The library associated with the computer infrastructure."@en;
   shacl:minCount 1;
-  shacl:name "has library"@en .
+  shacl:name "has library"@en;
+  shacl:path <http://data.europa.eu/it6/hasLibrary> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/4ad952ff94822177238b825948f03a10926a64d7> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructure.haslibrary";
   shacl:class <http://data.europa.eu/it6/Library>;
   shacl:description "The library associated with the computer infrastructure."@en;
-  shacl:name "has library"@en .
+  shacl:name "has library"@en;
+  shacl:path <http://data.europa.eu/it6/hasLibrary> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/a823bd020bcdc88441988da571bd0c3df5af87f0> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructure.hashardware";
   shacl:description "The hardware associated with the computer infrastructure"@en;
@@ -736,7 +738,8 @@
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/ff32de0d999423706a253b05325c4a503fa5d71f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructure.haslibrary";
   shacl:description "The library associated with the computer infrastructure."@en;
   shacl:name "has library"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI .
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/it6/hasLibrary> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ConceptShape> a shacl:NodeShape;
   shacl:closed false;

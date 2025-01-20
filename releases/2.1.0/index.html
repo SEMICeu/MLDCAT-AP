@@ -213,6 +213,7 @@ MLDCAT-AP (Machine Learning DCAT-AP) is an application profile that extends DCAT
             An Application Profile is a data specification aimed to facilitate the data exchange in a well-defined application context. It re-uses concepts from one or more semantic data specifications, while adding more specificity, by identifying mandatory, recommended, and optional elements, addressing particular application needs, and providing recommendations for controlled vocabularies to be used. 
             More information can be found on the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-cv-specification">SEMIC Style Guide</a>.
         </p>
+    <h3>Used Prefixes</h3>
         
 This specification uses the following prefixes to shorten the URIs for readibility.
 
@@ -7965,7 +7966,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="ComputerInfrastructure.haslibrary"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/has Library"
+                                resource="http://data.europa.eu/it6/hasLibrary"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20has library%20in%20Computer Infrastructure&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23ComputerInfrastructure.haslibrary" target="_blank" rel="noopener noreferrer" >
@@ -7974,9 +7975,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/it6/has Library"
+                                        <a href="http://data.europa.eu/it6/hasLibrary"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/has Library"
+                                           data-content="http://data.europa.eu/it6/hasLibrary"
                                            data-placement="right">
                                         has library</a>
                                 </td>
@@ -16512,7 +16513,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data.europa.eu/it6/ComputerInfrastructure</div></td>
 								<td></td>
 								<td><a href="#ComputerInfrastructure.haslibrary">has library </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/has Library</div></td>
+								<td><div class="shorten">http://data.europa.eu/it6/hasLibrary</div></td>
 							</tr>
 						
 					
@@ -20088,6 +20089,29 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 		background-color:dodgerblue;
 		color:white;
 	}
+    table.simple {                                                                      
+                  font-size: small;                                                           
+                          border-spacing:0;                                                   
+                          border-collapse:collapse;                                           
+                          border-bottom:3px solid #005a9c                                     
+        }                                                                                   
+        .simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}           
+        .simple th a{color:#fff;padding:3px 5px;text-align:left}                            
+        .simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}   
+        .simple td{padding:3px 10px;border-top:1px solid #ddd}                              
+        .simple tr:nth-child(even){background:#f0f6ff}
+    body.darkmode .simple th{background:#005a9c94;color:#ddd}
+    body.darkmode .simple th a{color:#ddd}
+    body.darkmode .simple tr:nth-child(even){background:#f0f6ff26}
+    body.darkmode :is(h4,h5,h6)+a.self-link::before {
+        color: var(--heading-text);
+    }
+    body.darkmode img {
+        background: none;
+    }
+    body.darkmode section#references :target {
+        background: #04162d;
+    }
   </style>
 
     	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">

@@ -367,7 +367,7 @@
           "sh:name": {
             "en": "has library"
           },
-          "sh:path": "http://data.europa.eu/it6/has Library"
+          "sh:path": "http://data.europa.eu/it6/hasLibrary"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/4ad952ff94822177238b825948f03a10926a64d7",
@@ -379,7 +379,7 @@
           "sh:name": {
             "en": "has library"
           },
-          "sh:path": "http://data.europa.eu/it6/has Library"
+          "sh:path": "http://data.europa.eu/it6/hasLibrary"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ComputerInfrastructureShape/a823bd020bcdc88441988da571bd0c3df5af87f0",
@@ -463,7 +463,7 @@
             "en": "has library"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/it6/has Library"
+          "sh:path": "http://data.europa.eu/it6/hasLibrary"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/it6/ComputerInfrastructure"

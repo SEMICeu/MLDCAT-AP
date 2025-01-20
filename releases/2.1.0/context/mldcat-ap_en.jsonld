@@ -139,7 +139,7 @@
     },
     "ComputerInfrastructure.hasLibrary": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/it6/has Library",
+      "@id": "http://data.europa.eu/it6/hasLibrary",
       "@type": "@id"
     },
     "ComputerInfrastructure.title": {
