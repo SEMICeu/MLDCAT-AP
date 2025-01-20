@@ -4067,18 +4067,6 @@
           "sh:path": "http://data.europa.eu/it6/hasEvaluation"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9a05a4ecdd7d8c668abbab93c8ae583756ff5a0f",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter",
-          "sh:description": {
-            "en": "The hyperparameter associated with this run."
-          },
-          "sh:name": {
-            "en": "has hyper parameter"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/it6/hasHyperparameter"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9b4273b86fb7bc4b72ab1aeec3842bf74fb41927",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hasoutputfiledescription",
           "sh:class": "http://data.europa.eu/it6/OutputFileDescription",
@@ -4119,18 +4107,6 @@
             "en": "has output file description"
           },
           "sh:path": "http://data.europa.eu/it6/hasOutputFileDescription"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a5d041e8a6db541d492c9c80790f4986f4231dd9",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter",
-          "sh:class": "http://data.europa.eu/it6/Parameter",
-          "sh:description": {
-            "en": "The hyperparameter associated with this run."
-          },
-          "sh:name": {
-            "en": "has hyper parameter"
-          },
-          "sh:path": "http://data.europa.eu/it6/hasHyperparameter"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a6a8b89a6989171ad80d09b1f1fbf34d3a4a0a28",

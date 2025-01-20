@@ -888,11 +888,6 @@
       "@id": "http://data.europa.eu/it6/hasFlow",
       "@type": "@id"
     },
-    "Run.hasHyperParameter": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/it6/hasHyperparameter",
-      "@type": "@id"
-    },
     "Run.hasHyperparameter": {
       "@container": "@set",
       "@id": "http://data.europa.eu/it6/hasHyperParameter",

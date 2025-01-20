@@ -3863,12 +3863,10 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/5bc739112726cd993c279f81380611cafc3a9857>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/629bbe57c2732660dcf6ee05809ff7d824661201>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/8380452aad83241a35f826311f1c5154e4a63878>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9a05a4ecdd7d8c668abbab93c8ae583756ff5a0f>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9b4273b86fb7bc4b72ab1aeec3842bf74fb41927>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9d1897ae4b120b3e387821944d58721260a82580>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a19fcda8c9d8234fee26a606e2037f888dacd4f9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a4e84b2c4a95c26cc27bb46270f9934ac3180dab>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a5d041e8a6db541d492c9c80790f4986f4231dd9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a6a8b89a6989171ad80d09b1f1fbf34d3a4a0a28>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/aadbd67a77a624f073be2076627fb9dc883cbe48>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/ac581b0674c3566f9a857e4ce8a489eb5450d9d0>,
@@ -3992,12 +3990,6 @@
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/it6/hasEvaluation> .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9a05a4ecdd7d8c668abbab93c8ae583756ff5a0f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter";
-  shacl:description "The hyperparameter associated with this run."@en;
-  shacl:name "has hyper parameter"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/it6/hasHyperparameter> .
-
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/9b4273b86fb7bc4b72ab1aeec3842bf74fb41927> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hasoutputfiledescription";
   shacl:class <http://data.europa.eu/it6/OutputFileDescription>;
   shacl:name "has output file description"@en;
@@ -4019,12 +4011,6 @@
   shacl:maxCount 1;
   shacl:name "has output file description"@en;
   shacl:path <http://data.europa.eu/it6/hasOutputFileDescription> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a5d041e8a6db541d492c9c80790f4986f4231dd9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hashyperparameter";
-  shacl:class <http://data.europa.eu/it6/Parameter>;
-  shacl:description "The hyperparameter associated with this run."@en;
-  shacl:name "has hyper parameter"@en;
-  shacl:path <http://data.europa.eu/it6/hasHyperparameter> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RunShape/a6a8b89a6989171ad80d09b1f1fbf34d3a4a0a28> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Run.hasoutputfiledescription";
   shacl:minCount 1;
