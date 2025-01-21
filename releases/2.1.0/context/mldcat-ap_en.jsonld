@@ -313,8 +313,12 @@
       "@id": "http://purl.org/dc/terms/language",
       "@type": "@id"
     },
-    "Distribution.license": {
+    "Distribution.licence": {
       "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "Distribution.mediaType": {
+      "@id": "http://purl.org/dc/terms/MediaType",
       "@type": "@id"
     },
     "Distribution.numberOfDatapoints": {
@@ -526,6 +530,11 @@
       "@id": "http://data.europa.eu/it6/isExecutedBy",
       "@type": "@id"
     },
+    "Library.licence": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
     "Library.title": {
       "@id": "http://purl.org/dc/terms/title"
     },
@@ -651,6 +660,10 @@
       "@id": "http://data.europa.eu/m8g/logo",
       "@type": "@id"
     },
+    "MachineLearningModel.modificationDate": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/it6/modifiedDate"
+    },
     "MachineLearningModel.name": {
       "@id": "http://purl.org/dc/terms/title"
     },
@@ -661,6 +674,9 @@
       "@container": "@set",
       "@id": "http://data.europa.eu/it6/runnedOn",
       "@type": "@id"
+    },
+    "MachineLearningModel.shortDescription": {
+      "@id": "http://data.europa.eu/it6/shortDescription"
     },
     "MachineLearningModel.testedOn": {
       "@container": "@set",
@@ -695,6 +711,7 @@
       "@id": "http://data.europa.eu/it6/version"
     },
     "Measure": "http://data.europa.eu/it6/Measure",
+    "MediaType": "http://purl.org/dc/terms/MediaType",
     "MediaTypeOrExtent": "http://purl.org/dc/terms/MediaTypeOrExtent",
     "NonNegativeInteger": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "OutputFileDescription": "http://data.europa.eu/it6/OutputFileDescription",
@@ -831,6 +848,9 @@
       "@container": "@set",
       "@id": "http://data.europa.eu/it6/hasFile",
       "@type": "@id"
+    },
+    "Repository.name": {
+      "@id": "http://purl.org/dc/terms/title"
     },
     "Resource": "http://www.w3.org/2000/01/rdf-schema#Resource",
     "RightsStatement": "http://purl.org/dc/terms/RightsStatement",

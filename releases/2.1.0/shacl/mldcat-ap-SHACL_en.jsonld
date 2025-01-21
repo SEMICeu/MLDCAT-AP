@@ -2004,6 +2004,30 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/dbcf2adef675735c48b532392359af27af5e8b71",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.licence",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "en": "A licence under which the Library is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f30149ffb6ec9d00dd5866b052105729fa27d02a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.licence",
+          "sh:description": {
+            "en": "A licence under which the Library is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.title",
           "sh:description": {
@@ -2082,6 +2106,18 @@
             "en": "training methodologies"
           },
           "sh:path": "http://data.europa.eu/it6/trainingMethodologies"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.shortdescription",
+          "sh:description": {
+            "en": "A short description of a machine learning model"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/it6/shortDescription"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0e6e22dc13d0b206842d78a0280d195612318d56",
@@ -2408,6 +2444,18 @@
           "sh:path": "http://data.europa.eu/it6/bias"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6b7242b6b89977700c05e4875131fbb975c4235e",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.modificationdate",
+          "sh:description": {
+            "en": "The date the machine learning model was last modifiedTime compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."
+          },
+          "sh:name": {
+            "en": "modification date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/it6/modifiedDate"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.description",
           "sh:description": {
@@ -2610,6 +2658,18 @@
             "en": "runned on"
           },
           "sh:path": "http://data.europa.eu/it6/runnedOn"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a89ae712fdba62eca26618adf10fb8bfee67d716",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.shortdescription",
+          "sh:description": {
+            "en": "A short description of a machine learning model"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data.europa.eu/it6/shortDescription"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/aa10c7331969a961108f2d78f31544c4d9e38a6b",
@@ -4872,6 +4932,13 @@
       "sh:targetClass": "http://purl.org/dc/terms/LinguisticSystem"
     },
     {
+      "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://purl.org/dc/terms/MediaType"
+    },
+    {
       "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeOrExtentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -6237,6 +6304,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype",
+          "sh:class": "http://purl.org/dc/terms/MediaType",
+          "sh:description": {
+            "en": "The media type of the distribution as defined by IANA"
+          },
+          "sh:name": {
+            "en": "media type"
+          },
+          "sh:path": "http://purl.org/dc/terms/MediaType"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/07881c00b6b7263297e992b1ea251140aa09c914",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.rowIDattribute",
           "sh:description": {
@@ -6247,18 +6326,6 @@
             "en": "row ID attribute"
           },
           "sh:path": "http://data.europa.eu/it6/rowIDAttribute"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/136bb2abfdf5aa444a60bb48633b362319dea4db",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license",
-          "sh:description": {
-            "en": "A licence under which the Distribution is made available."
-          },
-          "sh:name": {
-            "en": "license"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/license"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/16c960b8afbda0b0c9ea93512295a86ef1c66978",
@@ -6357,16 +6424,16 @@
           "sh:path": "http://www.w3.org/ns/odrl/2/hasPolicy"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/44e0945e932b142aa37108f9c7baac138213357d",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license",
-          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype",
           "sh:description": {
-            "en": "A licence under which the Distribution is made available."
+            "en": "The media type of the distribution as defined by IANA"
           },
           "sh:name": {
-            "en": "license"
+            "en": "media type"
           },
-          "sh:path": "http://purl.org/dc/terms/license"
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/MediaType"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/533683eaacab30836e2350f542e593e27eca9f89",
@@ -6415,6 +6482,18 @@
             "en": "access URL"
           },
           "sh:path": "http://www.w3.org/ns/dcat#accessURL"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/69c8fdb6db25c5ad1f8a47366c19adb834924ae0",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype",
+          "sh:description": {
+            "en": "The media type of the distribution as defined by IANA"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "media type"
+          },
+          "sh:path": "http://purl.org/dc/terms/MediaType"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/73765ca7a6e23ef17cf4e67a576e90a0c391f1c1",
@@ -6573,6 +6652,18 @@
           "sh:path": "http://data.europa.eu/it6/defaultTargetAttribute"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/9eaae476a881de13b9430537ace6e70da7327dbd",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence",
+          "sh:description": {
+            "en": "A licence under which the Distribution is made available."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.downloadURL",
           "sh:class": "http://www.w3.org/ns/dcat#Resource",
@@ -6669,18 +6760,6 @@
           "sh:path": "http://data.europa.eu/it6/processingError"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/cd035d5fcf2aa42f83e614e12afd8905d4d6bcf8",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license",
-          "sh:description": {
-            "en": "A licence under which the Distribution is made available."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "license"
-          },
-          "sh:path": "http://purl.org/dc/terms/license"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.title",
           "sh:description": {
@@ -6703,6 +6782,18 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/language"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "en": "A licence under which the Distribution is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:path": "http://purl.org/dc/terms/license"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dc17e7a798aea475507009807c87717284c17830",
@@ -6763,6 +6854,18 @@
             "en": "byte size"
           },
           "sh:path": "http://www.w3.org/ns/dcat#byteSize"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence",
+          "sh:description": {
+            "en": "A licence under which the Distribution is made available."
+          },
+          "sh:name": {
+            "en": "licence"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230",
@@ -7451,6 +7554,30 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/398fb93e389fba9a790e6adb0152f10f2ba6023a",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9b660db1133790511dd6d633f914c589c61f464c",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.hasfile",
           "sh:class": "http://data.europa.eu/it6/OutputFilePrediction",
@@ -7458,6 +7585,18 @@
             "en": "has file"
           },
           "sh:path": "http://data.europa.eu/it6/hasFile"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name",
+          "sh:description": {
+            "en": "The name assigned to the resource."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/dfb6b75816bc1b7517fa8f164055d11830066bd3",

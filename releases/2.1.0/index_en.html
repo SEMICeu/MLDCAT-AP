@@ -300,6 +300,7 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#Licencedocument">Licence document</a> |
 			      <a href="#LinguisticSystem">Linguistic System</a> |
 			      <a href="#Measure">Measure</a> |
+			      <a href="#MediaType">Media Type</a> |
 			      <a href="#MediaTypeOrExtent">Media Type Or Extent</a> |
 			      <a href="#OutputFileDescription">Output File Description</a> |
 			      <a href="#Parameter">Parameter</a> |
@@ -2336,7 +2337,8 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Distribution.identifier">identifier</a>
                             , <a href="#Distribution.ignoreattribute">ignore attribute</a>
                             , <a href="#Distribution.language">language</a>
-                            , <a href="#Distribution.license">license</a>
+                            , <a href="#Distribution.licence">licence</a>
+                            , <a href="#Distribution.mediatype">media type</a>
                             , <a href="#Distribution.numberofdatapoints">number of datapoints</a>
                             , <a href="#Distribution.processingdate">processing date</a>
                             , <a href="#Distribution.processingerror">processing error</a>
@@ -2941,12 +2943,12 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="Distribution.license"
+                            <tr id="Distribution.licence"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/license"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20license%20in%20Distribution&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Distribution.license" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20licence%20in%20Distribution&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Distribution.licence" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2956,7 +2958,7 @@ The main entities are those that form the core of the Application Profile.
                                            data-toggle="tooltip"
                                            data-content="http://purl.org/dc/terms/license"
                                            data-placement="right">
-                                        license</a>
+                                        licence</a>
                                 </td>
                                 <td>
                                     
@@ -2970,6 +2972,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A licence under which the Distribution is made available.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Distribution.mediatype"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/MediaType"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20media type%20in%20Distribution&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Distribution.mediatype" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/MediaType"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/MediaType"
+                                           data-placement="right">
+                                        media type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#MediaType" data-placement="right">Media Type</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The media type of the distribution as defined by IANA
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -3338,9 +3383,11 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#MachineLearningModel.licence">licence</a>
                             , <a href="#MachineLearningModel.limitations">limitations</a>
                             , <a href="#MachineLearningModel.logo">logo</a>
+                            , <a href="#MachineLearningModel.modificationdate">modification date</a>
                             , <a href="#MachineLearningModel.name">name</a>
                             , <a href="#MachineLearningModel.releasedate">release date</a>
                             , <a href="#MachineLearningModel.runnedon">runned on</a>
+                            , <a href="#MachineLearningModel.shortdescription">short description</a>
                             , <a href="#MachineLearningModel.testedon">tested on</a>
                             , <a href="#MachineLearningModel.testingdescription">testing description</a>
                             , <a href="#MachineLearningModel.trainedon">trained on</a>
@@ -4549,6 +4596,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="MachineLearningModel.modificationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/modifiedDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20modification date%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.modificationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/modifiedDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/modifiedDate"
+                                           data-placement="right">
+                                        modification date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#TemporalLiteral" data-placement="right">Temporal Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The date the machine learning model was last modifiedTime compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="MachineLearningModel.name"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/title"
@@ -4664,6 +4754,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     The dataset on which a machine learning mode is executed.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="MachineLearningModel.shortdescription"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/shortDescription"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20short description%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.shortdescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/shortDescription"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/shortDescription"
+                                           data-placement="right">
+                                        short description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A short description of a machine learning model
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -5028,6 +5161,8 @@ The main entities are those that form the core of the Application Profile.
         
     </div>
 </section>
+
+
 
 
 
@@ -11698,6 +11833,7 @@ They are included in the Application Profile because they form the range of prop
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#Library.isexecutedby">is executed by</a>
+                            , <a href="#Library.licence">licence</a>
                             , <a href="#Library.title">title</a>
                             , <a href="#Library.version">version</a>
                             .
@@ -11768,6 +11904,49 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                                 <td property="rdfs:comment">
                                     The library that is executed by this file
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Library.licence"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/license"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20licence%20in%20Library&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Library.licence" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/license"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/license"
+                                           data-placement="right">
+                                        licence</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Licencedocument" data-placement="right">Licence document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A licence under which the Library is made available.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -11988,6 +12167,49 @@ They are included in the Application Profile because they form the range of prop
                 </dt>
                 <dd>
                     
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="MediaType">
+                <a href="http://purl.org/dc/terms/MediaType"
+                   data-toggle="tooltip"
+                   data-content="http://purl.org/dc/terms/MediaType"
+                   data-placement="right">Media Type</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20MediaType&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The media type of the distribution as defined by IANA
                 </dd>
                 
                 
@@ -13449,6 +13671,7 @@ They are included in the Application Profile because they form the range of prop
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#Repository.hasfile">has file</a>
+                            , <a href="#Repository.name">name</a>
                             .
                     </dd>
                 
@@ -13517,6 +13740,49 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                                 <td property="rdfs:comment">
                                     
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Repository.name"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20name%20in%20Repository&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Repository.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name assigned to the resource.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -16935,6 +17201,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -17112,8 +17382,18 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Distribution">Distribution</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/dcat#Distribution</div></td>
 								<td></td>
-								<td><a href="#Distribution.license">license </a></td>
+								<td><a href="#Distribution.licence">licence </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/license</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Distribution">Distribution</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#Distribution</div></td>
+								<td></td>
+								<td><a href="#Distribution.mediatype">media type </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/MediaType</div></td>
 							</tr>
 						
 					
@@ -17987,6 +18267,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -18002,6 +18286,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Library.isexecutedby">is executed by </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/isExecutedBy</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Library">Library</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/Library</div></td>
+								<td></td>
+								<td><a href="#Library.licence">licence </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/license</div></td>
 							</tr>
 						
 					
@@ -18128,6 +18422,14 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+					
+						
+					
+						
 					
 						
 					
@@ -18481,6 +18783,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
 								<td></td>
+								<td><a href="#MachineLearningModel.modificationdate">modification date </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/modifiedDate</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
+								<td></td>
 								<td><a href="#MachineLearningModel.name">name </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
 							</tr>
@@ -18503,6 +18815,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#MachineLearningModel.runnedon">runned on </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/runnedOn</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
+								<td></td>
+								<td><a href="#MachineLearningModel.shortdescription">short description </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/shortDescription</div></td>
 							</tr>
 						
 					
@@ -18593,6 +18915,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					<tr>
 						<td><a href="#Measure">Measure</a></td>
 						<td><div class="shorten">http://data.europa.eu/it6/Measure</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#MediaType">Media Type</a></td>
+						<td><div class="shorten">http://purl.org/dc/terms/MediaType</div></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -19235,6 +19568,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -19246,6 +19583,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Repository.hasfile">has file </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/hasFile</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Repository">Repository</a></td>
+								<td><div class="shorten">https://linkedpaperswithcode.com/class/repository</div></td>
+								<td></td>
+								<td><a href="#Repository.name">name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
 							</tr>
 						
 					

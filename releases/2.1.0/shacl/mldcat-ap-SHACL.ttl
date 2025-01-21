@@ -40,6 +40,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#ImageObjectShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LinguisticSystemShape>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeOrExtentShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RightsStatementShape>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#BibliographicReferenceShape>,
@@ -1169,8 +1170,8 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/07881c00b6b7263297e992b1ea251140aa09c914>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/136bb2abfdf5aa444a60bb48633b362319dea4db>,
+  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/07881c00b6b7263297e992b1ea251140aa09c914>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/16c960b8afbda0b0c9ea93512295a86ef1c66978>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/193f76584d643e39b083a5a961780cf712835813>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/23d4c038584493decec780192681ef61694bff7c>,
@@ -1179,11 +1180,12 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/29ba27566ab1f32c8bb73f3492436d4bd868d3d2>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/3207443d4798da3e598de2e2c9a342548ddb65ba>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/36b68d0f06c0eacbbddd0d2891379c6d005dc861>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/44e0945e932b142aa37108f9c7baac138213357d>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/533683eaacab30836e2350f542e593e27eca9f89>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/59cbd395c4b9167c030b3fd61001eeeee5034346>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/653804840386e33525b3d39d205c174780be414b>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/69c8fdb6db25c5ad1f8a47366c19adb834924ae0>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/73765ca7a6e23ef17cf4e67a576e90a0c391f1c1>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/7434c99492683a2fb06dcdcf1f238671caf3d462>,
@@ -1197,6 +1199,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/9484b608420ccb732e39ca34b588c57868c81181>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/95509625b56c9643c3d508d415b35c9cbab6c095>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/956e2722bcc0b1f0a6eec10ab142299ed5fa8712>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/9eaae476a881de13b9430537ace6e70da7327dbd>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/a490981ff58636ec8601ca500e67bd9c575eaed9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/a5a1142622bf258910a43fbd2aeba04b46c12982>,
@@ -1205,29 +1208,30 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/c0d17764e84e711728581fda7356a51e99a9040a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/cc7655a3775bf39fd20cf25a5a93f21440c84281>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/cd035d5fcf2aa42f83e614e12afd8905d4d6bcf8>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/db878f1cb93930f64561d0504123c66feacfad5a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dc17e7a798aea475507009807c87717284c17830>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/e0065293221c5851ec508ae96cd4ad03ffdedd19>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/e0d527359d6292f5deef559af6adfe19289be318>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/e47e51e83422bb3a76b660610419c7f766a45bf2>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/ed8e40725c55813428b73d8e5042c6affe821ea2>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f64ea9c4b32a8afd45dc2afdcea6722b56707974>;
   shacl:targetClass dcat:Distribution .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/06ed12d1071a78728d10628eb2d072781559eb75> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype";
+  shacl:class dc:MediaType;
+  shacl:description "The media type of the distribution as defined by IANA"@en;
+  shacl:name "media type"@en;
+  shacl:path dc:MediaType .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/07881c00b6b7263297e992b1ea251140aa09c914> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.rowIDattribute";
   shacl:description "The attribute that represents the row-id column, if present in the dataset."@en;
   shacl:maxCount 1;
   shacl:name "row ID attribute"@en;
   shacl:path <http://data.europa.eu/it6/rowIDAttribute> .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/136bb2abfdf5aa444a60bb48633b362319dea4db> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license";
-  shacl:description "A licence under which the Distribution is made available."@en;
-  shacl:name "license"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/16c960b8afbda0b0c9ea93512295a86ef1c66978> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.rowIDattribute";
   shacl:description "The attribute that represents the row-id column, if present in the dataset."@en;
@@ -1277,11 +1281,11 @@
   shacl:name "has policy"@en;
   shacl:path <http://www.w3.org/ns/odrl/2/hasPolicy> .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/44e0945e932b142aa37108f9c7baac138213357d> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license";
-  shacl:class dc:LicenseDocument;
-  shacl:description "A licence under which the Distribution is made available."@en;
-  shacl:name "license"@en;
-  shacl:path dc:license .
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype";
+  shacl:description "The media type of the distribution as defined by IANA"@en;
+  shacl:name "media type"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:MediaType .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/533683eaacab30836e2350f542e593e27eca9f89> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.numberofdatapoints";
   shacl:description "The total count of individual data entries or observations contained."@en;
@@ -1306,6 +1310,12 @@
   shacl:description """	A URL that gives access to a Distribution of the Dataset."""@en;
   shacl:name "access URL"@en;
   shacl:path dcat:accessURL .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/69c8fdb6db25c5ad1f8a47366c19adb834924ae0> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.mediatype";
+  shacl:description "The media type of the distribution as defined by IANA"@en;
+  shacl:maxCount 1;
+  shacl:name "media type"@en;
+  shacl:path dc:MediaType .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/73765ca7a6e23ef17cf4e67a576e90a0c391f1c1> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.checksum";
   shacl:description "A mechanism that can be used to verify that the contents of a distribution have not changed."@en;
@@ -1385,6 +1395,12 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/it6/defaultTargetAttribute> .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/9eaae476a881de13b9430537ace6e70da7327dbd> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence";
+  shacl:description "A licence under which the Distribution is made available."@en;
+  shacl:maxCount 1;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/a07d6e7a0a1790b89a1ce7ff602cbbd9ea835282> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.downloadURL";
   shacl:class dcat:Resource;
   shacl:description "A URL that is a direct link to a downloadable file in a given format."@en;
@@ -1433,12 +1449,6 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/it6/processingError> .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/cd035d5fcf2aa42f83e614e12afd8905d4d6bcf8> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.license";
-  shacl:description "A licence under which the Distribution is made available."@en;
-  shacl:maxCount 1;
-  shacl:name "license"@en;
-  shacl:path dc:license .
-
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.title";
   shacl:description "A name given to the Distribution."@en;
   shacl:name "title"@en;
@@ -1450,6 +1460,12 @@
   shacl:name "language"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path dc:language .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dbcf2adef675735c48b532392359af27af5e8b71> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence";
+  shacl:class dc:LicenseDocument;
+  shacl:description "A licence under which the Distribution is made available."@en;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/dc17e7a798aea475507009807c87717284c17830> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.checksum";
   shacl:description "A mechanism that can be used to verify that the contents of a distribution have not changed."@en;
@@ -1480,6 +1496,12 @@
   shacl:description "The size of a Distribution in bytes."@en;
   shacl:name "byte size"@en;
   shacl:path dcat:byteSize .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f30149ffb6ec9d00dd5866b052105729fa27d02a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.licence";
+  shacl:description "A licence under which the Distribution is made available."@en;
+  shacl:name "licence"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:license .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/f635b26fbf54b0114a70dd22929ed87f5f34b230> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.bytesize";
   shacl:description "The size of a Distribution in bytes."@en;
@@ -2468,6 +2490,8 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/bda64b6b9c27a850b8782b17019e888c5edd7ce0>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/dbcf2adef675735c48b532392359af27af5e8b71>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>;
   shacl:targetClass <http://data.europa.eu/it6/Library> .
 
@@ -2505,6 +2529,18 @@
   shacl:nodeKind shacl:Literal;
   shacl:path dc:title .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/dbcf2adef675735c48b532392359af27af5e8b71> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.licence";
+  shacl:class dc:LicenseDocument;
+  shacl:description "A licence under which the Library is made available."@en;
+  shacl:name "licence"@en;
+  shacl:path dc:license .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f30149ffb6ec9d00dd5866b052105729fa27d02a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.licence";
+  shacl:description "A licence under which the Library is made available."@en;
+  shacl:name "licence"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:license .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.title";
   shacl:description "The name assigned to the resource."@en;
   shacl:minCount 1;
@@ -2530,6 +2566,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/06ff27d600ebfab82f26c6758d77cec5feed8a17>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0bec2b8d975faca8188207fb729ef0f9741a9afa>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0e6e22dc13d0b206842d78a0280d195612318d56>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/183edb9762aea61df93bed1ab937df409c26f0f8>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/1cf19b8f20dc9c7b053680153b1fea667f845f4a>,
@@ -2557,6 +2594,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/5b3cd72708414496a600a6fb4cb8607973347071>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/5bc739112726cd993c279f81380611cafc3a9857>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/5c00085225811cf3c496c271219a028c71b8547d>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6b7242b6b89977700c05e4875131fbb975c4235e>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6dc2a375f04122fef1497324a860c05b1989d711>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/7d4c667652f23f3a51353271e3800bca87ed3f68>,
@@ -2574,6 +2612,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a38e33decb21ddebecf480e2a0f61129b2715646>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a40b7a6f3c941d00eb296c12646c8a164a538f6a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a765ad590d8bbf948c74779425be566fc507d50a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a89ae712fdba62eca26618adf10fb8bfee67d716>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/aa10c7331969a961108f2d78f31544c4d9e38a6b>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/b05d80d7f4e190836768b76560ec614a2ec10e27>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/b18119f74ad8912985842f36710ac3c507642f6a>,
@@ -2639,6 +2678,12 @@
   shacl:maxCount 1;
   shacl:name "training methodologies"@en;
   shacl:path <http://data.europa.eu/it6/trainingMethodologies> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.shortdescription";
+  shacl:description "A short description of a machine learning model"@en;
+  shacl:name "short description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/it6/shortDescription> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0e6e22dc13d0b206842d78a0280d195612318d56> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hasoutputfileprediction";
   shacl:description "The file in which the model is expressed."@en;
@@ -2802,6 +2847,12 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/it6/bias> .
 
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6b7242b6b89977700c05e4875131fbb975c4235e> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.modificationdate";
+  shacl:description "The date the machine learning model was last modifiedTime compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
+  shacl:name "modification date"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/it6/modifiedDate> .
+
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.description";
   shacl:description "An account of the resource."@en;
   shacl:name "description"@en;
@@ -2903,6 +2954,12 @@
   shacl:description "The dataset on which a machine learning mode is executed."@en;
   shacl:name "runned on"@en;
   shacl:path <http://data.europa.eu/it6/runnedOn> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a89ae712fdba62eca26618adf10fb8bfee67d716> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.shortdescription";
+  shacl:description "A short description of a machine learning model"@en;
+  shacl:maxCount 1;
+  shacl:name "short description"@en;
+  shacl:path <http://data.europa.eu/it6/shortDescription> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/aa10c7331969a961108f2d78f31544c4d9e38a6b> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hasregistereduser";
   shacl:description "The registered user associated to the model"@en;
@@ -3115,6 +3172,10 @@
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeOrExtentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass dc:MediaTypeOrExtent .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MediaTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass dc:MediaType .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#OutputFileDescriptionShape> a shacl:NodeShape;
   shacl:closed false;
@@ -3674,14 +3735,35 @@
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9b660db1133790511dd6d633f914c589c61f464c>,
+  shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9b660db1133790511dd6d633f914c589c61f464c>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/dfb6b75816bc1b7517fa8f164055d11830066bd3>;
   shacl:targetClass <https://linkedpaperswithcode.com/class/repository> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/398fb93e389fba9a790e6adb0152f10f2ba6023a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:maxCount 1;
+  shacl:name "name"@en;
+  shacl:path dc:title .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/96cdcbb0489a41ab01fc39c521f5ed607a0b2c41> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:minCount 1;
+  shacl:name "name"@en;
+  shacl:path dc:title .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9b660db1133790511dd6d633f914c589c61f464c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.hasfile";
   shacl:class <http://data.europa.eu/it6/OutputFilePrediction>;
   shacl:name "has file"@en;
   shacl:path <http://data.europa.eu/it6/hasFile> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.name";
+  shacl:description "The name assigned to the resource."@en;
+  shacl:name "name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:title .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#RepositoryShape/dfb6b75816bc1b7517fa8f164055d11830066bd3> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Repository.hasfile";
   shacl:name "has file"@en;
