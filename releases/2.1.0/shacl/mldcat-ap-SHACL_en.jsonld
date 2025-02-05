@@ -2444,18 +2444,6 @@
           "sh:path": "http://data.europa.eu/it6/bias"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6b7242b6b89977700c05e4875131fbb975c4235e",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.modificationdate",
-          "sh:description": {
-            "en": "The date the machine learning model was last modifiedTime compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."
-          },
-          "sh:name": {
-            "en": "modification date"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/it6/modifiedDate"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.description",
           "sh:description": {
@@ -2994,6 +2982,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data.europa.eu/it6/trainingMethodologies"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f1db4963126c4a52c815fce110fd8f36a5106dc9",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.modified",
+          "sh:description": {
+            "en": "The date the machine learning model was last modified."
+          },
+          "sh:name": {
+            "en": "modified"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/modified"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f30149ffb6ec9d00dd5866b052105729fa27d02a",
@@ -6590,18 +6590,6 @@
             "en": "processing error"
           },
           "sh:path": "http://data.europa.eu/it6/processingError"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/8bb3dd5e28fff4dba5d55fa78d5b27ae1531b884",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.numberofdatapoints",
-          "sh:description": {
-            "en": "The total count of individual data entries or observations contained."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "number of datapoints"
-          },
-          "sh:path": "http://data.europa.eu/it6/numberOfDatapoints"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/8c1e0d1ac55cc7da56ed33785c09a2980899a997",

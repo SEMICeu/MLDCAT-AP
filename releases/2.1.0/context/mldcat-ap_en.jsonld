@@ -660,9 +660,9 @@
       "@id": "http://data.europa.eu/m8g/logo",
       "@type": "@id"
     },
-    "MachineLearningModel.modificationDate": {
+    "MachineLearningModel.modified": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/it6/modifiedDate"
+      "@id": "http://purl.org/dc/terms/modified"
     },
     "MachineLearningModel.name": {
       "@id": "http://purl.org/dc/terms/title"

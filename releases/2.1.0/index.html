@@ -3054,7 +3054,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     The total count of individual data entries or observations contained.
@@ -3383,7 +3383,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#MachineLearningModel.licence">licence</a>
                             , <a href="#MachineLearningModel.limitations">limitations</a>
                             , <a href="#MachineLearningModel.logo">logo</a>
-                            , <a href="#MachineLearningModel.modificationdate">modification date</a>
+                            , <a href="#MachineLearningModel.modified">modified</a>
                             , <a href="#MachineLearningModel.name">name</a>
                             , <a href="#MachineLearningModel.releasedate">release date</a>
                             , <a href="#MachineLearningModel.runnedon">runned on</a>
@@ -4596,22 +4596,22 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="MachineLearningModel.modificationdate"
+                            <tr id="MachineLearningModel.modified"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/modifiedDate"
+                                resource="http://purl.org/dc/terms/modified"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20modification date%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.modificationdate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20modified%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.modified" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/it6/modifiedDate"
+                                        <a href="http://purl.org/dc/terms/modified"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/modifiedDate"
+                                           data-content="http://purl.org/dc/terms/modified"
                                            data-placement="right">
-                                        modification date</a>
+                                        modified</a>
                                 </td>
                                 <td>
                                     
@@ -4624,7 +4624,7 @@ The main entities are those that form the core of the Application Profile.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The date the machine learning model was last modifiedTime compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).
+                                    The date the machine learning model was last modified.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -16044,8 +16044,9 @@ They are included in the Application Profile because they form the range of prop
 <section class="informative">
     <h2> Examples </h2>
         
-<div class="h3 examples" id="example-dataset">Example Dataset</div>
-<div class="h3 examples" id="example-machinelearningmodel">Example Machine Learning Model</div>
+<div class="h3 examples" id="example-dataset">Example <a href="https://www.openml.org/search?type=data&status=active&id=31&sort=runs">Credit-g</a> Dataset on OpenML</div>
+<div class="h3 examples" id="example-machinelearningmodel-hf">Example <a href="https://huggingface.co/bigscience/bloomz-7b1">Bloom-7b1</a> Machine Learning Model on HuggingFace</div>
+<div class="h3 examples" id="example-machinelearningmodel-eosc">Example <a href="https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thermal-bridges-rooftops-detector">Thermal Bridges</a> Machine Learning Model on EOSC</div>
 
 </section>
 
@@ -18783,8 +18784,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
 								<td></td>
-								<td><a href="#MachineLearningModel.modificationdate">modification date </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/modifiedDate</div></td>
+								<td><a href="#MachineLearningModel.modified">modified </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/modified</div></td>
 							</tr>
 						
 					

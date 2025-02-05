@@ -1,5 +1,5 @@
 {
-    "@context": ["https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.0.0/context/mldcat-ap.jsonld",
+    "@context": ["https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.1.0/context/mldcat-ap.jsonld",
        { 
          "adms" : "http://www.w3.org/ns/adms#",
          "it6" : "http://data.europa.eu/it6/",
