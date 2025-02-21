@@ -2276,28 +2276,16 @@
           "sh:path": "http://data.europa.eu/it6/hasBibliographicReference"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.description",
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/334bd09cb2d51fee7cf3d3112df24d33e535f70f",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.isfundedby",
           "sh:description": {
-            "en": "An account of the resource."
+            "en": "An object property linking something to the funding that funds it (i.e. that finances or pays for it), or to the funding agency providing that funding.  This flexibility is given because of alternative usages of the English word 'funds'."
           },
-          "sh:maxCount": "1",
           "sh:name": {
-            "en": "description"
+            "en": "is funded by"
           },
-          "sh:path": "http://purl.org/dc/terms/description"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/398fb93e389fba9a790e6adb0152f10f2ba6023a",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.name",
-          "sh:description": {
-            "en": "The name assigned to the resource."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/cerif/frapo/isFundedBy"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/3a8fcb0a351c6cd00e40b0e8714ea64e230eaa18",
@@ -2970,6 +2958,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data.europa.eu/it6/howToUse"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/eaa7f0e48d95ac15f906e0f393b9e3435fda6152",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.isfundedby",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "An object property linking something to the funding that funds it (i.e. that finances or pays for it), or to the funding agency providing that funding.  This flexibility is given because of alternative usages of the English word 'funds'."
+          },
+          "sh:name": {
+            "en": "is funded by"
+          },
+          "sh:path": "http://purl.org/cerif/frapo/isFundedBy"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f0f9b7c716e45649a41100b2094e02df5efbdf4c",
@@ -6458,6 +6458,30 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/dcat#byteSize"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5dc9e41ce32674f93626b7c46ac30d47f09a6b5c",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.hasdata",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Indicates associated with Data (may or may not be personal)."
+          },
+          "sh:name": {
+            "en": "has data"
+          },
+          "sh:path": "https://w3id.org/dpv#hasData"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5f00c818c845b373f67a88f0ec4e516c1d9dd481",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.hasdata",
+          "sh:description": {
+            "en": "Indicates associated with Data (may or may not be personal)."
+          },
+          "sh:name": {
+            "en": "has data"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://w3id.org/dpv#hasData"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32",

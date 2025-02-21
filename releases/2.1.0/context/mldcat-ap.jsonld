@@ -287,6 +287,11 @@
       "@id": "http://purl.org/dc/terms/format",
       "@type": "@id"
     },
+    "Distribution.hasData": {
+      "@container": "@set",
+      "@id": "https://w3id.org/dpv#hasData",
+      "@type": "@id"
+    },
     "Distribution.hasFeature": {
       "@container": "@set",
       "@id": "http://data.europa.eu/it6/hasFeature",
@@ -562,6 +567,7 @@
       "@type": "@id"
     },
     "MachineLearningModel.description": {
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/description"
     },
     "MachineLearningModel.evaluationResults": {
@@ -638,6 +644,11 @@
     "MachineLearningModel.intendedUse": {
       "@id": "http://data.europa.eu/it6/intendedUse"
     },
+    "MachineLearningModel.isFundedBy": {
+      "@container": "@set",
+      "@id": "http://purl.org/cerif/frapo/isFundedBy",
+      "@type": "@id"
+    },
     "MachineLearningModel.keyword": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/dcat#keyword"
@@ -665,6 +676,7 @@
       "@id": "http://purl.org/dc/terms/modified"
     },
     "MachineLearningModel.name": {
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/title"
     },
     "MachineLearningModel.releaseDate": {

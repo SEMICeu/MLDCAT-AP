@@ -1183,6 +1183,8 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/4546bd675f20c3ead3fabfd84682d9063fd2926a>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/533683eaacab30836e2350f542e593e27eca9f89>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/59cbd395c4b9167c030b3fd61001eeeee5034346>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5dc9e41ce32674f93626b7c46ac30d47f09a6b5c>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5f00c818c845b373f67a88f0ec4e516c1d9dd481>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/653804840386e33525b3d39d205c174780be414b>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/69c8fdb6db25c5ad1f8a47366c19adb834924ae0>,
@@ -1297,6 +1299,18 @@
   shacl:name "byte size"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path dcat:byteSize .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5dc9e41ce32674f93626b7c46ac30d47f09a6b5c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.hasdata";
+  shacl:class skos:Concept;
+  shacl:description "Indicates associated with Data (may or may not be personal)."@en;
+  shacl:name "has data"@en;
+  shacl:path <https://w3id.org/dpv#hasData> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/5f00c818c845b373f67a88f0ec4e516c1d9dd481> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.hasdata";
+  shacl:description "Indicates associated with Data (may or may not be personal)."@en;
+  shacl:name "has data"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <https://w3id.org/dpv#hasData> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#DistributionShape/6311ab0f528a12e90a9d4be09bdec4ff36578b32> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Distribution.checksum";
   shacl:class <http://spdx.org/rdf/terms#Checksum>;
@@ -2573,8 +2587,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/31aa7a8aa9973dae8ae713419f96fdaf0aaa6448>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/331d8630022188972d9d6610b18a8d994ecf8224>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/362d1bf0eab8051024cf5ec1345eb1ce50762580>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/398fb93e389fba9a790e6adb0152f10f2ba6023a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/334bd09cb2d51fee7cf3d3112df24d33e535f70f>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/3a8fcb0a351c6cd00e40b0e8714ea64e230eaa18>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/47e5ae88856c272043a19580de0a25ec53fcb9a5>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/4be37093e4c3ba0d5b5a18ef6b97778d6d689392>,
@@ -2631,6 +2644,7 @@
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/e6b08d88d2235f5646f52d6d5b7cbe3396532967>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/e6b10372e56872f25144e0c3995ff1ec62327458>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/e9d118da1b9665f782d440a94730d7052e06e118>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/eaa7f0e48d95ac15f906e0f393b9e3435fda6152>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f0f9b7c716e45649a41100b2094e02df5efbdf4c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f1db4963126c4a52c815fce110fd8f36a5106dc9>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f30149ffb6ec9d00dd5866b052105729fa27d02a>,
@@ -2756,17 +2770,11 @@
   shacl:name "has bibliographic reference"@en;
   shacl:path <http://data.europa.eu/it6/hasBibliographicReference> .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/362d1bf0eab8051024cf5ec1345eb1ce50762580> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.description";
-  shacl:description "An account of the resource."@en;
-  shacl:maxCount 1;
-  shacl:name "description"@en;
-  shacl:path dc:description .
-
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/398fb93e389fba9a790e6adb0152f10f2ba6023a> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.name";
-  shacl:description "The name assigned to the resource."@en;
-  shacl:maxCount 1;
-  shacl:name "name"@en;
-  shacl:path dc:title .
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/334bd09cb2d51fee7cf3d3112df24d33e535f70f> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.isfundedby";
+  shacl:description "An object property linking something to the funding that funds it (i.e. that finances or pays for it), or to the funding agency providing that funding.  This flexibility is given because of alternative usages of the English word 'funds'."@en;
+  shacl:name "is funded by"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://purl.org/cerif/frapo/isFundedBy> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/3a8fcb0a351c6cd00e40b0e8714ea64e230eaa18> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hasvariation";
   shacl:class <http://data.europa.eu/it6/MachineLearningModel>;
@@ -3103,6 +3111,12 @@
   shacl:name "how to use"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data.europa.eu/it6/howToUse> .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/eaa7f0e48d95ac15f906e0f393b9e3435fda6152> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.isfundedby";
+  shacl:class foaf:Agent;
+  shacl:description "An object property linking something to the funding that funds it (i.e. that finances or pays for it), or to the funding agency providing that funding.  This flexibility is given because of alternative usages of the English word 'funds'."@en;
+  shacl:name "is funded by"@en;
+  shacl:path <http://purl.org/cerif/frapo/isFundedBy> .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/f0f9b7c716e45649a41100b2094e02df5efbdf4c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.trainingmethodologies";
   shacl:description "A description of the methodologies used"@en;
