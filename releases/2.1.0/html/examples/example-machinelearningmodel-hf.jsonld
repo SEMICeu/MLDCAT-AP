@@ -24,9 +24,10 @@
             "MachineLearningModel.intendedUse" : "We recommend using the model to perform tasks expressed in natural language. For example, given the prompt \"Translate to English: Je t’aime.\", the model will most likely answer \"I love you.\". Some prompt ideas from our paper:\n一个传奇的开端，一个不灭的神话，这不仅仅是一部电影，而是作为一个走进新时代的标签，永远彪炳史册。你认为这句话的立场是赞扬、中立还是批评?\nSuggest at least five related search terms to \"Mạng neural nhân tạo\".\nWrite a fairy tale about a troll saving a princess from a dangerous dragon. The fairy tale is a masterpiece that has achieved praise worldwide and its moral is \"Heroes Come in All Shapes and Sizes\". Story (in Spanish):\nExplain in a sentence in Telugu what is backpropagation in neural networks.\nFeel free to share your generations in the Community tab!",
             "MachineLearningModel.licence" : "https://huggingface.co/spaces/bigscience/license",
             "MachineLearningModel.limitations" : "Prompt Engineering: The performance may vary depending on the prompt. For BLOOMZ models, we recommend making it very clear when the input stops to avoid the model trying to continue it. For example, the prompt \"Translate to English: Je t'aime\" without the full stop (.) at the end, may result in the model trying to continue the French sentence. Better prompts are e.g. \"Translate to English: Je t'aime.\", \"Translate to English: Je t'aime. Translation:\" \"What is \"Je t'aime.\" in English?\", where it is clear for the model when it should answer. Further, we recommend providing the model as much context as possible. For example, if you want it to answer in Telugu, then tell the model, e.g. \"Explain in a sentence in Telugu what is backpropagation in neural networks.\".",
-            "MachineLearningModel.name": "bloomz-7b1",
+            "MachineLearningModel.name" : "bloomz-7b1",
             "MachineLearningModel.trainedOn" : ["https://huggingface.co/datasets/bigscience/xP3","https://huggingface.co/datasets/bigscience/xP3all"],
-            "MachineLearningModel.version": "1.0.0"
+            "MachineLearningModel.version" : "1.0.0",
+            "MachineLearningModel.identifier" : "bigscience/bloomz-7b1",
         },
         {
             "@id" : "https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors",

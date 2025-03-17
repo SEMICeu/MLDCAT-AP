@@ -1,0 +1,43 @@
+{
+  "@context": "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.1.0/html/examples/eosc-mldcat-ap-context.jsonld",
+  "uri" : "https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector",
+  "type": "MachineLearningModel", 
+  "metadata_version": "2.0.0",
+  "title": "Thermal Bridges on Building Rooftops Detection (TBBRDet)",
+  "summary": "Identify thermal bridges on building rooftops via object detection / instance segmentation models",
+  "description": "The application adapts object detection / instance segmentation models from the [MMDetection Toolbox](https://github.com/open-mmlab/mmdetection/tree/v2.21.0) to work with combined RGB and thermal imagery to identify thermal bridges (weak points) on building rooftops.\n\n\u003Cvideo controls\u003E\u003Csource src='https://user-images.githubusercontent.com/12682506/177049125-36658a55-e07e-4355-8fbe-10d422cf7246.mp4' type='video/mp4'\u003EYour browser does not support the video tag.\u003C/video\u003E\n\n**Training the deep learning model(s)**\n\nThe service is based on the [TBBRDet code](https://github.com/Helmholtz-AI-Energy/TBBRDet) which forms the basis of the paper [Investigating deep learning approaches to building rooftop thermal bridge detection from aerial images](https://doi.org/10.1016/j.autcon.2022.104690) [1]. \nIt describes an ablation study with the model architectures:\n* MaskRCNN ResNet-50 backbone\n* MaskRCNN Swin-T Transformer backbone\n* TridentNet* \n* Feature Selective Anchor-Free (FSAF)\n\nThe study varies model training from scratch and with [COCO](https://cocodataset.org/) pretrained weights, as well as using height maps (5-channel inputs) vs standard RGBT (4-channel inputs).\n\nThe Swin-T model (with 5-channel inputs and pretrained weights) achieved the highest average recall scores, so this application focuses on that architecture. \nThe pretrained weights for the Swin model can be downloaded [here](https://download.openmmlab.com/mmdetection/v2.0/swin/mask_rcnn_swin-t-p4-w7_fpn_fp16_ms-crop-3x_coco/mask_rcnn_swin-t-p4-w7_fpn_fp16_ms-crop-3x_coco_20210908_165006-90a4008c.pth) and are also included in the docker image.\n\nTraining via this application automatically creates a timestamp folder in a predefined model structure within the `tbbrdet_api/models/` folder.\nYou can check the status of any training by looking at the automatically generated `.log.json` file in the associated timestamp folder.\n\n**Data**\n\nThe dataset that forms the basis of model training is the [Thermal Bridges on Building Rooftops (TBBRv2)](https://doi.org/10.5281/zenodo.6517768). A simple, easily downloadable version can be found [on zenodo](https://zenodo.org/records/4767772).\nThe dataset contains **917 images** with a total of **6895 annotations** of thermal bridges on rooftops:\n* train (723 images)\n* test (203 images)\n\nDue to the small number of images, no validation set is created and instead the data is merely split into train / test.\nFor use in this application, it is sufficient to simply download all the .tar.std and .json files from the listed link.\nThe train / test folder structure will be built automatically by provided the folder path containing these files.\nAlternatively, you can place your own extracted data (.npy and .json files) in your directory of choice, although it is essential to keep the same folder structure as shown [on zenodo](https://zenodo.org/records/4767772)\n\n**Inference**\n\nThe docker image contains a pretrained Swin-T model for inference (tbbrdet_api/models/swin/coco/2023-12-07_130038) that expects 5-channel numpy inputs `(RGB, T, H)` formatted in the same way as those in the zenodo dataset.\nThe inference results are automatically saved to the used model's timestamp folder. \n\n**References**\n1. Mayer, Z., Kahn, J., Hou, Y. et al. Deep learning approaches to building rooftop thermal bridge detection from aerial images. In Automation in Construction Vol. 146, p. 104690 (2023). Elsevier BV. https://doi.org/10.1016/j.autcon.2022.104690,\n2. Mayer, Z., Kahn, J., Götz, M. et al. Thermal Bridges on Building Rooftops. In Sci Data 10, 268 (2023). https://doi.org/10.1038/s41597-023-02140-z",
+  "dates": {
+    "created": "2024-07-18",
+    "updated": "2024-12-05"
+  },
+  "links": {
+    "source_code": "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector",
+    "docker_image": "ai4oshub/thermal-bridges-rooftops-detector",
+    "ai4_template": "ai4-template/1.9.9",
+    "dataset": "https://zenodo.org/records/4767772",
+    "cicd_url": "https://jenkins.services.ai4os.eu/job/ai4os-hub/job/thermal-bridges-rooftops-detector/job/main/",
+    "cicd_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=ai4os-hub/thermal-bridges-rooftops-detector/main"
+  },
+  "tags": [
+    "deep learning",
+    "object detection",
+    "instance segmentation",
+    "multi-spectral data"
+  ],
+  "tasks": [
+    "Computer_Vision"
+  ],
+  "categories": [ 
+    "AI4_trainable",
+    "AI4_pre_trained",
+    "AI4_inference"
+  ],
+  "libraries": [
+    "PyTorch"
+  ],
+  "data-type": [
+    "Image"
+  ],
+  "license": "BSD_3_CLAUSE",
+  "id": "thermal-bridges-rooftops-detector"
+}

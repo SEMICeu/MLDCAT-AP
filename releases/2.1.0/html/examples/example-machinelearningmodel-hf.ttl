@@ -23,6 +23,7 @@ Feel free to share your generations in the Community tab!""" ;
 	dct:title "bloomz-7b1" ;
 	it6:trainedOn <https://huggingface.co/datasets/bigscience/xP3>, <https://huggingface.co/datasets/bigscience/xP3all> ;
 	it6:version "1.0.0" ;
+	dct:identifer "bigscience/bloomz-7b1" ;
 	a it6:MachineLearningModel .
 
 <https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors> dct:format <http://example.com/format/safetensors> ;

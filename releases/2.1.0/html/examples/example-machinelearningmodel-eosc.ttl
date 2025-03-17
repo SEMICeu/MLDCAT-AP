@@ -17,6 +17,7 @@
 	it6:version "1.0.0" ;
 	dcat:keyword "deep learning", "object detection", "instance segmentation", "multispectral data" ;
 	it6:hasOutputFilePrediction <http://example.com/File/1> ;
+	dct:identifier "thermal-bridges-rooftops-detector" ;
 	a it6:MachineLearningModel .
 
 <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> dct:title "GitHub" ;

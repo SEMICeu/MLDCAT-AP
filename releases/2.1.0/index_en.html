@@ -3413,6 +3413,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#MachineLearningModel.hasbenchmark">has benchmark</a>
                             , <a href="#MachineLearningModel.hasbibliographicreference">has bibliographic reference</a>
                             , <a href="#MachineLearningModel.hasengagement">has engagement</a>
+                            , <a href="#MachineLearningModel.hasmachinelearninglibrary">has machine learning library</a>
                             , <a href="#MachineLearningModel.hasoutputfileprediction">has output file prediction</a>
                             , <a href="#MachineLearningModel.haspolicy">has policy</a>
                             , <a href="#MachineLearningModel.hasprediction">has prediction</a>
@@ -3420,9 +3421,11 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#MachineLearningModel.hasregistereduser">has registered user</a>
                             , <a href="#MachineLearningModel.hasrepository">has repository</a>
                             , <a href="#MachineLearningModel.hasrisk">has risk</a>
+                            , <a href="#MachineLearningModel.hastasktype">has task type</a>
                             , <a href="#MachineLearningModel.hasuploader">has uploader</a>
                             , <a href="#MachineLearningModel.hasvariation">has variation</a>
                             , <a href="#MachineLearningModel.howtouse">how to use</a>
+                            , <a href="#MachineLearningModel.identifier">identifier</a>
                             , <a href="#MachineLearningModel.intendeduse">intended use</a>
                             , <a href="#MachineLearningModel.isfundedby">is funded by</a>
                             , <a href="#MachineLearningModel.keyword">keyword</a>
@@ -3955,6 +3958,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="MachineLearningModel.hasmachinelearninglibrary"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/hasMachineLearningLibrary"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20has machine learning library%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.hasmachinelearninglibrary" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/hasMachineLearningLibrary"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/hasMachineLearningLibrary"
+                                           data-placement="right">
+                                        has machine learning library</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Library" data-placement="right">Library</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The library or framework used by the machine learning model.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="MachineLearningModel.hasoutputfileprediction"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/it6/hasOutputFilePrediction"
@@ -4256,6 +4302,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="MachineLearningModel.hastasktype"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/it6/hasTaskType"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20has task type%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.hastasktype" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/it6/hasTaskType"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/it6/hasTaskType"
+                                           data-placement="right">
+                                        has task type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#TaskType" data-placement="right">Task Type</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The recommended controlled vocabulary is the <a href="https://semiceu.github.io/MLDCAT-AP/releases/codelist/task-type.html">Task type</a> code list.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="MachineLearningModel.hasuploader"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/it6/hasUploader"
@@ -4371,6 +4460,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     An explanation of how to use or deploy the model.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="MachineLearningModel.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20identifier%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23MachineLearningModel.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An unambiguous identifier for the resource.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -11922,8 +12054,7 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Library.isexecutedby">is executed by</a>
-                            , <a href="#Library.licence">licence</a>
+                            For this entity the following properties are defined: <a href="#Library.licence">licence</a>
                             , <a href="#Library.title">title</a>
                             , <a href="#Library.version">version</a>
                             .
@@ -11964,49 +12095,6 @@ They are included in the Application Profile because they form the range of prop
                         </tr>
                     </thead>
                     <tbody class="supertype">
-                        
-                            <tr id="Library.isexecutedby"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/it6/isExecutedBy"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20is executed by%20in%20Library&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23Library.isexecutedby" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/it6/isExecutedBy"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/isExecutedBy"
-                                           data-placement="right">
-                                        is executed by</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#OutputFilePrediction" data-placement="right">Output File Prediction</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The library that is executed by this file
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         
                             <tr id="Library.licence"
                                 typeof="rdfs:Property"
@@ -15804,6 +15892,13 @@ They are included in the Application Profile because they form the range of prop
                 
                 
                     <dt>
+                        Subclass of
+                        <dt>
+                            <dd> <a href="#Concept">Concept</a>
+                                
+                        </dd>
+                    
+                    <dt>
                         Properties
                     </dt>
                     
@@ -15875,7 +15970,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     
@@ -15895,7 +15990,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="TaskType.id"
                                 typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/identifier"
+                                resource="http://www.w3.org/2004/02/skos/core#notation"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20id%20in%20Task Type&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23TaskType.id" target="_blank" rel="noopener noreferrer" >
@@ -15904,9 +15999,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://purl.org/dc/terms/identifier"
+                                        <a href="http://www.w3.org/2004/02/skos/core#notation"
                                            data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-content="http://www.w3.org/2004/02/skos/core#notation"
                                            data-placement="right">
                                         id</a>
                                 </td>
@@ -15918,7 +16013,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     An unambiguous identifier for the resource.
@@ -15938,7 +16033,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="TaskType.title"
                                 typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
+                                resource="http://www.w3.org/2004/02/skos/core#prefLabel"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20title%20in%20Task Type&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/2.1.0%23TaskType.title" target="_blank" rel="noopener noreferrer" >
@@ -15947,9 +16042,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://purl.org/dc/terms/title"
+                                        <a href="http://www.w3.org/2004/02/skos/core#prefLabel"
                                            data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
+                                           data-content="http://www.w3.org/2004/02/skos/core#prefLabel"
                                            data-placement="right">
                                         title</a>
                                 </td>
@@ -18373,8 +18468,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
 					
 						
 					
@@ -18382,18 +18475,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Library">Library</a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/Library</div></td>
-								<td></td>
-								<td><a href="#Library.isexecutedby">is executed by </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/isExecutedBy</div></td>
-							</tr>
-						
 					
 						
 							<tr>
@@ -18534,6 +18615,18 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
 					
 						
 					
@@ -18733,6 +18826,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
 								<td></td>
+								<td><a href="#MachineLearningModel.hasmachinelearninglibrary">has machine learning library </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/hasMachineLearningLibrary</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
+								<td></td>
 								<td><a href="#MachineLearningModel.hasoutputfileprediction">has output file prediction </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/hasOutputFilePrediction</div></td>
 							</tr>
@@ -18803,6 +18906,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
 								<td></td>
+								<td><a href="#MachineLearningModel.hastasktype">has task type </a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/hasTaskType</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
+								<td></td>
 								<td><a href="#MachineLearningModel.hasuploader">has uploader </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/hasUploader</div></td>
 							</tr>
@@ -18825,6 +18938,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#MachineLearningModel.howtouse">how to use </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/howToUse</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#MachineLearningModel">Machine Learning Model</a></td>
+								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
+								<td></td>
+								<td><a href="#MachineLearningModel.identifier">identifier </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
 							</tr>
 						
 					
@@ -20361,7 +20484,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data.europa.eu/it6/TaskType</div></td>
 								<td></td>
 								<td><a href="#TaskType.id">id </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#notation</div></td>
 							</tr>
 						
 					
@@ -20371,7 +20494,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data.europa.eu/it6/TaskType</div></td>
 								<td></td>
 								<td><a href="#TaskType.title">title </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#prefLabel</div></td>
 							</tr>
 						
 					

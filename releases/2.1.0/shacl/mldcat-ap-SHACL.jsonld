@@ -1938,18 +1938,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/10238d52d80ea5ec4d440ac5aa8ca732da42b24a",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.isexecutedby",
-          "sh:description": {
-            "en": "The library that is executed by this file"
-          },
-          "sh:name": {
-            "en": "is executed by"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/it6/isExecutedBy"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/1e2ff89f72ca069b1668489d90cb44ba553353d5",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.version",
           "sh:maxCount": "1",
@@ -1957,18 +1945,6 @@
             "en": "version"
           },
           "sh:path": "http://data.europa.eu/it6/version"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/2cd3f752a62846cb9926f882fb46768cd6abe68f",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Library.isexecutedby",
-          "sh:class": "http://data.europa.eu/it6/OutputFilePrediction",
-          "sh:description": {
-            "en": "The library that is executed by this file"
-          },
-          "sh:name": {
-            "en": "is executed by"
-          },
-          "sh:path": "http://data.europa.eu/it6/isExecutedBy"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LibraryShape/bda64b6b9c27a850b8782b17019e888c5edd7ce0",
@@ -2106,6 +2082,18 @@
             "en": "training methodologies"
           },
           "sh:path": "http://data.europa.eu/it6/trainingMethodologies"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0c5c7df30c6c70aa0e77b321f682957484ff9a07",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hasmachinelearninglibrary",
+          "sh:class": "http://data.europa.eu/it6/Library",
+          "sh:description": {
+            "en": "The library or framework used by the machine learning model."
+          },
+          "sh:name": {
+            "en": "has machine learning library"
+          },
+          "sh:path": "http://data.europa.eu/it6/hasMachineLearningLibrary"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
@@ -2408,6 +2396,15 @@
           "sh:path": "http://data.europa.eu/it6/hasVariation"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/5ba76a25e6d311d3bc386d0a799fe0c76b5a01e3",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hastasktype",
+          "sh:class": "http://data.europa.eu/it6/TaskType",
+          "sh:name": {
+            "en": "has task type"
+          },
+          "sh:path": "http://data.europa.eu/it6/hasTaskType"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/5bc739112726cd993c279f81380611cafc3a9857",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.keyword",
           "sh:description": {
@@ -2430,6 +2427,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data.europa.eu/it6/bias"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6c7c1bd2ab3b7761e5be759a078a9fd93f411a57",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/6cae9880e515253132af1452a38a8a5827165149",
@@ -2588,6 +2597,18 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/9f01dedf112f0d762b0e0de316dfe1cfb6036f92",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hasmachinelearninglibrary",
+          "sh:description": {
+            "en": "The library or framework used by the machine learning model."
+          },
+          "sh:name": {
+            "en": "has machine learning library"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/it6/hasMachineLearningLibrary"
+        },
+        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/a061d6ab7663725d8a9b6f3c960aac3bbe2835e7",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.evaluationstrategy",
           "sh:description": {
@@ -2658,6 +2679,18 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/it6/haRegisteredUser"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.identifier",
+          "sh:description": {
+            "en": "An unambiguous identifier for the resource."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/b05d80d7f4e190836768b76560ec614a2ec10e27",
@@ -2886,6 +2919,15 @@
             "en": "licence"
           },
           "sh:path": "http://purl.org/dc/terms/license"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/dc0c5890d6cf9527f563c17e0650abccbc9746f6",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModel.hastasktype",
+          "sh:name": {
+            "en": "has task type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/it6/hasTaskType"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#MachineLearningModelShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
@@ -4818,7 +4860,7 @@
             "en": "id"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/identifier"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
@@ -4839,7 +4881,7 @@
           "sh:name": {
             "en": "id"
           },
-          "sh:path": "http://purl.org/dc/terms/identifier"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/6cae9880e515253132af1452a38a8a5827165149",
@@ -4848,15 +4890,6 @@
             "en": "description"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/2004/02/skos/core#definition"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskType.description",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "description"
-          },
           "sh:path": "http://www.w3.org/2004/02/skos/core#definition"
         },
         {
@@ -4869,7 +4902,7 @@
           "sh:name": {
             "en": "title"
           },
-          "sh:path": "http://purl.org/dc/terms/title"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/d5d74574f70f9a979535f3624608f88180dd0c97",
@@ -4881,19 +4914,7 @@
             "en": "title"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/e0c9d9e2a26ed56f4d4d9eb9de7c55864b9b5635",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskType.id",
-          "sh:description": {
-            "en": "An unambiguous identifier for the resource."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "id"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         },
         {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#TaskTypeShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
@@ -4905,7 +4926,7 @@
           "sh:name": {
             "en": "title"
           },
-          "sh:path": "http://purl.org/dc/terms/title"
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/it6/TaskType"

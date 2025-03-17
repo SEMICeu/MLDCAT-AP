@@ -530,11 +530,6 @@
     "ImageObject": "http://data.europa.eu/m8g/ImageObject",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "Library": "http://data.europa.eu/it6/Library",
-    "Library.isExecutedBy": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/it6/isExecutedBy",
-      "@type": "@id"
-    },
     "Library.licence": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/license",
@@ -594,6 +589,11 @@
       "@id": "http://data.europa.eu/it6/hasEngagement",
       "@type": "@id"
     },
+    "MachineLearningModel.hasMachineLearningLibrary": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/it6/hasMachineLearningLibrary",
+      "@type": "@id"
+    },
     "MachineLearningModel.hasOutputFilePrediction": {
       "@container": "@set",
       "@id": "http://data.europa.eu/it6/hasOutputFilePrediction",
@@ -629,6 +629,11 @@
       "@id": "http://data.europa.eu/it6/hasRisk",
       "@type": "@id"
     },
+    "MachineLearningModel.hasTaskType": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/it6/hasTaskType",
+      "@type": "@id"
+    },
     "MachineLearningModel.hasUploader": {
       "@id": "http://data.europa.eu/it6/hasUploader",
       "@type": "@id"
@@ -640,6 +645,10 @@
     },
     "MachineLearningModel.howToUse": {
       "@id": "http://data.europa.eu/it6/howToUse"
+    },
+    "MachineLearningModel.identifier": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/identifier"
     },
     "MachineLearningModel.intendedUse": {
       "@id": "http://data.europa.eu/it6/intendedUse"
@@ -1032,10 +1041,10 @@
       "@id": "http://www.w3.org/2004/02/skos/core#definition"
     },
     "TaskType.id": {
-      "@id": "http://purl.org/dc/terms/identifier"
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
     },
     "TaskType.title": {
-      "@id": "http://purl.org/dc/terms/title"
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
     },
     "TemporalLiteral": "http://www.w3.org/2000/01/rdf-schema#Literal"
   }

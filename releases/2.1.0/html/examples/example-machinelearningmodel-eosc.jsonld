@@ -28,7 +28,8 @@
             "MachineLearningModel.trainedOn" : "https://zenodo.org/records/6517768",
             "MachineLearningModel.version" : "1.0.0",
             "MachineLearningModel.keyword" : ["deep learning","object detection","instance segmentation","multispectral data"],
-            "MachineLearningModel.hasOutputFilePrediction" : "http://example.com/File/1"
+            "MachineLearningModel.hasOutputFilePrediction" : "http://example.com/File/1",
+            "MachineLearningModel.identifier" : "thermal-bridges-rooftops-detector"
         },
         {
             "@id": "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector",
