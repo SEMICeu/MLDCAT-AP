@@ -542,6 +542,18 @@
       "@id": "http://data.europa.eu/it6/version"
     },
     "LicenceDocument": "http://purl.org/dc/terms/LicenseDocument",
+    "LicenceDocument.identifier": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "LicenceDocument.name": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "LicenceDocument.type": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
     "LinguisticSystem": "http://purl.org/dc/terms/LinguisticSystem",
     "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "MachineLearningModel": "http://data.europa.eu/it6/MachineLearningModel",
