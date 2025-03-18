@@ -4968,18 +4968,6 @@
           "sh:path": "http://purl.org/dc/terms/type"
         },
         {
-          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/9caf9e629daa0e64ece77788576468821d7cff8c",
-          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.name",
-          "sh:description": {
-            "en": "The name of the license."
-          },
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
-        },
-        {
           "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
           "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.identifier",
           "sh:description": {
@@ -5002,6 +4990,18 @@
             "en": "identifier"
           },
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "@id": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.title",
+          "sh:description": {
+            "en": "The name of the license."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         }
       ],
       "sh:targetClass": "http://purl.org/dc/terms/LicenseDocument"

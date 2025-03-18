@@ -2544,9 +2544,9 @@
   shacl:closed false;
   shacl:property <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
     <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/aadbd67a77a624f073be2076627fb9dc883cbe48>,
-    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/c0d17764e84e711728581fda7356a51e99a9040a>;
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/c0d17764e84e711728581fda7356a51e99a9040a>,
+    <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/d5d74574f70f9a979535f3624608f88180dd0c97>;
   shacl:targetClass dc:LicenseDocument .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.type";
@@ -2561,12 +2561,6 @@
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path dc:type .
 
-<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.name";
-  shacl:description "The name of the license."@en;
-  shacl:name "name"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path skos:prefLabel .
-
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/aadbd67a77a624f073be2076627fb9dc883cbe48> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.identifier";
   shacl:description "An unambiguous identifier of the License."@en;
   shacl:name "identifier"@en;
@@ -2578,6 +2572,12 @@
   shacl:maxCount 1;
   shacl:name "identifier"@en;
   shacl:path skos:notation .
+
+<https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LicenseDocumentShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#Licencedocument.title";
+  shacl:description "The name of the license."@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path skos:prefLabel .
 
 <https://semiceu.github.io/MLDCAT-AP/releases/2.1.0#LinguisticSystemShape> a shacl:NodeShape;
   shacl:closed false;
