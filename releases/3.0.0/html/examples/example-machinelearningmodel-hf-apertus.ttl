@@ -1,0 +1,76 @@
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix lpwcc: <https://linkedpaperswithcode.com/class/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://huggingface.co/swiss-ai/Apertus-70B-2509> dct:identifier "swiss-ai/Apertus-70B-2509" ;
+	dct:title "Apertus-70B-2509" ;
+	it6:hasProvider <https://www.swiss-ai.org/> ;
+	it6:releaseDate "2025-09-02"^^xsd:date ;
+	it6:placedOnMarketDate "2025-09-02"^^xsd:date ;
+	it6:version "Apertus 1" ;
+	it6:modelArchitecture "Decoder-only transformer architecture with xIELU activations, QKNorms, Pre-Norm by RMSNorms, and rotary positional embeddings." ;
+	it6:hasInputModalitity ex:modality-input-1 ;
+	it6:hasOutput ex:modality-output-1 ;
+	it6:totalNumberOfParameters "70000000000"^^xsd:nonNegativeInteger ;
+	it6:methodOfDistribution "Hugging Face" ;
+	dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+	<http://www.w3.org/ns/odrl/2/hasPolicy> <https://huggingface.co/swiss-ai/Apertus-70B-2509/policy> ;
+	it6:intendedUse "General-purpose AI model" ;
+	it6:trainedOn <https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu>, 
+				<https://huggingface.co/datasets/epfml/FineWeb-HQ>, 
+				<https://huggingface.co/datasets/HuggingFaceTB/dclm-edu>, 
+				<https://huggingface.co/datasets/epfml/FineWeb2-HQ>, 
+				<https://huggingface.co/datasets/HuggingFaceFW/fineweb-2>, 
+				<https://huggingface.co/datasets/bigcode/the-stack-dedup>, 
+				<https://huggingface.co/datasets/common-pile/stackv2_edu_filtered>, 
+				<https://huggingface.co/datasets/HuggingFaceTB/finemath>, 
+				<https://huggingface.co/datasets/LLM360/MegaMath>, 
+				<https://huggingface.co/datasets/HuggingFaceTB/smoltalk2>, 
+				<https://huggingface.co/datasets/utter-project/EuroBlocks-SFTSynthetic-1124>, 
+				<https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225>, 
+				<https://huggingface.co/datasets/DataProvenanceInitiative/CommercialFlan-Collection-Chain-Of-Thought> ;
+	it6:hasFile <https://huggingface.co/swiss-ai/Apertus-70B-2509/blob/main/model-00001-of-00030.safetensors> ;
+	a it6:MachineLearningModel .
+
+<https://www.swiss-ai.org/> foaf:name "Swiss National AI Institute (SNAI)" ;
+	a foaf:Agent .
+
+ex:modality-input-1 it6:classification ex:Text ;
+	it6:size "Native context length 64k tokens, extensible to 128k" ;
+	a it6:Modality .
+
+ex:Text a skos:Concept .
+
+ex:modality-output-1 it6:classification ex:Text ;
+	a it6:Modality .
+
+<https://www.apache.org/licenses/LICENSE-2.0> a dct:LicenseDocument .
+
+<https://huggingface.co/swiss-ai/Apertus-70B-2509/policy> a <http://www.w3.org/ns/odrl/2/Policy> .
+
+<https://huggingface.co/swiss-ai/Apertus-70B-2509/blob/main/model-00001-of-00030.safetensors> dct:format <http://example.com/format/safetensors> ;
+	dct:identifier "model-00001-of-00030.safetensors" ;
+	dct:title "Apertus-70B-2509 model-00001-of-00030 safetensors format" ;
+	it6:url <https://huggingface.co/swiss-ai/Apertus-70B-2509/resolve/main/model-00001-of-00030.safetensors> ;
+	spdx:checksum <http://example.com/Checksum/d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd> ;
+	a it6:File .
+
+<http://example.com/Checksum/d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd> spdx:checksumValue "d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd"^^xsd:hexBinary ;
+	spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+	a spdx:Checksum .
+
+<https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu> dct:title "FineWeb-Edu" ;
+	it6:collectionDate "2024-09-02"^^xsd:date ;
+	dcat:version "1.0.O" ;
+	dct:description "FineWeb-Edu dataset consists of 1.3T tokens and 5.4T tokens (FineWeb-Edu-score-2) of educational web pages filtered from 🍷 FineWeb dataset. This is the 1.3 trillion version." ;
+	it6:dataProvenance "The datasets were not used as is but additionally filtered for opt-out retrospectively, for toxicity, high quality, and other preprocessing as detailed below." ;
+	a dcat:Dataset .
+

@@ -1,0 +1,95 @@
+{
+    "@context": ["https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/3.0.0/context/mldcat-ap.jsonld",
+       { 
+         "adms" : "http://www.w3.org/ns/adms#",
+         "it6" : "http://data.europa.eu/it6/",
+         "odrl" : "http://www.w3.org/ns/odrl/2/",
+         "spdx" : "http://spdx.org/rdf/terms#",
+         "xsd" : "http://www.w3.org/2001/XMLSchema#"
+       }
+     ],
+     "@graph": [
+        {
+            "@id": "http://openml.org/openml/dataset/31",
+            "@type": "Dataset",
+            "Dataset.accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+            "Dataset.collectionDate": {
+                "@value":"1994-11-17",
+                "@type": "xsd:date"
+            },
+            "Dataset.description": "This dataset classifies people described by a set of attributes as good or bad credit risks",
+            "Dataset.datasetDistribution": "http://openml.org/openml/distribution/31",
+            "Dataset.identifier": "31",
+            "Dataset.isReferencedBy": "https://dl.acm.org/doi/abs/10.1145/967900.968104",
+            "Dataset.releaseDate": {
+                "@value": "2014-04-06T23:21:47",
+                "@type": "xsd:dateTime"
+            },
+            "Dataset.keyword": ["credit_scoring","finance_problem", "mythbusting_1", "OpenML-CC18", "OpenML100",
+            "study_1", "study_123", "study_14", "study_144", "study_15", "study_20", 
+            "study_218", "study_241", "study_34", "study_37", "study_41", "study_50",
+            "study_52", "study_7", "study_70", "study_98", "study_99", "uci"],
+            "Dataset.landingPage": "https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)",
+            "Dataset.publisher": "http://openml.org/openml/agent/2",
+            "Dataset.status": "http://openml.org/openml/dataset-status#active",
+            "Dataset.title": "credit-g",
+            "Dataset.versionInfo": "1",
+            "Dataset.versionLabel": "1",
+            "Dataset.visibility": "http://openml.org/openml/dataset-visibility#public"
+        },
+        {
+            "@id": "http://openml.org/openml/distribution/31",
+            "@type": "Distribution",
+            "Distribution.accessService": "http://openml.org/openml/dataService/1",
+            "Distribution.accessUrl": "https://www.openml.org/search?type=data%26status=active%26id=31",
+            "Distribution.checksum": "http://openml.org/openml/checksum/31",
+            "Distribution.defaultTargetAttribute": "class",
+            "Distribution.downloadUrl": "https://www.openml.org/data/download/31/dataset_31_credit-g.arff",
+            "Distribution.format": "http://sweetontology.net/reprDataFormat/ARFF",
+            "Distribution.hasFeature": "http://openml.org/openml/feature/31-1",
+            "Distribution.hasPolicy": "https://archive.ics.uci.edu/ml/citation_policy.html",
+            "Distribution.hasQualityMeasurement": "http://openml.org/openml/quality/numberofinstances/1",
+            "Distribution.identifier": "31",
+            "Distribution.language": "http://publications.europa.eu/resource/authority/language/ENG",
+            "Distribution.processingDate": {
+                "@value": "2020-11-20T19:44:53",
+                "@type": "xsd:dateTime"
+            }
+        },
+        {
+            "@id": "http://openml.org/openml/dataService/1",
+            "@type": "DataService",
+            "DataService.endpointUrl": "https://www.openml.org/apis",
+            "DataService.servesDataset": "http://openml.org/openml/dataset/31",
+            "DataService.title": "REST API for sharing, organizing and reusing machine learning datasets, code, and experiments."
+        },
+        {
+            "@id": "http://openml.org/openml/checksum/31",
+            "@type": "Checksum",
+            "Checksum.checksumValue": "9a475053fed0c26ee95cd4525e50074c",
+            "Checksum.algorithm": "http://spdx.org/rdf/terms#checksumAlgorithm_md5"
+        },
+        {
+            "@id": "http://openml.org/openml/feature/31-1",
+            "@type": "Feature",
+            "Feature.title": "class",
+            "Feature.type": "http://openml.org/openml/feature-type#nominal"
+        },
+        {
+            "@id": "http://openml.org/openml/quality/numberofinstances/1",
+            "@type": "QualityMeasurement",
+            "QualityMeasurement.value": "1000",
+            "QualityMeasurement.type": "http://openml.org/openml/qualitytype/numberofinstances"
+        },
+        {
+            "@id": "http://openml.org/openml/agent/1",
+            "@type": "Agent",
+            "Agent.name": "Dr Hans Hofmann"
+        },
+        {
+            "@id": "http://openml.org/openml/agent/2",
+            "@type": "Agent",
+            "Agent.name": "Jan Van Rijn"
+        }
+    ]
+}

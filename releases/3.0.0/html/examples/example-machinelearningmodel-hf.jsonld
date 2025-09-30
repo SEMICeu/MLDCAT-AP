@@ -1,0 +1,91 @@
+{
+    "@context": [
+     "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.1.0/context/mldcat-ap.jsonld",
+      {
+        "biro" : "http://purl.org/spar/biro/",
+        "it6" : "http://data.europa.eu/it6/",
+        "lpwcc" : "https://linkedpaperswithcode.com/class/",
+        "spdx" : "http://spdx.org/rdf/terms#",
+        "xsd" : "http://www.w3.org/2001/XMLSchema#"
+      }
+    ],
+      "@graph": [
+        {
+            "@id": "https://huggingface.co/bigscience/bloomz-7b1",
+            "@type": "MachineLearningModel",
+            "MachineLearningModel.created" : {
+                "@value": "2024-02-22T09:05:04",
+                "@type": "xsd:dateTime"
+            },
+            "MachineLearningModel.hasOutputFilePrediction" : ["https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors","https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin"],
+            "MachineLearningModel.hasRepository" : "https://huggingface.co/bigscience/bloomz-7b1/tree/main",
+            "MachineLearningModel.hasBibliographicReference" : "http://example.com/BibliographicReference/1",
+            "MachineLearningModel.hasUploader" : "https://huggingface.co/Muennighoff", 
+            "MachineLearningModel.intendedUse" : "We recommend using the model to perform tasks expressed in natural language. For example, given the prompt \"Translate to English: Je t’aime.\", the model will most likely answer \"I love you.\". Some prompt ideas from our paper:\n一个传奇的开端，一个不灭的神话，这不仅仅是一部电影，而是作为一个走进新时代的标签，永远彪炳史册。你认为这句话的立场是赞扬、中立还是批评?\nSuggest at least five related search terms to \"Mạng neural nhân tạo\".\nWrite a fairy tale about a troll saving a princess from a dangerous dragon. The fairy tale is a masterpiece that has achieved praise worldwide and its moral is \"Heroes Come in All Shapes and Sizes\". Story (in Spanish):\nExplain in a sentence in Telugu what is backpropagation in neural networks.\nFeel free to share your generations in the Community tab!",
+            "MachineLearningModel.licence" : "https://huggingface.co/spaces/bigscience/license",
+            "MachineLearningModel.limitations" : "Prompt Engineering: The performance may vary depending on the prompt. For BLOOMZ models, we recommend making it very clear when the input stops to avoid the model trying to continue it. For example, the prompt \"Translate to English: Je t'aime\" without the full stop (.) at the end, may result in the model trying to continue the French sentence. Better prompts are e.g. \"Translate to English: Je t'aime.\", \"Translate to English: Je t'aime. Translation:\" \"What is \"Je t'aime.\" in English?\", where it is clear for the model when it should answer. Further, we recommend providing the model as much context as possible. For example, if you want it to answer in Telugu, then tell the model, e.g. \"Explain in a sentence in Telugu what is backpropagation in neural networks.\".",
+            "MachineLearningModel.name" : "bloomz-7b1",
+            "MachineLearningModel.trainedOn" : ["https://huggingface.co/datasets/bigscience/xP3","https://huggingface.co/datasets/bigscience/xP3all"],
+            "MachineLearningModel.version" : "1.0.0",
+            "MachineLearningModel.identifier" : "bigscience/bloomz-7b1"
+        },
+        {
+            "@id" : "https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors",
+            "@type": "OutputFilePrediction",
+            "OutputFilePrediction.format": "http://example.com/format/safetensors",
+            "OutputFilePrediction.id" : "bloomz-7b1.safetensors",
+            "OutputFilePrediction.title" : "bloomz-7b1 safetensors format",
+            "OutputFilePrediction.url" : "https://huggingface.co/bigscience/bloomz-7b1/resolve/main/model.safetensors",
+            "OutputFilePrediction.checksum" : "http://example.com/Checksum/1"
+        },
+        {
+            "@id": "http://example.com/Checksum/1",
+            "@type": "Checksum",
+            "Checksum.checksumValue" : "4e1e2bdcc97ec356cc92130d3802c81a324e9840b0ed417a9342ea728aa1d369",
+            "Checksum.algorithm" : "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        },
+        {
+            "@id" : "https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin",
+            "@type": "OutputFilePrediction",
+            "OutputFilePrediction.format": "http://example.com/format/pytorch",
+            "OutputFilePrediction.id" : "bloomz-7b1-pytorch",
+            "OutputFilePrediction.title" : "bloomz-7b1 pytorch format",
+            "OutputFilePrediction.url" : "https://huggingface.co/bigscience/bloomz-7b1/resolve/main/pytorch_model.bin",
+            "OutputFilePrediction.checksum" : "http://example.com/Checksum/2"
+        },
+        {
+            "@id": "http://example.com/Checksum/2",
+            "@type": "Checksum",
+            "Checksum.checksumValue" : "d1f5d9fc449dd5fbe045f62c609e2b70f63d2e63faf74d7e0adb895dc294f28e",
+            "Checksum.algorithm" : "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        },
+        {
+            "@id": "https://huggingface.co/bigscience/bloomz-7b1/tree/main",
+            "@type": "Repository",
+            "Repository.hasFile" : ["https://huggingface.co/bigscience/bloomz-7b1/blob/main/model.safetensors","https://huggingface.co/bigscience/bloomz-7b1/blob/main/pytorch_model.bin"],
+			"Repository.name" : "Files"
+        },
+        {
+            "@id": "http://example.com/BibliographicReference/1",
+            "@type": "BibliographicReference",
+            "BibliographicReference.bibliographicCitation" : "@article{muennighoff2022crosslingual,\ntitle={Crosslingual generalization through multitask finetuning},\nauthor={Muennighoff, Niklas and Wang, Thomas and Sutawika, Lintang and Roberts, Adam and Biderman, Stella and Scao, Teven Le and Bari, M Saiful and Shen, Sheng and Yong, Zheng-Xin and Schoelkopf, Hailey and others},\njournal={arXiv preprint arXiv:2211.01786},\nyear={2022}}",
+            "BibliographicReference.format" : "http://example.com/format/BibTeX",
+            "BibliographicReference.references" : "https://arxiv.org/abs/2211.01786"
+        },
+        {
+            "@id": "https://arxiv.org/abs/2211.01786",
+            "@type": "Paper",
+            "Paper.date" : {
+                "@value": "2023-05-29",
+                "@type": "xsd:date"
+            },
+            "Paper.hasDocument" : "https://arxiv.org/pdf/2211.01786",
+            "Paper.title" : "Crosslingual Generalization through Multitask Finetuning"
+        },
+        {
+            "@id" : "https://huggingface.co/Muennighoff",
+            "@type": "Agent",
+            "Agent.name": "Niklas Muennighoff"
+        }
+    ]
+}

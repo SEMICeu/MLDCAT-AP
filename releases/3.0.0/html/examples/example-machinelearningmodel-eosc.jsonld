@@ -1,0 +1,87 @@
+{
+    "@context": [
+     "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/3.0.0/context/mldcat-ap.jsonld",
+      {
+        "biro" : "http://purl.org/spar/biro/",
+        "it6" : "http://data.europa.eu/it6/",
+        "lpwcc" : "https://linkedpaperswithcode.com/class/",
+        "spdx" : "http://spdx.org/rdf/terms#",
+        "xsd" : "http://www.w3.org/2001/XMLSchema#"
+      }
+    ],
+      "@graph": [
+        {
+            "@id": "https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thermal-bridges-rooftops-detector",
+            "@type": "MachineLearningModel",
+            "MachineLearningModel.created" : {
+                "@value": "2024-07-18T00:00:00",
+                "@type": "xsd:dateTime"
+            },
+            "MachineLearningModel.modified" : {
+                "@value": "2024-12-05T00:00:00",
+                "@type": "xsd:dateTime"
+            },
+            "MachineLearningModel.hasRepository" : ["https://github.com/ai4os-hub/thermal-bridges-rooftops-detector", "https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector" , "https://github.com/open-mmlab/mmdetection/tree/v2.21.0"] ,
+            "MachineLearningModel.hasBibliographicReference" : ["http://example.com/BibliographicReference/1", "http://example.com/BibliographicReference/2" ] ,
+            "MachineLearningModel.licence" : "https://github.com/open-mmlab/mmdetection/blob/v2.21.0/LICENSE",
+            "MachineLearningModel.name": "Thermal Bridges on Building Rooftops Detection (TBBRDet)",
+            "MachineLearningModel.trainedOn" : "https://zenodo.org/records/6517768",
+            "MachineLearningModel.version" : "1.0.0",
+            "MachineLearningModel.keyword" : ["deep learning","object detection","instance segmentation","multispectral data"],
+            "MachineLearningModel.hasFile" : "http://example.com/File/1",
+            "MachineLearningModel.identifier" : "thermal-bridges-rooftops-detector"
+        },
+        {
+            "@id": "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector",
+            "@type": "Repository",
+			"Repository.name" : "GitHub"
+        },
+        {
+            "@id": "https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector",
+            "@type": "Repository",
+			"Repository.name" : "Docker"
+        },
+        {
+            "@id": "http://example.com/BibliographicReference/1",
+            "@type": "BibliographicReference",
+            "BibliographicReference.bibliographicCitation" : "@article{MAYER2023104690,title = {Deep learning approaches to building rooftop thermal bridge detection from aerial images},journal = {Automation in Construction},volume = {146},pages = {104690},year = {2023},issn = {0926-5805},doi = {https://doi.org/10.1016/j.autcon.2022.104690},url = {https://www.sciencedirect.com/science/article/pii/S092658052200560X},author = {Zoe Mayer and James Kahn and Yu Hou and Markus Götz and Rebekka Volk and Frank Schultmann},keywords = {Building analysis, Thermal bridges, Drones, Deep learning, Computer vision, Object detection},abstract = {Thermal bridges are weak points of building envelopes that can lead to energy losses, collection of moisture, and formation of mould in the building fabric. To detect thermal bridges of large building stocks, drones with thermographic cameras can be used. As the manual analysis of comprehensive image datasets is very time-consuming, we investigate deep learning approaches for its automation. For this, we focus on thermal bridges on building rooftops recorded in panorama drone images from our updated dataset of Thermal Bridges on Building Rooftops (TBBRv2), containing 926 images with 6,927 annotations. The images include RGB, thermal, and height information. We compare state-of-the-art models with and without pretraining from five different neural network architectures: MaskRCNN R50, Swin-T transformer, TridentNet, FSAF, and a MaskRCNN R18 baseline. We find promising results, especially for pretrained models, scoring an Average Recall above 50% for detecting large thermal bridges with a pretrained Swin-T Transformer model.}}",
+            "BibliographicReference.format" : "http://example.com/format/BibTeX",
+            "BibliographicReference.references" : "https://doi.org/10.1016/j.autcon.2022.104690"
+        },
+        {
+            "@id": "https://doi.org/10.1016/j.autcon.2022.104690",
+            "@type": "Paper",
+            "Paper.date" : {
+                "@value": "2022-11-26",
+                "@type": "xsd:date"
+            },
+            "Paper.hasDocument" : "https://www.sciencedirect.com/science/article/pii/S092658052200560X/pdfft?md5=9569ab0974f5a79ab7c99831f3f09ff6&pid=1-s2.0-S092658052200560X-main.pdf",
+            "Paper.title" : "Deep learning approaches to building rooftop thermal bridge detection from aerial images"
+        },
+        {
+            "@id": "http://example.com/BibliographicReference/2",
+            "@type": "BibliographicReference",
+            "BibliographicReference.bibliographicCitation" : "TY  - JOUR\nAU  - Mayer, Zoe\nAU  - Kahn, James\nAU  - Götz, Markus\nAU  - Hou, Yu\nAU  - Beiersdörfer, Tobias\nAU  - Blumenröhr, Nicolas\nAU  - Volk, Rebekka\nAU  - Streit, Achim\nAU  - Schultmann, Frank\nPY  - 2023\nDA  - 2023/05/10\nTI  - Thermal Bridges on Building Rooftops\nJO  - Scientific Data\nSP  - 268\nVL  - 10\nIS  - 1\nAB  - Thermal Bridges on Building Rooftops (TBBR) is a multi-channel remote sensing dataset. It was recorded during six separate UAV fly-overs of the city center of Karlsruhe, Germany, and comprises a total of 926 high-resolution images with 6927 manually-provided thermal bridge annotations. Each image provides five channels: three color, one thermographic, and one computationally derived height map channel. The data is pre-split into training and test data subsets suitable for object detection and instance segmentation tasks. All data is organized and structured to comply with FAIR principles, i.e. being findable, accessible, interoperable, and reusable. It is publicly available and can be downloaded from the Zenodo data repository. This work provides a comprehensive data descriptor for the TBBR dataset to facilitate broad community uptake.\nSN  - 2052-4463\nUR  - https://doi.org/10.1038/s41597-023-02140-z\nDO  - 10.1038/s41597-023-02140-z\nID  - Mayer2023\nER  - \n",
+            "BibliographicReference.format" : "http://example.com/format/Ris",
+            "BibliographicReference.references" : "https://doi.org/10.1038/s41597-023-02140-z"
+        },
+        {
+            "@id": "https://doi.org/10.1038/s41597-023-02140-z",
+            "@type": "Paper",
+            "Paper.date" : {
+                "@value": "2023-05-10",
+                "@type": "xsd:date"
+            },
+            "Paper.hasDocument" : "https://www.nature.com/articles/s41597-023-02140-z.pdf",
+            "Paper.title" : "Thermal Bridges on Building Rooftops"
+        },
+        {
+            "@id" : "http://example.com/File/1",
+            "@type": "File",
+            "File.format": "http://example.com/format/pytorch",
+            "File.id" : "TBBRDet pytorch",
+            "File.title" : "TBBRDet pytorch format",
+            "File.url" : "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector"
+        }
+    ]
+}
