@@ -19,7 +19,7 @@ The table below gives an overview of the classes (and their definitions) within 
 | Nr | MLDCAT-AP v2.1.0 | MLDCAT-AP v3.0.0 | Rationale | GitHub / Change |
 | --- | --- | --- | --- | --- |
 | - | - | Version 3.0.0 follow major version of DCAT-AP 3.X | - | - |
-| C | it6:Risk | it6:HarmRisk | its own definition defines its more as an harm risk  | https://github.com/SEMICeu/MLDCAT-AP/issues/29 |
+| C | it6:Risk | it6:HarmRisk | its own definition defines it more as an harm risk  | https://github.com/SEMICeu/MLDCAT-AP/issues/29 |
 | C | - | it6:Modality | addition of this class to be compliant with the AI ACT and AI CoP | - |
 | C | it6:Parameter | it6:Parameter | there were 2 classes Parameters, now simplified in one  | - |
 | C | - | dct:Location | this class has been added to for the geographical coverage of the Dataset | - |
