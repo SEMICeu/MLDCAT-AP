@@ -37,14 +37,14 @@ The table below gives an overview of the classes (and their definitions) within 
 | R |  dcat:Dataset / dct:MediaType | dcat:Dataset / dcat:mediaType | typo in the relation  | - |
 | P | dcat:Distribution / dpv:hasData | dcat:Distribution / dpv:hasData | changing hyperlink to the code list in the usage note  | https://github.com/SEMICeu/MLDCAT-AP/issues/25 |
 | P | - | it6:EnvironmentalImpact / it6:measurementMethodology  | addition of this property to be compliant with the AI CoP  | - |
-| P | it6:EstimationProcedure/it6:dataSplitsURL  | it6:EstimationProcedure/it6:hasSplit  | change property to relation to it6:Split  | https://github.com/SEMICeu/MLDCAT-AP/issues/16 |
+| P | it6:EstimationProcedure / it6:dataSplitsURL  | it6:EstimationProcedure / it6:hasSplit  | change property to relation to it6:Split  | https://github.com/SEMICeu/MLDCAT-AP/issues/16 |
 | P | - | it6:Hardware / dct:description  | addition of this property to be compliant with the AI CoP  | - |
 | P | - | it6:Library / dct:description  | addition of this property to be compliant with the AI CoP  | - |
 | R | - | it6:Library / dct:isExecutedBy | to create a better relation with the File belonging to a Machine Learning Model  | - |
 | P | - | it6:MachineLearningModel / it6:designSpecifications | addition of this property to be compliant with the AI CoP  | - |
 | R | - | it6:MachineLearningModel / it6:hasInputModality | addition of this property to be compliant with the AI CoP and AI Act  | - |
 | R | - | it6:MachineLearningModel / it6:hasOutputModality | addition of this property to be compliant with the AI CoP and AI Act  | - |
-| R | it6:MachineLearningModel / it6:haRegisteredUser | it6:MachineLearningModel/it6:hasRegisteredUser  | typo in the relation | - |
+| R | it6:MachineLearningModel / it6:haRegisteredUser | it6:MachineLearningModel / it6:hasRegisteredUser  | typo in the relation | - |
 | R | - | it6:MachineLearningModel / it6:methodOfDistribution | addition of this property to be compliant with the AI CoP and AI Act  | - |
 | R | - | it6:MachineLearningModel / it6:modelArchitecture | addition of this property to be compliant with the AI CoP and AI Act  | - |
 | P | - | it6:MachineLearningModel / it6:placedOnMarketDate | addition of this property to be compliant with the AI CoP  | - |
