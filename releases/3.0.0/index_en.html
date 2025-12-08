@@ -74,11 +74,23 @@
 	};
 	var shaclfilepath = "shacl/mldcat-ap-SHACL.ttl" ;
 	var folder = "./html/examples/";
-	var model = "mldcat-ap" ;
+	var model = "semic-shacl" ;
 	var version_list = [
 		{
-		"type": "v3.0.0",
+		"type": "mldcatap.3_0_0",
 		"description": "MLDCAT-AP 3.0.0"
+		},
+		{
+		"type": "mldcatap.3_0_0_cop_aio",
+		"description": "MLDCAT-AP 3.0.0 For AIO"
+		},
+		{
+		"type": "mldcatap.3_0_0_cop_dp",
+		"description": "MLDCAT-AP 3.0.0 For DP"
+		},
+		{
+		"type": "mldcatap.3_0_0_cop_nca",
+		"description": "MLDCAT-AP 3.0.0 For NCA"
 		}
 	] ;
 	var linkinfo = "https://semiceu.github.io/MLDCAT-AP/releases/3.0.0" + "#validation" ;
@@ -194,7 +206,7 @@ MLDCAT-AP (Machine Learning DCAT-AP) is an Application Profile that extends DCAT
             This Application Profile has the status SEMIC Candidate Recommendation published at 2025-09-30.
         </p>
         <p>
-            Information about the process and the decisions involved in the creation of this specification can be consulted at the <a href="https://github.com/SEMICeu/MLDCAT-AP/blob/master/releases/3.0.0/html/Changelog.md">Changelog</a>.
+            Information about the process and the decisions involved in the creation of this specification can be consulted at the <a href="https://github.com/SEMICeu/MLDCAT-AP/blob/main/releases/3.0.0/html/Changelog.md">Changelog</a>.
         </p>
 </section>
 
@@ -376,7 +388,16 @@ This specification uses the following prefixes to shorten the URIs for readabili
    Main Entities
 </h2>
 The main entities are those that form the core of the Application Profile.
-
+The properties and their associated constraints that apply in the context of this profile are listed in a tabular form.
+Each row corresponds to one property. 
+In addition to the constraints also cross-references are provided to DCAT. To save space, the following abbreviations are used to indicate in short the difference with DCAT:
+<ul id="reuse-column">
+	<li>A: reused as-is defined and expressed in DCAT [[vocab-dcat-3]]</li>
+	<li>E: reused with additional usage notes or additional restrictions compared to DCAT [[vocab-dcat-3]]</li>
+	<li>P: DCAT-AP profile specific extension where DCAT had no requirements earlier on specified</li>
+</ul>
+This reuse qualification assessement is with respect to a specific version of DCAT. 
+Therefore it may vary over time when new versions of DCAT-AP are created.
 
 
    
@@ -2454,7 +2475,7 @@ The main entities are those that form the core of the Application Profile.
 
                                             
                                                 
-                                                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalCoverage">DCAT-AP [A]</a>
+                                                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage">DCAT-AP [A]</a>
                                                 
                                             
 
@@ -6547,7 +6568,7 @@ The main entities are those that form the core of the Application Profile.
                         
                             <tr id="MachineLearningModel.hasinputmodality"
                                 typeof="rdf:Property"
-                                resource="http://data.europa.eu/it6/hasInputModalitity"
+                                resource="http://data.europa.eu/it6/hasInputModality"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/SEMICeu/MLDCAT-AP/issues/new?title=Issue%20for%20has input modality%20in%20Machine Learning Model&body=Explain%20your%20issue%20for%20https://semiceu.github.io/MLDCAT-AP/releases/3.0.0%23MachineLearningModel.hasinputmodality" target="_blank" rel="noopener noreferrer" >
@@ -6556,9 +6577,9 @@ The main entities are those that form the core of the Application Profile.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/it6/hasInputModalitity"
+                                        <a href="http://data.europa.eu/it6/hasInputModality"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/it6/hasInputModalitity"
+                                           data-content="http://data.europa.eu/it6/hasInputModality"
                                            data-placement="right">
                                         has input modality</a>
                                 </td>
@@ -20432,13 +20453,17 @@ They are included in the Application Profile because they form the range of prop
 -->
 
 <section class="informative">
-    <h2> Examples </h2>
+    <h2 aria-level="1" role="heading" id="h2_sotd">
+        Examples
+    </h2> 
+	<div class="region region--no-space-top" id="examples">													   
         
 <h3 class="h3 examples" id="example-dataset">Example <a href="https://www.openml.org/search?type=data&status=active&id=31&sort=runs">Credit-g</a> Dataset on OpenML</h3>
 <h3 class="h3 examples" id="example-machinelearningmodel-hf-bloom">Example <a href="https://huggingface.co/bigscience/bloomz-7b1">Bloom-7b1</a> Machine Learning Model on HuggingFace</h3>
 <h3 class="h3 examples" id="example-machinelearningmodel-hf-apertus">Example <a href="https://huggingface.co/swiss-ai/Apertus-8B-2509">Apertus</a> Machine Learning Model on HuggingFace</h3>
 <h3 class="h3 examples" id="example-machinelearningmodel-eosc">Example <a href="https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thermal-bridges-rooftops-detector">Thermal Bridges</a> Machine Learning Model on EOSC</h3>
 
+	</div>
 </section>
 
 
@@ -20479,12 +20504,22 @@ Each implementation happens within a context, and that context is beyond the SHA
 The shapes can be found <a href="./shacl/mldcat-ap-SHACL.ttl">here</a>.
 
 <p>
-The Interoperability Test Bed (ITB) provides a <a href="https://www.itb.ec.europa.eu/shacl/mldcat-ap/upload">validation service for MLDCAT-AP</a> reusing the linked shapes.
+The Interoperability Test Bed (ITB) provides a <a href="https://www.itb.ec.europa.eu/shacl/semic-shacl/upload">SEMIC SHACL validation service</a> where it is possible to validate for MLDCAT-AP reusing the linked shapes.
+There are 4 types of validation for this version:
+<ul>
+<li><b>3.0.0</b>: to validate against the data model version 3.0.0</li>
+<li><b>3.0.0 for AI Office</b>: to validate against the data model + the <a href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai#ecl-inpage-the-3-chapters-of-the-code">transparency requirements</a> for the AI Office coming for the AI Code Of Practice</li>
+<li><b>3.0.0 for Downstream Providers</b>: to validate against the data model + the <a href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai#ecl-inpage-the-3-chapters-of-the-code">transparency requirements</a> for the Downstream providers coming for the AI Code Of Practice</li>
+<li><b>3.0.0 for National Competent Authority</b>: to validate against the data model + the <a href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai#ecl-inpage-the-3-chapters-of-the-code">transparency requirements</a> for the National Competent Authorities coming for the AI Code Of Practice</li>
+</ul> 
+
+The additional shapes can be found in the <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main">Semantic Mappings</a> repository.
+
 The examples in this specification can be validated via the <a href="https://www.itb.ec.europa.eu/shacl/swagger-ui/index.html">ITB REST API</a>.
 </p>
 
 <h3>UML representation</h3>
-The UML representation from which the MLDCAT-AP has been build is available <a href="./uml">here</a>.
+The UML representation from which the MLDCAT-AP has been build is available <a href="/uml">here</a>.
 
 <!--
 <h3>Mapping</h3>
@@ -20549,6 +20584,7 @@ SEMIC uses and will use the RDFS lexicalisation for all of its specifications. M
 	<ul>
 		<li>A mapping towards Croissant can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/MLDCAT-AP/ML%20Croissant">here</a></li>
 		<li>A mapping towards FAIR4ML can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/MLDCAT-AP/FAIR4ML">here</a></li>
+		<li>A mapping towards DPV can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/MLDCAT-AP/DPV">here</a></li>
 	</ul>
 </section>
  
@@ -21272,7 +21308,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 							<tr>
 								<td><a href="#DataService">Data Service</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/dcat#DataService</div></td>
-								<td></td>
+								<td>Optional</td>
 								<td><a href="#DataService.servesmodel">serves model </a></td>
 								<td><div class="shorten">http://data.europa.eu/it6/servesModel</div></td>
 							</tr>
@@ -23498,7 +23534,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data.europa.eu/it6/MachineLearningModel</div></td>
 								<td>Optional</td>
 								<td><a href="#MachineLearningModel.hasinputmodality">has input modality </a></td>
-								<td><div class="shorten">http://data.europa.eu/it6/hasInputModalitity</div></td>
+								<td><div class="shorten">http://data.europa.eu/it6/hasInputModality</div></td>
 							</tr>
 						
 					

@@ -25,18 +25,18 @@
 	<http://www.w3.org/ns/odrl/2/hasPolicy> <https://huggingface.co/swiss-ai/Apertus-70B-2509/policy> ;
 	it6:intendedUse "General-purpose AI model" ;
 	it6:trainedOn <https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu>, 
-				<https://huggingface.co/datasets/epfml/FineWeb-HQ>, 
-				<https://huggingface.co/datasets/HuggingFaceTB/dclm-edu>, 
-				<https://huggingface.co/datasets/epfml/FineWeb2-HQ>, 
-				<https://huggingface.co/datasets/HuggingFaceFW/fineweb-2>, 
-				<https://huggingface.co/datasets/bigcode/the-stack-dedup>, 
-				<https://huggingface.co/datasets/common-pile/stackv2_edu_filtered>, 
-				<https://huggingface.co/datasets/HuggingFaceTB/finemath>, 
-				<https://huggingface.co/datasets/LLM360/MegaMath>, 
-				<https://huggingface.co/datasets/HuggingFaceTB/smoltalk2>, 
-				<https://huggingface.co/datasets/utter-project/EuroBlocks-SFTSynthetic-1124>, 
-				<https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225>, 
-				<https://huggingface.co/datasets/DataProvenanceInitiative/CommercialFlan-Collection-Chain-Of-Thought> ;
+		<https://huggingface.co/datasets/epfml/FineWeb-HQ>, 
+		<https://huggingface.co/datasets/HuggingFaceTB/dclm-edu>, 
+		<https://huggingface.co/datasets/epfml/FineWeb2-HQ>, 
+		<https://huggingface.co/datasets/HuggingFaceFW/fineweb-2>, 
+		<https://huggingface.co/datasets/bigcode/the-stack-dedup>, 
+		<https://huggingface.co/datasets/common-pile/stackv2_edu_filtered>, 
+		<https://huggingface.co/datasets/HuggingFaceTB/finemath>, 
+		<https://huggingface.co/datasets/LLM360/MegaMath>, 
+		<https://huggingface.co/datasets/HuggingFaceTB/smoltalk2>, 
+		<https://huggingface.co/datasets/utter-project/EuroBlocks-SFTSynthetic-1124>, 
+		<https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225>, 
+		<https://huggingface.co/datasets/DataProvenanceInitiative/CommercialFlan-Collection-Chain-Of-Thought> ;
 	it6:hasFile <https://huggingface.co/swiss-ai/Apertus-70B-2509/blob/main/model-00001-of-00030.safetensors> ;
 	a it6:MachineLearningModel .
 

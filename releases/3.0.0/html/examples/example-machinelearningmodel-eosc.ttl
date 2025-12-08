@@ -1,11 +1,11 @@
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix biro: <http://purl.org/spar/biro/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix it6: <http://data.europa.eu/it6/> .
 @prefix lpwcc: <https://linkedpaperswithcode.com/class/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thermal-bridges-rooftops-detector> dct:created "2024-07-18T00:00:00"^^xsd:dateTime ;
 	dct:modified "2024-12-05T00:00:00"^^xsd:dateTime ;
