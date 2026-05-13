@@ -15,30 +15,22 @@ This section offers an overview of the webinars and events related to MLDCAT-AP.
 
 The table below shows webinars and events related to **latest version of MLDCAT-AP**:
 <table>  
-<tbody>  
-<tr>  
-<td>  
-<p><strong>Title</strong></p>  
-</td>  
-<td>  
-<p><strong>Date</strong></p>  
-</td> 
-</tr>  
-<tr>  
-<td>  
-<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/mldcat-ap-webinar ">MLDCAT-AP Webinar</a></p>  
-</td>  
-<td>  
-<p>09/09/2025</p>  
-</td> 
-</tr>  
-<tr>  
-<td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/introductory-webinar-mldcat-ap">Introductory webinar on MLDCAT-AP</a></p>  
-</td>  
-<td>  
-<p>21/03/2024</p>  
-</td> 
-</tr>  
-</tbody>  
+	<tbody>  
+		<tr>  
+			<td><p><strong>Title</strong></p></td>  
+			<td><p><strong>Date</strong></p></td> 
+		</tr>
+		<tr>  
+			<td><p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-mldcat-ap-ai-factories-enabling-semantic-interoperability-machine-learning-7-may-2026">MLDCAT-AP for AI Factories</a></p></td>  
+			<td><p>07/05/2026</p></td> 
+		</tr> 
+		<tr>  
+			<td><p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/mldcat-ap-webinar">MLDCAT-AP Webinar</a></p></td>  
+			<td><p>09/09/2025</p></td> 
+		</tr>  
+		<tr>  
+			<td><p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/introductory-webinar-mldcat-ap">Introductory webinar on MLDCAT-AP</a></p></td>
+			<td><p>21/03/2024</p></td> 
+		</tr>  
+	</tbody>  
 </table>  
