@@ -1,0 +1,111 @@
+    {
+        "@context": [
+        "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/3.0.0/context/mldcat-ap.jsonld",
+        {
+            "biro" : "http://purl.org/spar/biro/",
+            "it6" : "http://data.europa.eu/it6/",
+            "lpwcc" : "https://linkedpaperswithcode.com/class/",
+            "spdx" : "http://spdx.org/rdf/terms#",
+            "xsd" : "http://www.w3.org/2001/XMLSchema#",
+            "ex" : "http://example.org/"
+        }
+        ],
+        "@graph": [
+            {
+                "@id": "https://huggingface.co/swiss-ai/Apertus-70B-2509",
+                "@type": "MachineLearningModel",
+                "MachineLearningModel.identifier" : "swiss-ai/Apertus-70B-2509",
+                "MachineLearningModel.name" : "Apertus-70B-2509",
+                "MachineLearningModel.hasProvider" : "https://www.swiss-ai.org/",
+                "MachineLearningModel.releaseDate" : {
+                    "@value": "2025-09-02",
+                    "@type": "xsd:date"
+                },
+                "MachineLearningModel.placedOnMarketDate" : {
+                    "@value": "2025-09-02",
+                    "@type": "xsd:date"
+                },
+                "MachineLearningModel.version" : "Apertus 1",
+                "MachineLearningModel.modelArchitecture" : "Decoder-only transformer architecture with xIELU activations, QKNorms, Pre-Norm by RMSNorms, and rotary positional embeddings.",
+                "MachineLearningModel.hasInputModality" : "ex:modality-input-1",
+                "MachineLearningModel.hasOutputModality" : "ex:modality-output-1",
+                "MachineLearningModel.totalNumberOfParameters" : {
+                    "@value": "70000000000",
+                    "@type": "xsd:nonNegativeInteger"
+                },
+                "MachineLearningModel.methodOfDistribution" : "Hugging Face",
+                "MachineLearningModel.licence" : "https://www.apache.org/licenses/LICENSE-2.0",
+                "MachineLearningModel.hasPolicy" : "https://huggingface.co/swiss-ai/Apertus-70B-2509/policy",
+                "MachineLearningModel.intendedUse" : "General-purpose AI model",
+                "MachineLearningModel.trainedOn" : ["https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+                                                    "https://huggingface.co/datasets/epfml/FineWeb-HQ", 
+                                                    "https://huggingface.co/datasets/HuggingFaceTB/dclm-edu", 
+                                                    "https://huggingface.co/datasets/epfml/FineWeb2-HQ",
+                                                    "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+                                                    "https://huggingface.co/datasets/bigcode/the-stack-dedup",
+                                                    "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered",
+                                                    "https://huggingface.co/datasets/HuggingFaceTB/finemath",
+                                                    "https://huggingface.co/datasets/LLM360/MegaMath",
+                                                    "https://huggingface.co/datasets/HuggingFaceTB/smoltalk2",
+                                                    "https://huggingface.co/datasets/utter-project/EuroBlocks-SFTSynthetic-1124",
+                                                    "https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225",
+                                                    "https://huggingface.co/datasets/DataProvenanceInitiative/CommercialFlan-Collection-Chain-Of-Thought"],
+                "MachineLearningModel.hasFile" : ["https://huggingface.co/swiss-ai/Apertus-70B-2509/blob/main/model-00001-of-00030.safetensors"],
+            },
+            {
+                "@id" : "https://www.swiss-ai.org/",
+                "@type": "Agent",
+                "Agent.name": "Swiss National AI Institute (SNAI)"
+            },
+            {
+                "@id" : "ex:modality-input-1",
+                "@type": "Modality",
+                "Modality.classification": "ex:Text",
+                "Modality.size" : "Native context length 64k tokens, extensible to 128k"
+            }, 
+            {
+                "@id" : "ex:Text",
+                "@type": "Concept"
+            },
+            {
+                "@id" : "ex:modality-output-1",
+                "@type": "Modality",
+                "Modality.classification": "ex:Text"
+            },
+            {
+                "@id" : "https://www.apache.org/licenses/LICENSE-2.0",
+                "@type": "LicenseDocument"
+            }, 
+            {
+                "@id" : "https://huggingface.co/swiss-ai/Apertus-70B-2509/policy",
+                "@type": "Policy"
+            }, 
+            {
+                "@id" : "https://huggingface.co/swiss-ai/Apertus-70B-2509/blob/main/model-00001-of-00030.safetensors",
+                "@type": "File",
+                "File.format": "http://example.com/format/safetensors",
+                "File.id" : "model-00001-of-00030.safetensors",
+                "File.title" : "Apertus-70B-2509 model-00001-of-00030 safetensors format",
+                "File.url" : "https://huggingface.co/swiss-ai/Apertus-70B-2509/resolve/main/model-00001-of-00030.safetensors",
+                "File.checksum" : "http://example.com/Checksum/d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd"
+            },
+            {
+                "@id": "http://example.com/Checksum/d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd",
+                "@type": "Checksum",
+                "Checksum.checksumValue" : "d9b30acaee5750f04a1b27ec056a20379e7c887ee61c308e80b0ca5deb76a4dd",
+                "Checksum.algorithm" : "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+            },
+            {
+                "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+                "@type": "Dataset",
+                "Dataset.title" : "FineWeb-Edu",
+                "Dataset.collectionDate":  {
+                    "@value": "2024-09-02",
+                    "@type": "xsd:date"
+                },
+                "Dataset.version" : "1.0.0",
+                "Dataset.description" : "FineWeb-Edu dataset consists of 1.3T tokens and 5.4T tokens (FineWeb-Edu-score-2) of educational web pages filtered from 🍷 FineWeb dataset. This is the 1.3 trillion version.",
+                "Dataset.dataProvenance" : "The datasets were not used as is but additionally filtered for opt-out retrospectively, for toxicity, high quality, and other preprocessing as detailed below."
+            }
+        ]
+    }
