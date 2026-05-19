@@ -1,9 +1,11 @@
 @prefix biro: <http://purl.org/spar/biro/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix it6: <http://data.europa.eu/it6/> .
 @prefix lpwcc: <https://linkedpaperswithcode.com/class/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -14,14 +16,14 @@
 	dct:license <https://github.com/open-mmlab/mmdetection/blob/v2.21.0/LICENSE> ;
 	dct:title "Thermal Bridges on Building Rooftops Detection (TBBRDet)" ;
 	it6:trainedOn <https://zenodo.org/records/6517768> ;
-	it6:version "1.0.0" ;
+	dcat:version "1.0.0" ;
 	dcat:keyword "deep learning", "object detection", "instance segmentation", "multispectral data" ;
 	it6:hasFile <http://example.com/File/1> ;
 	dct:identifier "thermal-bridges-rooftops-detector" ;
 	a it6:MachineLearningModel .
 
 <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> dct:title "GitHub" ;
-	a lpwcc:repository .
+	a lpwcc:repository, dcat:Resource .
 
 <https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> dct:title "Docker" ;
 	a lpwcc:repository .
@@ -74,4 +76,20 @@ ER  -
 	dct:title "TBBRDet pytorch format" ;
 	it6:url <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> ;
 	a it6:File .
+
+<http://example.com/format/pytorch> a skos:Concept .
+
+<https://github.com/open-mmlab/mmdetection/tree/v2.21.0> dct:title "OpenMMLab Detection Toolbox and Benchmark" ;
+	a lpwcc:repository .
+
+<https://github.com/open-mmlab/mmdetection/blob/v2.21.0/LICENSE> a dct:LicenseDocument .
+
+<https://zenodo.org/records/6517768> dct:title "FIGURES 18 – 21. Gymnanthelius geographical distributions." ;
+	dct:description "A list of figures" ;
+	it6:collectionDate "2004-12-31"^^xsd:date ;
+	a dcat:Dataset .
+
+<https://www.sciencedirect.com/science/article/pii/S092658052200560X/pdfft?md5=9569ab0974f5a79ab7c99831f3f09ff6&pid=1-s2.0-S092658052200560X-main.pdf> a foaf:Document .
+
+<https://www.nature.com/articles/s41597-023-02140-z.pdf> a foaf:Document .
 

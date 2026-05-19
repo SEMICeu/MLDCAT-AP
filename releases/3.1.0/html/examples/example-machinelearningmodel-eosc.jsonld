@@ -1,6 +1,6 @@
 {
     "@context": [
-     "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/3.0.0/context/mldcat-ap.jsonld",
+     "https://semiceu.github.io/MLDCAT-AP/releases/3.1.0/context/mldcat-ap.jsonld",
       {
         "biro" : "http://purl.org/spar/biro/",
         "it6" : "http://data.europa.eu/it6/",
@@ -82,6 +82,41 @@
             "File.id" : "TBBRDet pytorch",
             "File.title" : "TBBRDet pytorch format",
             "File.url" : "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector"
-        }
+        },
+        {
+            "@id": "https://github.com/ai4os-hub/thermal-bridges-rooftops-detector",
+            "@type": "CataloguedResource"
+        },
+        {
+            "@id": "http://example.com/format/pytorch",
+            "@type": "Concept"
+        },
+        {
+            "@id": "https://github.com/open-mmlab/mmdetection/tree/v2.21.0",
+            "@type": "Repository",
+            "Repository.name": "OpenMMLab Detection Toolbox and Benchmark"
+        },
+        {
+            "@id": "https://github.com/open-mmlab/mmdetection/blob/v2.21.0/LICENSE",
+            "@type": "LicenceDocument"
+        },
+        {
+            "@id": "https://zenodo.org/records/6517768",
+            "@type": "Dataset",
+            "Dataset.title": "FIGURES 18 – 21. Gymnanthelius geographical distributions.",
+            "Dataset.description": "A list of figures",
+            "Dataset.collectionDate" :  {
+                "@value": "2004-12-31",
+                "@type": "xsd:date"
+            }
+        },
+        {   
+            "@id": "https://www.sciencedirect.com/science/article/pii/S092658052200560X/pdfft?md5=9569ab0974f5a79ab7c99831f3f09ff6&pid=1-s2.0-S092658052200560X-main.pdf",
+            "@type": "Document"
+        },
+        {   
+            "@id": "https://www.nature.com/articles/s41597-023-02140-z.pdf",
+            "@type": "Document"
+        }     
     ]
 }

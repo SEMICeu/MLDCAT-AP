@@ -1,5 +1,5 @@
 {
-  "@context": "https://semiceu.github.io/uri.semic.eu-generated/MLDCAT-AP/releases/2.1.0/html/examples/eosc-mldcat-ap-context.jsonld",
+  "@context": "https://semiceu.github.io/MLDCAT-AP/releases/3.1.0/html/examples/eosc-mldcat-ap-context.jsonld",
   "uri" : "https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector",
   "type": "MachineLearningModel", 
   "metadata_version": "2.0.0",
